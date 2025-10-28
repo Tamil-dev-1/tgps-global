@@ -1,0 +1,58 @@
+/* Home section */
+
+
+.hero-section {
+  height: 80vh; /* ✅ both columns same height */
+  overflow: hidden;
+}
+
+.hero-background {
+  background: linear-gradient(135deg, #1e5dbf 0%, #0d47a1 25%, #2962ff 50%, #448aff 75%, #82b1ff 100%);
+  position: relative;
+  height: 100%;
+}
+
+.decorative-circle {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  top: -200px;
+  left: -100px;
+}
+
+.decorative-circle2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  bottom: -100px;
+  left: 50px;
+}
+
+.text-content {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+}
+
+.text-content h1 {
+  font-size: clamp(2.5rem, 6vw, 7rem);
+  font-weight: bold;
+  line-height: 1.1;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Make sure image fills entire right column */
+.hero-image {
+  height: 100%;
+}
+
+.hero-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}

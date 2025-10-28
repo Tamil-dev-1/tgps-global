@@ -1,0 +1,97 @@
+/* === General Navbar Layout === */
+.hul-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #001b80;
+  color: white;
+  padding: 0 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* === Left Side (Logo + Name) === */
+.hul-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 0 0 30%;
+}
+
+.hul-logo {
+  height: 70px;
+}
+
+.hul-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* === Right Section === */
+.hul-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
+}
+
+/* === Top Bar (Theme + Location + Search) === */
+.hul-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.hul-theme, .hul-location {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.hul-link {
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+/* === Search Box === */
+.hul-search {
+  display: flex;
+  align-items: center;
+  background-color: #6cd8f0;
+  color: #7b00b5;
+  padding: 6px 14px;
+  border-radius: 2px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hul-search:hover {
+  opacity: 0.9;
+}
+
+/* === Bottom Menu === */
+.hul-menu {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 700;
+}
+
+.hul-menu li {
+  cursor: pointer;
+}
+
+.hul-menu li:hover {
+  text-decoration: underline;
+}
+
+.hul-down {
+  font-size: 0.8rem;
+  margin-left: 4px;
+}
