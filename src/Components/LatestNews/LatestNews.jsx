@@ -8,10 +8,12 @@ import {
   CardMedia,
 } from "@mui/material";
 
-export default function NewsSection() {
+
+export default function LatestNews() {
   return (
-    <Box sx={{ backgroundColor: "#0047BA", p: 5, color: "white" }}>
+    <Box sx={{ backgroundColor: "#005EFF", p: 5, color: "white" }}>
       {/* === SECTION HEADING === */}
+     
       <Typography
         variant="h4"
         sx={{
@@ -42,6 +44,12 @@ export default function NewsSection() {
               height: "100%",
               boxShadow: "none",
               backgroundColor: "transparent",
+              transition: "transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease",
+              "&:hover": {
+                transform: "scale(1.02)",
+                boxShadow: "0 8px 25px rgba(0,0,0,0.3)",
+                backgroundColor: "#0a66d4", // light blue hover color
+              },
             }}
           >
             <CardMedia
@@ -102,7 +110,7 @@ export default function NewsSection() {
           }}
         >
           <Grid container spacing={2}>
-            {[ // 2 rows of 2 cards
+            {[
               [
                 {
                   image:
@@ -149,6 +157,12 @@ export default function NewsSection() {
                       backgroundColor: "#0047BA",
                       color: "white",
                       boxShadow: "none",
+                      transition: "transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease",
+                      "&:hover": {
+                        transform: "translateY(-6px)",
+                        boxShadow: "0 8px 25px rgba(0,0,0,0.4)",
+                        backgroundColor: "#0a66d4", // light blue hover
+                      },
                     }}
                   >
                     <CardMedia
@@ -198,6 +212,7 @@ export default function NewsSection() {
           </Grid>
         </Grid>
       </Grid>
+    
     </Box>
   );
 }

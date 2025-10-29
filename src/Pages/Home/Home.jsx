@@ -1,10 +1,12 @@
 import React from "react";
 import { Box, Grid, Typography, Button } from "@mui/material";
 //import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowForward from "@mui/icons-material/ArrowForward";
 import "./Home.css";
 
 import TheGroup from "../../Components/TheGroup";
 import LatestNews from '../../Components/LatestNews/LatestNews'
+import Frequency from "../../Components/Frequency";
 
 
 export default function Home() {
@@ -105,7 +107,7 @@ export default function Home() {
         }}
       >
         <Button
-          variant="contained"
+          variant="contained"  endIcon={<ArrowForward/>}
           sx={{
             backgroundColor: "#6be7f0",
             color: "#0a1f77",
@@ -116,7 +118,7 @@ export default function Home() {
             textTransform: "none",
             borderRadius: 0,
             "&:hover": {
-              backgroundColor: "#4dd0e1",
+              backgroundColor: "#FFEC9A",
               transform: "translateY(-3px)",
             },
             transition: "all 0.3s ease",
@@ -132,6 +134,10 @@ export default function Home() {
      <TheGroup />
     
     <LatestNews />
+    <div>
+          <Frequency />
+    </div>
+   
    
     </>
   );

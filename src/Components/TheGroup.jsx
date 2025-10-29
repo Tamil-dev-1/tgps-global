@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Card, CardContent, Typography, CardMedia, Box } from "@mui/material";
 
-export default function PurposeSection() {
+export default function TheGroup() {
   return (
     <Box sx={{ backgroundColor: "#9C44C0", p: 4 }}>
       {/* === Left-Aligned Heading and Text === */}
