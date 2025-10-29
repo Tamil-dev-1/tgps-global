@@ -20,12 +20,11 @@ export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const menuItems = [
-    "Our company",
-    "Brands",
-    "Sustainability",
+    "AboutUs",
+    "The Group",
     "News",
     "Careers",
-    "Investors",
+    "Contact",
   ];
 
   const toggleDrawer = (open) => () => setDrawerOpen(open);
@@ -112,7 +111,7 @@ export default function Navbar() {
                   <Box display="flex" alignItems="center" gap={1}>
                     <Language fontSize="small" />
                     <Typography variant="body2" sx={{ fontSize: "0.9rem" }}>
-                      Unilever Hindustan Unilever Limited{" "}
+                      Thai Green Power Solution{" "}
                       <Typography
                         component="a"
                         href="#"
