@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Logo from '../../assets/images/logo/tgps.png'
+import Logo from "../../assets/images/logo/tgps.png";
+import { Link } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
@@ -20,11 +21,11 @@ export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const menuItems = [
-    "AboutUs",
-    "The Group",
-    "News",
-    "Careers",
-    "Contact",
+    { label: "AboutUs", path: "/aboutus" },
+    { label: "The Group", path: "/the-group" },
+    { label: "News", path: "/news" },
+    { label: "Careers", path: "/careers" },
+    { label: "Contact", path: "/contact" },
   ];
 
   const toggleDrawer = (open) => () => setDrawerOpen(open);
@@ -34,7 +35,7 @@ export default function Navbar() {
       <AppBar
         position="static"
         sx={{
-          backgroundColor: "#002395",
+          backgroundColor: "#001F82",
           color: "#fff",
           boxShadow: "none",
         }}
@@ -44,42 +45,41 @@ export default function Navbar() {
           sx={{
             display: "flex",
             alignItems: "stretch",
-            minHeight: "110px",
-            padding: 0,
+            minHeight: { xs: "80px", md: "110px" },
           }}
         >
-          {/* === Left Section (30%) === */}
+          {/* === Left Section (Logo) === */}
           <Box
             sx={{
-              width: "20%",
-              backgroundColor: "#1a33c6", // lighter blue to match reference
+              flexBasis: { xs: "30%", md: "20%" },
+              backgroundColor: "#fff",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              overflow: "hidden",
-              padding:2
+              p: { xs: 1, md: 3 },
             }}
           >
             <Box
               component="img"
-              src={Logo} 
-              alt="HUL Logo"
+              src={Logo}
+              alt="Tgps Logo"
               sx={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover", // fills full section
+                 width: { xs: 100, sm: 150, md: 257 }, // responsive sizes
+                height: "auto",
+                maxHeight: { xs: 80, md: 100 },
+                objectFit: "cover",
               }}
             />
           </Box>
 
-          {/* === Right Section (70%) === */}
+          {/* === Right Section === */}
           <Box
             sx={{
-              width: "80%",
+              flexGrow: 1,
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
-              px: { xs: 2, md: 4 },
+              px: { xs: 2, sm: 3, md: 5 },
               py: { xs: 1.5, md: 2 },
             }}
           >
@@ -90,18 +90,21 @@ export default function Navbar() {
               justifyContent="flex-end"
               spacing={2}
               sx={{
-                mb: 2,
+                mb: { xs: 1, md: 2 },
                 display: { xs: "none", md: "flex" },
               }}
             >
               <Grid item>
-                <Box display="flex" alignItems="center" gap={4}>
+                <Box display="flex" alignItems="center" gap={3}>
                   {/* Theme */}
                   <Box display="flex" alignItems="center" gap={1}>
                     <DarkMode fontSize="small" />
                     <Typography
                       variant="body2"
-                      sx={{ fontWeight: 500, fontSize: "0.9rem" }}
+                      sx={{
+                        fontWeight: 600,
+                        fontSize: { md: "0.9rem", lg: "0.8rem" },
+                      }}
                     >
                       Theme ▾
                     </Typography>
@@ -110,8 +113,17 @@ export default function Navbar() {
                   {/* Location */}
                   <Box display="flex" alignItems="center" gap={1}>
                     <Language fontSize="small" />
-                    <Typography variant="body2" sx={{ fontSize: "0.9rem" }}>
-                      Thai Green Power Solution{" "}
+                    <Typography
+                      variant="body2"
+                      sx={{
+                        fontSize: { md: "0.8rem", lg: "0.8rem" },
+                        display: "flex",
+                        alignItems: "center",
+                         fontWeight: 500,
+                        flexWrap: "wrap",
+                      }}
+                    >
+                      Thai Green Power Solution
                       <Typography
                         component="a"
                         href="#"
@@ -119,7 +131,8 @@ export default function Navbar() {
                           color: "#fff",
                           textDecoration: "underline",
                           fontWeight: 600,
-                          ml: "4px",
+                           fontSize: { md: "0.8rem", lg: "0.8rem" },
+                          ml: "11px",
                         }}
                       >
                         Change location
@@ -136,9 +149,11 @@ export default function Navbar() {
                       fontWeight: 700,
                       textTransform: "none",
                       "&:hover": { backgroundColor: "#5fcde0" },
-                      px: 2.8,
-                      py: 1.2,
-                      borderRadius: "3px",
+                      px: { md: 2, lg: 1.5 },
+                      py: { md: 0.5, lg: 0.5 },
+                      borderRadius: 0,
+                     
+                      fontSize: { md: "0.9rem", lg: "0.9rem" },
                     }}
                   >
                     Search site
@@ -147,30 +162,36 @@ export default function Navbar() {
               </Grid>
             </Grid>
 
-            {/* --- Bottom Row: Menu --- */}
+            {/* --- Bottom Row Menu --- */}
             <Box
               display={{ xs: "none", md: "flex" }}
               justifyContent="flex-end"
-              gap={4.5}
-              sx={{ pr: 1 }}
+              gap={{ md: 3, lg: 4 }}
+              sx={{
+                flexWrap: "wrap",
+              }}
             >
               {menuItems.map((item) => (
                 <Typography
-                  key={item}
+                  key={item.label}
                   variant="subtitle1"
+                  component={Link}
+                  to={item.path}
                   sx={{
                     fontWeight: 700,
                     cursor: "pointer",
+                    color: "inherit",
+                    textDecoration: "none",
                     "&:hover": { textDecoration: "underline" },
-                    fontSize: "1rem",
+                    fontSize: { md: "0.95rem", lg: "1.05rem" },
                   }}
                 >
-                  {item} ▾
+                  {item.label} ▾
                 </Typography>
               ))}
             </Box>
 
-            {/* === Mobile Menu === */}
+            {/* === Mobile Hamburger === */}
             <Box
               display={{ xs: "flex", md: "none" }}
               justifyContent="flex-end"
@@ -185,7 +206,12 @@ export default function Navbar() {
       </AppBar>
 
       {/* === Drawer for Mobile Menu === */}
-      <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
+      <Drawer
+        anchor="right"
+        open={drawerOpen}
+        onClose={toggleDrawer(false)}
+        ModalProps={{ keepMounted: true }}
+      >
         <Box
           sx={{
             width: 250,
@@ -202,11 +228,14 @@ export default function Navbar() {
             Menu
           </Typography>
           <Divider sx={{ borderColor: "rgba(255,255,255,0.2)" }} />
+
           <List>
             {menuItems.map((item) => (
               <ListItem
-                button
-                key={item}
+                key={item.label}
+                component={Link}
+                to={item.path}
+                onClick={toggleDrawer(false)}
                 sx={{
                   "&:hover": {
                     backgroundColor: "rgba(255,255,255,0.1)",
@@ -214,7 +243,7 @@ export default function Navbar() {
                 }}
               >
                 <ListItemText
-                  primary={item}
+                  primary={item.label}
                   primaryTypographyProps={{
                     fontWeight: 600,
                     fontSize: "1rem",
@@ -224,45 +253,67 @@ export default function Navbar() {
               </ListItem>
             ))}
           </List>
-          <Divider sx={{ borderColor: "rgba(255,255,255,0.2)" }} />
-           <Box display="flex" alignItems="flex-start" gap={1} mb={2}>
-              <Language fontSize="small" sx={{ mt: "3px" }} />
-              <Box>
-                <Typography
-                  variant="body2"
-                  sx={{ lineHeight: 1.4, fontSize: "0.9rem" }}
-                >
-                  Unilever Hindustan Unilever Limited
-                </Typography>
-                <Typography
-                  component="a"
-                  href="#"
-                  sx={{
-                    color: "#fff",
-                    textDecoration: "underline",
-                    fontWeight: 600,
-                    fontSize: "0.9rem",
-                  }}
-                >
-                  Change location
-                </Typography>
-              </Box>
-            </Box>
 
-            {/* === Theme Section === */}
-            <Box display="flex" alignItems="center" gap={1}>
-              <DarkMode fontSize="small" />
+          <Divider sx={{ borderColor: "rgba(255,255,255,0.2)", mb: 2 }} />
+
+          {/* Location section */}
+          <Box display="flex" alignItems="flex-start" gap={1} mb={2}>
+            <Language fontSize="small" sx={{ mt: "3px" }} />
+            <Box>
               <Typography
                 variant="body2"
-                sx={{ fontWeight: 600, fontSize: "0.95rem" }}
+                sx={{ lineHeight: 1.4, fontSize: "0.9rem" }}
               >
-                Theme ▾
+                Thai Green Power Solution
+              </Typography>
+              <Typography
+                component="a"
+                href="#"
+                sx={{
+                  color: "#fff",
+                  textDecoration: "underline",
+                  fontWeight: 600,
+                  fontSize: "0.9rem",
+                }}
+              >
+                Change location
               </Typography>
             </Box>
-          
-          
+          </Box>
+
+          {/* Theme section */}
+          <Box display="flex" alignItems="center" gap={1}>
+            <DarkMode fontSize="small" />
+            <Typography
+              variant="body2"
+              sx={{ fontWeight: 500, fontSize: "0.95rem" }}
+            >
+              Theme ▾
+            </Typography>
+          </Box>
         </Box>
       </Drawer>
     </>
   );
 }
+// import React from 'react'
+
+// const Navbar = () => {
+//   return (
+//     <div className='header-main'>
+//       <div className='header-logo'>
+//           <h1>Logo</h1>
+//       </div>
+
+//       <div className='header-controls'>
+//         <div className='header-tools'></div>
+//         <nav className='header-nav'>
+
+//         </nav>
+//       </div>
+      
+//     </div>
+//   )
+// }
+
+// export default Navbar

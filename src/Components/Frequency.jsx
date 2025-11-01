@@ -97,10 +97,7 @@ export default function Frequency() {
                 fontWeight: 300,
                 maxWidth: '900px'
               }}>
-                A next-gen blockchain exclusively tailored for renewable energy solutions. 
-                Frequency Chain X combines cutting-edge technology with sustainability, 
-                enabling decentralized apps and NFT-backed developments to power a cleaner, 
-                greener world.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam non aliquam sunt ex maiores modi nihil culpa perferendis molestias, quaerat in natus corrupti, amet esse tempore iste dolores ducimus harum?
               </p>
 
              
@@ -298,7 +295,7 @@ export default function Frequency() {
           color: 'white',
           marginBottom: '24px'
         }}>
-          Join the Green Energy Revolution
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
         </h2>
         <p style={{
           fontSize: '20px',
@@ -307,8 +304,7 @@ export default function Frequency() {
           maxWidth: '700px',
           margin: '0 auto 32px'
         }}>
-          Be part of the future where blockchain technology meets sustainability. 
-          Start building on Frequency Chain X today.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nihil facere fugiat, recusandae itaque perspiciatis veritatis 
         </p>
         <button style={{
           padding: '20px 48px',

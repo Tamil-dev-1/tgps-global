@@ -7,14 +7,16 @@ import "./Home.css";
 import TheGroup from "../../Components/TheGroup";
 import LatestNews from '../../Components/LatestNews/LatestNews'
 import Frequency from "../../Components/Frequency";
+//import Tgpsinfotech from "../../Components/Tgps_infotech/Tgpsinfotech";
+//import GreenCarpet from "../../Components/Green carpet/GreenCarpet";
 
 
 export default function Home() {
   const stats = [
-    { number: "90+", label: "years of excellence" },
-    { number: "50+", label: "renewable projects" },
-    { number: "No. 1", label: "in sustainable energy" },
-    { number: "₹10,000+", label: "crore project value" },
+    { number: "90+", label: "Lorem Ipsum has" },
+    { number: "50+", label: "Lorem Ipsum has" },
+    { number: "No. 1", label: "Lorem Ipsum has" },
+    { number: "₹10,000+", label: "Lorem Ipsum has" },
   ];
 
    
@@ -27,34 +29,55 @@ export default function Home() {
     <section className="hero-section">
       <div className="hero-left">
         <h1>
-          Welcome to <br />
-          Thai Green <br />
+          Welcome to 
+          Thai Green 
           Power Solution
         </h1>
       </div>
       <div className="hero-right">
-        <img src='https://www.hul.co.in/content-images/92ui5egz/production/bdd064eccda122b148f6834646f986d4a409a1d5-1920x1080.jpg?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format' alt="HUL Store" />
+        <img src='https://images.pexels.com/photos/6801649/pexels-photo-6801649.jpeg' alt="TGPS_hero image" />
       </div>
     </section>
 
-                            {/* //Logo and Box section-2 */}
+                            {/* //Statics and Box section-2 */}
 
     
     <Box
       sx={{
         backgroundColor: "#001b77",
         color: "#fff",
-        textAlign: "center",
-        py: { xs: 8, md: 20 }, // smaller padding on mobile
-        px: { xs: 2, sm: 4, md: 8 },
+        textAlign: "initial",
+         // smaller padding on mobile
+        pt: { xs: 8, md:20}, // smaller padding on mobile
+        pb: { xs: 8, md: 8 }, // smaller padding on mobile
+        px: { xs: 2, sm: 4, md: 4 },
       }}
     >
+    <Typography
+  variant="h5"
+  sx={{
+    fontWeight: 600,
+    mb: "1rem",
+    // 👇 remove fixed margin on small screens, keep on desktop
+    ml: { xs: 0, sm: 0, md: "1rem" },
+    // 👇 dynamically center or left align
+    textAlign: { xs: "center", sm: "center", md: "left" },
+    // 👇 smooth resizing and scaling
+    fontSize: "clamp(1.2rem, 2vw, 2rem)",
+    width: "100%", // ensures it can center properly
+    transition: "all 0.4s ease-in-out",
+  }}
+>
+  Thai Green Power Solution Company Limited
+</Typography>
+
       {/* === Stats Cards === */}
       <Grid
         container
-        spacing={2}
+        spacing={0}
         justifyContent="center"
-        alignItems="stretch"
+        alignItems="center"
+        
       >
         {stats.map((stat, index) => (
           <Grid
@@ -66,13 +89,14 @@ export default function Home() {
             sx={{
               backgroundColor: index % 2 === 0 ? "#0066ff" : "#0052cc",
               textAlign: "center",
-              p: { xs: 4, sm: 4, md: 5 },
-              borderRadius: "8px",
-              transition: "transform 0.3s ease, background 0.3s ease",
-              "&:hover": {
-                transform: "scale(1.05)",
-                backgroundColor: index % 2 === 0 ? "#3388ff" : "#3366cc",
-              },
+              mb:0.2,
+              ml:0.2,
+              px: { xs: 4, sm: 4, md: 6 },
+              py: { xs: 3, sm: 3, md: 4 },
+              pl: { xs: 3, sm: 4, md: 9 },
+              
+              borderRadius: "0px",
+              
             }}
           >
             <Typography
@@ -103,14 +127,14 @@ export default function Home() {
         sx={{
           display: "flex",
           justifyContent: "center",
-          mt: { xs: 6, md: 8 },
+          mt: { xs: 6, md: 5 },
         }}
       >
         <Button
           variant="contained"  endIcon={<ArrowForward/>}
           sx={{
             backgroundColor: "#6be7f0",
-            color: "#0a1f77",
+            color: "#7705B4",
             px: { xs: 3, sm: 5 },
             py: { xs: 1.2, sm: 1.5 },
             fontWeight: 600,
@@ -134,11 +158,7 @@ export default function Home() {
      <TheGroup />
     
     <LatestNews />
-    <div>
-          <Frequency />
-    </div>
-   
-   
+      
     </>
   );
 }
