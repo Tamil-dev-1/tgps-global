@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../../assets/images/logo/tgps.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
@@ -20,6 +20,10 @@ import { DarkMode, Language, Search, Menu } from "@mui/icons-material";
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
+  // home page navigation
+
+  const navigate = useNavigate();
+
   const menuItems = [
     { label: "AboutUs", path: "/aboutus" },
     { label: "The Group", path: "/the-group" },
@@ -35,7 +39,7 @@ export default function Navbar() {
       <AppBar
         position="static"
         sx={{
-          backgroundColor: "#001F82",
+          backgroundColor: "#005EFF",
           color: "#fff",
           boxShadow: "none",
         }}
@@ -63,11 +67,13 @@ export default function Navbar() {
               component="img"
               src={Logo}
               alt="Tgps Logo"
+              onClick={()=>navigate('/')}
               sx={{
                  width: { xs: 100, sm: 150, md: 257 }, // responsive sizes
                 height: "auto",
                 maxHeight: { xs: 80, md: 100 },
                 objectFit: "cover",
+                cursor:'pointer'
               }}
             />
           </Box>
@@ -142,10 +148,10 @@ export default function Navbar() {
 
                   {/* Search */}
                   <Button
-                    startIcon={<Search sx={{ color: "#7b00b5" }} />}
+                    startIcon={<Search sx={{ color: "#fff" }} />}
                     sx={{
-                      backgroundColor: "#6cd8f0",
-                      color: "#7b00b5",
+                      backgroundColor: "#1F36C7",
+                      color: "#fff",
                       fontWeight: 700,
                       textTransform: "none",
                       "&:hover": { backgroundColor: "#5fcde0" },
