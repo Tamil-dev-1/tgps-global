@@ -1,3 +1,16 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+
 body {
   font-family: 'Poppins', sans-serif;
+}
+/* custom btn hover-effect */
+
+.custom-btn:hover {
+  background-color: #7705BC;
+  color: white;
+  transform: translateY(-3px); /* slight lift */
+  box-shadow: 0 4px 10px rgba(119, 5, 188, 0.3);
 }

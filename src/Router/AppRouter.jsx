@@ -7,6 +7,7 @@ import News from '../Pages/News/News';
 import Careers from '../Pages/Careers/Careers';
 import Contact from '../Pages/Contact/Contact';
 import Header from '../Components/Header/Header';
+import Footer from '../Components/footer/Footer';
 
 
 
@@ -14,7 +15,7 @@ const AppRouter = () => {
   return (
    
    <Router>
-
+     {/* Header */}
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -25,7 +26,7 @@ const AppRouter = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       {/* <Footer /> */}
-
+     <Footer />
     </Router>
   )
 }

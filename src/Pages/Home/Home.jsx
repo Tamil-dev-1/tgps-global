@@ -1,18 +1,38 @@
 
 import React from 'react'
+
  
 import "./Home.css";
+import OurBrand from '../../Components/ourbrand/OurBrand';
+import BlogCarousel from '../../Components/Blog/BlogCarousel';
+//import HeroSection from '../../Components/HeroSection';
 const Home = () => {
+
+              // our brand logos image
+    const logos = [
+    "https://upload.wikimedia.org/wikipedia/commons/1/19/Pepsi_logo_2014.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/7/78/Coca-Cola_logo.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/a/a6/Nestle_textlogo_blue.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/6/6b/Unilever.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/2/2f/P%26G_logo.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/a/ab/Colgate_logo.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/b/b5/LG_logo_%282015%29.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/0/0f/Samsung_Logo.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/2/24/Honda_logo.svg",
+    
+  ];
   return (
     <>
-<section
+<section data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"
   id="home"
   className="container-fluid p-0 m-0"
   style={{
     background: "#77DDF5",
   }}
 >
-  <div
+  <div 
     className="row g-0 align-items-center"
     style={{
       minHeight: "70vh", // 👈 overall height (adjusts with zoom)
@@ -52,17 +72,17 @@ const Home = () => {
 
 
                         {/* SATISTICS CARD SECTION */}
-    <section
-      className="container-fluid py-5 my-5 stats-section"
+    <section 
+      className="container-fluid py-4 my-2 stats-section"
       style={{ backgroundColor: "#fff" }}
     >
       {/* 🔹 Section Heading */}
-      <div className="mb-3">
+      <div className="mb-3 ps-5">
         <h2
           className="fw-bold mb-0"
           style={{
-            color: "#0047BA",
-            fontSize: "clamp(1.6rem, 2.5vw, 2.2rem)",
+            color: "#005EFF",
+             fontSize: "clamp(1.2rem, 2vw, 1.8rem)",
           }}
         >
           We are Thai Green Power Solution
@@ -73,6 +93,7 @@ const Home = () => {
       <div className="container px-3 text-center">
         <div className="row g-0 text-white justify-content-center">
           {/* 1️⃣ Card */}
+          
           <div className="col-lg-3 col-md-6 col-12">
             <div className="stat-card bg-primary-alt">
               <h1 className="fw-bold mb-1">90+</h1>
@@ -265,7 +286,9 @@ const Home = () => {
     </div>
 
     {/* 2️⃣ SECOND COLUMN - Image Card 1 */}
-    <div className="col-lg-4 col-md-6 col-12">
+    <div className="col-lg-4 col-md-6 col-12"  data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
       <div
         className="card border-0 shadow-sm h-100"
         style={{
@@ -293,7 +316,9 @@ const Home = () => {
     </div>
 
     {/* 3️⃣ THIRD COLUMN - Image Card 2 */}
-    <div className="col-lg-4 col-md-6 col-12">
+    <div className="col-lg-4 col-md-6 col-12"  data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
       <div
         className="card border-0 shadow-sm h-100"
         style={{
@@ -321,6 +346,292 @@ const Home = () => {
     </div>
   </div>
 </section>
+
+                         {/* OUR BRANDS--section */}
+
+
+<div style={{ backgroundColor: "#F7F7EF", padding: "60px 80px" }}> {/* Increased side padding */}
+  <div className="container text-center">
+    {/* Heading */}
+    <h2 style={{ fontWeight: "700", color: "#0032A0" }}>Our Brands</h2>
+
+    {/* Paragraph */}
+    <p
+      className="mt-3 mb-5"
+      style={{
+        maxWidth: "700px",
+        margin: "0 auto",
+        color: "#555",
+        fontSize: "1.1rem",
+      }}
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi numquam,
+      corrupti nemo dolores maxime aperiam deleniti recusandae corporis nisi,
+      eveniet ipsa delectus ea veritatis alias! Quidem, porro cupiditate.
+      Ducimus, deleniti?
+    </p>
+
+    {/* Logo Grid */}
+    <div
+      className="d-flex flex-wrap justify-content-center gap-4"
+      style={{ maxWidth: "1000px", margin: "0 auto" }}
+    >
+      {logos.map((logo, index) => (
+        <div
+          key={index}
+          className="responsive-brand-box p-3 border rounded-3 bg-white d-flex align-items-center justify-content-center shadow-sm"
+          style={{
+            flex: "1 1 calc(28% - 1rem)", // narrower cards
+            maxWidth: "260px", // reduced width
+            height: "100px", // slightly smaller height
+          }}
+        >
+          <img
+            src={logo}
+            alt={`Brand ${index + 1}`}
+            className="img-fluid"
+            style={{ maxHeight: "50px", objectFit: "contain" }}
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+
+
+                        {/* PEOPLE ARE THE ENGINE */}
+
+           <div style={{ backgroundColor: "#FFFFFF",  }}>
+      <div className="container py-5">
+        {/* Heading Section */}
+        <div className="text-start mb-5">
+          <h1 className='text-center' style={{ fontWeight: 700, color: "#0032A0" }}>
+            People Are The Engine Of Our Success
+          </h1>
+          <p className="mt-3" style={{ color: "#0032A0", fontSize: "1.1rem" }}>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla minus vero laboriosam maxime ab earum perspiciatis alias? Adipisci, dicta rerum hic ratione sunt eos, illo architecto est quos, minima laboriosam!
+          </p>
+        </div>
+
+        {/* Cards Section */}
+        <div className="row g-4">
+          {/*  Card---1 */}
+<div className="col-lg-4 col-md-12 d-flex justify-content-center ">
+  <div
+    className="card border-0 rounded-0"
+    style={{
+      overflow: "hidden",
+      backgroundColor: "#f9f9f9",
+      width: "90%",
+      maxWidth: "320px",
+    }}
+  >
+    {/* Image with Wave */}
+    <div style={{ position: "relative" }}>
+      <img
+        src="https://images.pexels.com/photos/53135/hydrangea-blossom-bloom-flower-53135.jpeg"
+        alt="Sustainability"
+        className="img-fluid rounded-0 w-100"
+        style={{
+          height: "200px",
+          objectFit: "cover",
+        }}
+      />
+
+      {/* Wave SVG */}
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style={{
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          width: "100%",
+          height: "50px",
+        }}
+      >
+        <path
+          d="M0.00,49.98 C150.00,150.00 349.44,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style={{ fill: "#f9f9f9" }}
+        ></path>
+      </svg>
+    </div>
+
+    <div className="card-body text-center">
+      <h5>
+        <a
+          href="#"
+          className="text-decoration-none"
+          style={{ color: "#0056d2", fontWeight: 700 }}
+        >
+          lorem
+        </a>
+      </h5>
+      <p style={{ color: "#555", fontSize: "1rem" }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+        perspiciatis repellendus, quo commodi beatae et.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+          {/*  Card ---2 */}
+ <div className="col-lg-4 col-md-12 d-flex justify-content-center ">
+  <div
+    className="card border-0 rounded-0"
+    style={{
+      overflow: "hidden",
+      backgroundColor: "#f9f9f9",
+      width: "90%",
+      maxWidth: "320px",
+    }}
+  >
+    {/* Image with Wave */}
+    <div style={{ position: "relative" }}>
+      <img
+        src="https://images.pexels.com/photos/2295213/pexels-photo-2295213.jpeg"
+        alt="Sustainability"
+        className="img-fluid rounded-0 w-100"
+        style={{
+          height: "200px",
+          objectFit: "cover",
+        }}
+      />
+
+      {/* Wave SVG */}
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style={{
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          width: "100%",
+          height: "50px",
+        }}
+      >
+        <path
+          d="M0.00,49.98 C150.00,150.00 349.44,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style={{ fill: "#f9f9f9" }}
+        ></path>
+      </svg>
+    </div>
+
+    <div className="card-body text-center">
+      <h5>
+        <a
+          href="#"
+          className="text-decoration-none"
+          style={{ color: "#0056d2", fontWeight: 700 }}
+        >
+          lorem
+        </a>
+      </h5>
+      <p style={{ color: "#555", fontSize: "1rem" }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+        perspiciatis repellendus, quo commodi beatae et.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+                        {/* CARD===3 */}
+           {/* <div className="col-lg-4 col-md-12 d-flex justify-content-center">
+  <div className="card border-0 rounded-0" style={{ borderRadius: "10px", overflow: "hidden", backgroundColor: "#f9f9f9", width: "90%", maxWidth: "320px" }}>
+    <img
+      src="https://images.pexels.com/photos/53135/hydrangea-blossom-bloom-flower-53135.jpeg"
+      alt="Sustainability"
+      className="img-fluid"
+    />
+    <div className="card-body text-center">
+      <h5>
+        <a
+          href="#"
+          className="text-decoration-none"
+          style={{ color: "#0056d2", fontWeight: 700 }}
+        >
+          lorem
+        </a>
+      </h5>
+      <p style={{ color: "#555", fontSize: "1rem" }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+        perspiciatis repellendus, quo commodi beatae et.
+      </p>
+    </div>
+  </div>
+</div> */}
+<div className="col-lg-4 col-md-12 d-flex justify-content-center ">
+  <div
+    className="card border-0 rounded-0"
+    style={{
+      overflow: "hidden",
+      backgroundColor: "#f9f9f9",
+      width: "90%",
+      maxWidth: "320px",
+    }}
+  >
+    {/* Image with Wave */}
+    <div style={{ position: "relative" }}>
+      <img
+        src="https://images.pexels.com/photos/46974/muscari-common-grape-hyacinth-blossom-bloom-46974.jpeg"
+        alt="Sustainability"
+        className="img-fluid rounded-0 w-100"
+        style={{
+          height: "200px",
+          objectFit: "cover",
+        }}
+      />
+
+      {/* Wave SVG */}
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style={{
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          width: "100%",
+          height: "50px",
+        }}
+      >
+        <path
+          d="M0.00,49.98 C150.00,150.00 349.44,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style={{ fill: "#f9f9f9" }}
+        ></path>
+      </svg>
+    </div>
+
+    <div className="card-body text-center">
+      <h5>
+        <a
+          href="#"
+          className="text-decoration-none"
+          style={{ color: "#0056d2", fontWeight: 700 }}
+        >
+          lorem
+        </a>
+      </h5>
+      <p style={{ color: "#555", fontSize: "1rem" }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+        perspiciatis repellendus, quo commodi beatae et.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+     
+{/* 
+<HeroSection /> */}
+<OurBrand />
+<BlogCarousel />
+
 
 
     </>
