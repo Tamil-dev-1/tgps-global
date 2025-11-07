@@ -5,6 +5,7 @@ import React from 'react'
 import "./Home.css";
 import OurBrand from '../../Components/ourbrand/OurBrand';
 import BlogCarousel from '../../Components/Blog/BlogCarousel';
+import LatestNews from '../../Components/LatestNews/LatestNews';
 //import HeroSection from '../../Components/HeroSection';
 const Home = () => {
 
@@ -238,8 +239,7 @@ const Home = () => {
       `}</style>
     </section>
 
-
-
+<LatestNews />
 
 
 

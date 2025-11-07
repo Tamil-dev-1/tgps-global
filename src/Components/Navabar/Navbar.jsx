@@ -156,7 +156,7 @@ export default function Navbar() {
                       textTransform: "none",
                       "&:hover": { backgroundColor: "#5fcde0" },
                       px: { md: 2, lg: 1.5 },
-                      py: { md: 0.5, lg: 0.5 },
+                      py: { md: 0.7, lg: 0.7 },
                       borderRadius: 0,
                      
                       fontSize: { md: "0.9rem", lg: "0.9rem" },

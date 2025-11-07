@@ -1,0 +1,135 @@
+.transparent-input {
+  background-color: #ffffff2d !important;
+  border: none;
+  border-bottom: 10px solid blue; /* 👈 bottom border only */
+  border-radius: 0;
+  color: #fff;
+  outline: none;
+}
+
+.transparent-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Remove blue glow when clicked */
+.transparent-input:focus {
+  box-shadow: none !important;
+  border-bottom: 2px solid #6EE6F3; /* 👈 highlight color on focus */
+  outline: none;
+}
+
+
+
+.sharp-input {
+  border-radius: 0;
+  border: 1.5px solid #cbd5e1;
+  transition: all 0.25s ease;
+}
+
+.sharp-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.4);
+}
+
+.sharp-btn {
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sharp-btn:hover {
+  background: linear-gradient(90deg, #2563eb, #1e40af);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.4);
+  transform: translateY(-2px);
+}
+
+
+/* .animated-bg {
+  height: 100vh;
+  background: linear-gradient(270deg, #ff7e5f, #feb47b, #6a11cb, #2575fc);
+  background-size: 800% 800%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+} */
+
+/* 🌈 1. Smooth Diagonal Gradient Flow */
+/* .animated-bg {
+  height: 100vh;
+  background: linear-gradient(45deg, #00c6ff, #0072ff, #00f260, #0575e6);
+  background-size: 600% 600%;
+  animation: gradientDiagonal 8s ease infinite;
+}
+
+@keyframes gradientDiagonal {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+} */
+
+
+/* 🌅 2. Vertical Flow Gradient */
+
+/* .animated-bg {
+  height: 100vh;
+  background: linear-gradient(180deg, #ff9966, #ff5e62, #ff9966);
+  background-size: 400% 400%;
+  animation: gradientVertical 10s ease infinite;
+}
+
+@keyframes gradientVertical {
+  0% { background-position: 50% 0%; }
+  50% { background-position: 50% 100%; }
+  100% { background-position: 50% 0%; }
+} */
+
+
+/* 🌌 3. Pulse / Breathing Effect */
+/* .animated-bg {
+  height: 100vh;
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  background-size: 200% 200%;
+  animation: gradientPulse 5s ease-in-out infinite;
+}
+
+@keyframes gradientPulse {
+  0%, 100% { background-size: 200% 200%; }
+  50% { background-size: 250% 250%; }
+} */
+
+/* 🔄 4. Rotating Gradient (Circular Motion) */
+/* .animated-bg {
+  height: 100vh;
+  background: conic-gradient(from 0deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #ff9a9e);
+  animation: gradientRotate 8s linear infinite;
+}
+
+@keyframes gradientRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} */
+
+/* 
+💫 5. Wave-Like Gradient Movement */
+.animated-bg {
+  height: 100vh;
+  background: linear-gradient(270deg, #f6d365, #fda085, #fbc2eb, #a6c1ee);
+  background-size: 1000% 1000%;
+  animation: gradientWave 12s ease-in-out infinite;
+}
+
+@keyframes gradientWave {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 0%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 100%; }
+  100% { background-position: 0% 50%; }
+}

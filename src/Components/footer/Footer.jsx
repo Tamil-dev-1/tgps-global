@@ -8,7 +8,7 @@ import {
 import { FaXTwitter } from "react-icons/fa6"
 import { GrLinkedin } from "react-icons/gr";
 import { IoMailSharp } from "react-icons/io5";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="mt-5">
@@ -75,21 +75,31 @@ const Footer = () => {
       >
         <div className="container text-center text-md-start">
           <div className="d-flex flex-column flex-md-row flex-wrap justify-content-center justify-content-md-start gap-3 mb-4 pb-3">
+            <Link to="/">
             <a href="#" className="text-white text-decoration-underline fw-semibold" style={{textDecorationColor:'#00BFFF'}}>
-              Thai Green Power Solution Company Limited
+              Contact Thai Green Power Solution Company Limited
             </a>
+            </Link>
+           <Link to='/aboutus'>
             <a href="#" className="text-white text-decoration-underline fw-semibold">
               AboutUs
             </a>
+           </Link>
+            <Link to='/the-group'>
             <a href="#" className="text-white text-decoration-underline fw-semibold">
               The Group
             </a>
+            </Link>
+           <Link to='/news'>
             <a href="#" className="text-white text-decoration-underline fw-semibold">
               News
             </a>
+           </Link>
+           <Link to='/careers'>
             <a href="#" className="text-white text-decoration-underline fw-semibold">
               Careers
             </a>
+           </Link>
             <a href="#" className="text-white text-decoration-underlinefw-semibold">
               Contact
             </a>
@@ -102,7 +112,7 @@ const Footer = () => {
           </div>
 
           <div className="text-center text-md-start mt-4">
-            <h6 className="fw-semibold mb-3">Hindustan Unilever Limited</h6>
+            <h6 className="fw-semibold mb-3">Thai Green Power Solution Company Limited</h6>
             <small>
               © 2025 Copyright:TGPSAll rights Reserved |{" "}
               <a

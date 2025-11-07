@@ -9,40 +9,40 @@ const BlogCarousel = () => {
   const blogs = [
     {
       img: "https://images.pexels.com/photos/5081392/pexels-photo-5081392.jpeg",
-      author: "Elon Mask",
+      author: "Lorem Ipsum",
       date: "14 Jan, 2024",
-      title: "Women in AI: Anna Korhonen studies the intersection",
+      title: "simply dummy text of the printing and typesetting industry. ",
     },
     {
       img: "https://images.pexels.com/photos/18105/pexels-photo.jpg",
-      author: "Elon Mask",
+      author: "Lorem Ipsum",
       date: "14 Jan, 2024",
-      title: "EU could approve Apple’s ‘tap and go’ payment proposal",
+      title: "simply dummy text of the printing and typesetting industry.",
     },
     {
       img: "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg",
-      author: "Elon Mask",
+      author: "Lorem Ipsum",
       date: "14 Jan, 2024",
-      title: "Building an Editor by Sharing Code Between Android",
+      title: "simply dummy text of the printing and typesetting industry.",
     },
     {
       img: "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg",
-      author: "Elon Mask",
+      author: "Lorem Ipsum",
       date: "14 Jan, 2024",
-      title: "Google merges Android and Hardware divisions to drive AI",
+      title: "simply dummy text of the printing and typesetting industry.",
     },
     {
       img: "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg",
-      author: "Elon Mask",
+      author: "Lorem Ipsum",
       date: "14 Jan, 2024",
-      title: "Google merges Android and Hardware divisions to drive AI",
+      title: "simply dummy text of the printing and typesetting industry. ",
     },
   ];
 
   return (
-    <div style={{ padding: "60px 0", backgroundColor: "#fff" }} >
+    <div style={{ padding: "60px 0", backgroundColor: "#24A7F7" }} >
       <div className="container text-center">
-        <h2 style={{ fontWeight: "700", color: "#222" }}>Our Blogs</h2>
+        <h2 style={{ fontWeight: "700", color: "#fff" }}>Our Blogs</h2>
 
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
