@@ -31,7 +31,7 @@ const Footer = () => {
       </div>
 
       {/* Middle Section */}
-      <div className="bg-light py-5">
+      <div className="py-5" style={{backgroundColor:'#F7F7EF'}}>
         <div className="container">
           <div className="row text-center text-md-start align-items-center">
             {/* Left */}

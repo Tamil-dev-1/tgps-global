@@ -2,67 +2,157 @@ import React from "react";
 import contactImg from '..//..//assets/images/Contact/contact-img.jpg'
 import contactInfo from '..//..//assets/images/Contact/contactinfo.jpg'
 import contact from '..//..//assets/images/Contact/contact.jpg'
+import { motion } from "framer-motion";
+import { FaMapMarkerAlt } from "react-icons/fa";
 const Contact = () => {
+ const locations = [
+  {
+    company: "Transcendent India",
+    country: "India",
+    address: "Chennai, Tamil Nadu",
+    flag: "https://flagcdn.com/h120/in.png",
+  },
+  {
+    company: "Transcendent Thailand",
+    country: "Thailand",
+    address: "Bangkok",
+    flag: "https://flagcdn.com/h120/th.png",
+  },
+  {
+    company: "Transcendent Sri Lanka",
+    country: "Sri Lanka",
+    address: "Colombo",
+    flag: "https://flagcdn.com/h120/lk.png",
+  },
+  {
+    company: "Transcendent Qatar",
+    country: "Qatar",
+    address: "Doha",
+    flag: "https://flagcdn.com/h120/qa.png",
+  },
+];
+
   return (
+    
     <div>
       {/* ===== HERO SECTION ===== */}
       <section
         className="d-flex align-items-center justify-content-center text-white text-center"
-        style={{
-          height: "60vh",
-          backgroundImage:`url(${contact})`,
-             
-        
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+       style={{ background: "linear-gradient(135deg, #E3F2FD 0%, #FFFFFF 100%)"}}
       >
         <div>
-          <h1 className="fw-bold display-4 mb-3">Contact Us</h1>
-          <p className="lead">
+         
+          <p  className="text-center fw-bold mt-5 mb-5"
+          style={{
+           
+            color: "#0D6EFD",
+            letterSpacing: "1px",
+            fontSize: "2rem",
+          }} >
             We’d love to hear from you! Let’s start a conversation.
           </p>
         </div>
       </section>
+{/* 
+      🌍 Our Global Presence */}
+       <section
+      className="py-5"
+      style={{
+        background: "#fff",
+      }}
+    >
+      <div className="container text-center fw-bold mb-4">
+        <motion.h2
+          className="fw-bold mb-5"
+          style={{ fontWeight: 900,
+    color: "#004AAD",
+    letterSpacing: "1px",
+    fontSize: "1.9rem",
+    paddingBottom:'30px',
+    marginTop:'30px' }}
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+    
+      Our Global Presence
 
-      {/* ===== CONTACT INFO CARDS ===== */}
-      <section className="container py-5">
-        <div className="row g-4 text-center">
-          <div className="col-md-4">
-            <div className="card border-0 shadow-sm p-4 h-100">
-              <i className="bi bi-geo-alt fs-1 text-primary mb-3"></i>
-              <h5 className="fw-semibold">Our Office</h5>
-              <p className="text-muted">
-                123 Business Street, Chennai, Tamil Nadu, India
-              </p>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card border-0 shadow-sm p-4 h-100">
-              <i className="bi bi-envelope fs-1 text-primary mb-3"></i>
-              <h5 className="fw-semibold">Email Us</h5>
-              <p className="text-muted">contact@yourcompany.com</p>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card border-0 shadow-sm p-4 h-100">
-              <i className="bi bi-telephone fs-1 text-primary mb-3"></i>
-              <h5 className="fw-semibold">Call Us</h5>
-              <p className="text-muted">+91 98765 43210</p>
-            </div>
-          </div>
+        </motion.h2>
+
+        <div className="row g-5 justify-content-center">
+          {locations.map((loc, index) => (
+            <motion.div
+              key={index}
+              className="col-lg-3 col-md-6 col-12"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="d-flex flex-column align-items-center text-center">
+                {/* Location Icon */}
+                <FaMapMarkerAlt
+                  size={34}
+                  color="#004AAD"
+                  className="mb-3"
+                  style={{ marginBottom: "10px" }}
+                />
+
+                {/* Company Info */}
+                <h5
+                  className="fw-bold mb-1"
+                  style={{ color: "#003366", fontSize: "1.1rem" }}
+                >
+                  {loc.company}
+                </h5>
+                <h6
+                  className="fw-semibold text-secondary mb-1"
+                  style={{ fontSize: "0.9rem" }}
+                >
+                  {loc.country}
+                </h6>
+                <p
+                  className="text-muted mb-3"
+                  style={{ fontSize: "0.85rem", maxWidth: "240px" }}
+                >
+                  {loc.address}
+                </p>
+
+                {/* Rectangle Flag (wider look) */}
+                <motion.img
+                  src={loc.flag}
+                  alt={loc.country}
+                  className="shadow-sm"
+                  style={{
+                    width: "200px",
+                    height: "110px",
+                    borderRadius: "8px",
+                    border: "1px solid #ccc",
+                    objectFit: "cover",
+                  }}
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.4, delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                />
+              </div>
+            </motion.div>
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
+  
 
             {/* CONTACT INFO SECTION */}
 
-<section className="py-5"  style={{
+{/* <section className="py-5"  style={{
         backgroundImage: `url(${contactInfo})`,
         
       }}>
   <div className="container">
     <div className="row align-items-center gy-5">
-      {/* LEFT SIDE — Contact Info */}
+    
       <div className="col-lg-6">
         <h2 className="fw-bold mb-3" style={{ fontSize: "2rem", color: "#1F36C7" }}>
           Contact Info
@@ -75,7 +165,7 @@ const Contact = () => {
           className="p-4 rounded-4 shadow-sm"
           style={{ backgroundColor: "#F9FBFF" }}
         >
-          {/* Address */}
+        
           <div className="d-flex align-items-start mb-4">
             <div
               className="me-3 d-flex align-items-center justify-content-center rounded-4"
@@ -100,7 +190,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Phone */}
+         
           <div className="d-flex align-items-start mb-4">
             <div
               className="me-3 d-flex align-items-center justify-content-center rounded-4"
@@ -125,7 +215,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Email */}
+          
           <div className="d-flex align-items-start">
             <div
               className="me-3 d-flex align-items-center justify-content-center rounded-4"
@@ -152,11 +242,11 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* RIGHT SIDE — New Image */}
+      
       <div className="col-lg-6 text-center position-relative">
        
 
-        {/* Main Image */}
+        
         <img
           src={ contactImg}
           alt="Contact team"
@@ -172,12 +262,12 @@ const Contact = () => {
       </div>
     </div>
   </div>
-</section>
+</section> */}
 
 
       {/* ===== CONTACT FORM SECTION ===== */}
      <section
-  className="py-2"
+  className="py-5"
   style={{
     background: "linear-gradient(135deg, #dbeafe 0%, #ffffff 100%)",
     minHeight: "70vh",
@@ -267,18 +357,6 @@ const Contact = () => {
 </section>
 
 
-      {/* ===== GOOGLE MAP (OPTIONAL) ===== */}
-      <section className="p-0 m-0">
-        <iframe
-          title="Company Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3419858264175!2d80.24229921533664!3d12.971598590858837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267ad1d30d9e9%3A0x1a547f6c19f18a43!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1634637361872!5m2!1sen!2sin"
-          width="100%"
-          height="400"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
-      </section>
 
       {/* ===== FOOTER CTA ===== */}
       <section

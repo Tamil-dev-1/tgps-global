@@ -1,38 +1,35 @@
 import React from "react";
 import bubbleImg from '..//..//assets/images/Careers/bubbles.jpg'
+import waterdropImg from '..//..//assets/images/Careers/water-drops.jpg'
 
 const Careers = () => {
   return (
     <div>
       {/* ===== HERO SECTION ===== */}
       <section
-        className="text-white text-center d-flex align-items-center justify-content-center"
+        className=" text-center d-flex align-items-center justify-content-center"
         style={{
-          height: "70vh",
-          backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/5716001/pexels-photo-5716001.jpeg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+                  height: "30vh",
+                 marginTop:'30px',
+                 color:'#9C44C0'
+                }}
       >
         <div>
-          <h1 className="fw-bold display-3 mb-3">Life At TGPS</h1>
-          <p className="lead mb-4">
+          <h1 className="fw-bold display-3 mb-3">Life at TGPS</h1>
+          <p className="lead mb-1">
             We’re building a future driven by creativity, passion, and innovation.
           </p>
-          <a href="#openings" className="btn btn-light px-4 py-2 fw-semibold">
-            View Open Positions
-          </a>
+          
         </div>
       </section>
 
       {/* ===== ABOUT / CULTURE SECTION ===== */}
-      <section className="container mt-5  py-5 text-center" style={{ backgroundImage: `url(${bubbleImg})`,
+      <section className="container mt-5  py-5 text-center" style={{ backgroundColor:'#9C44C0',
               
             }}>
-        <h2 className="fw-bold mb-4">Life at Our Company</h2>
-        <p className="text-muted mb-5">
-          At our company, collaboration and growth are part of everyday life.
+        <h2 className="fw-bold mb-4 text-white">We TGPS</h2>
+        <p className="text-white mb-5">
+          At TGPS, collaboration and growth are part of everyday life.
           We encourage creativity and value every individual’s contribution.
         </p>
 
@@ -43,7 +40,7 @@ const Careers = () => {
               className="img-fluid rounded shadow-sm"
               alt="Team Collaboration"
             />
-            <h5 className="mt-3 fw-semibold">Team Collaboration</h5>
+            <h5 className="mt-3 fw-semibold text-white">Team Collaboration</h5>
           </div>
           <div className="col-md-4">
             <img
@@ -51,7 +48,7 @@ const Careers = () => {
               className="img-fluid rounded shadow-sm"
               alt="Workspace"
             />
-            <h5 className="mt-3 fw-semibold">Modern Workspace</h5>
+            <h5 className="mt-3 fw-semibold text-white">Modern Workspace</h5>
           </div>
           <div className="col-md-4">
             <img
@@ -59,7 +56,7 @@ const Careers = () => {
               className="img-fluid rounded shadow-sm"
               alt="Events"
             />
-            <h5 className="mt-3 fw-semibold">Fun Events</h5>
+            <h5 className="text-white mt-3 fw-semibold">Fun Events</h5>
           </div>
         </div>
       </section>
@@ -104,7 +101,7 @@ const Careers = () => {
                   Experience: {job.exp} <br />
                   Location: {job.loc}
                 </p>
-                <a href="#apply" className="btn btn-primary w-100">
+                <a href="#apply" className="btn w-100" style={{backgroundColor:'#fff'}}>
                   Apply Now
                 </a>
               </div>
