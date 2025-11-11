@@ -4,28 +4,29 @@ import contactInfo from '..//..//assets/images/Contact/contactinfo.jpg'
 import contact from '..//..//assets/images/Contact/contact.jpg'
 import { motion } from "framer-motion";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import GlobalPresence from "../../Components/Global Presence/GlobalPresence";
 const Contact = () => {
  const locations = [
   {
-    company: "Transcendent India",
+    company: "Lorem Ipsum",
     country: "India",
-    address: "Chennai, Tamil Nadu",
+    address: "Coimbatore, Tamil Nadu",
     flag: "https://flagcdn.com/h120/in.png",
   },
   {
-    company: "Transcendent Thailand",
+    company: "Lorem Ipsum",
     country: "Thailand",
     address: "Bangkok",
     flag: "https://flagcdn.com/h120/th.png",
   },
   {
-    company: "Transcendent Sri Lanka",
+    company: "Lorem Ipsum",
     country: "Sri Lanka",
     address: "Colombo",
     flag: "https://flagcdn.com/h120/lk.png",
   },
   {
-    company: "Transcendent Qatar",
+    company: "Lorem Ipsum",
     country: "Qatar",
     address: "Doha",
     flag: "https://flagcdn.com/h120/qa.png",
@@ -38,7 +39,7 @@ const Contact = () => {
       {/* ===== HERO SECTION ===== */}
       <section
         className="d-flex align-items-center justify-content-center text-white text-center"
-       style={{ background: "linear-gradient(135deg, #E3F2FD 0%, #FFFFFF 100%)"}}
+       
       >
         <div>
          
@@ -53,9 +54,11 @@ const Contact = () => {
           </p>
         </div>
       </section>
+
+      <GlobalPresence />
 {/* 
       🌍 Our Global Presence */}
-       <section
+       {/* <section
       className="py-5"
       style={{
         background: "#fff",
@@ -91,7 +94,7 @@ const Contact = () => {
               viewport={{ once: true }}
             >
               <div className="d-flex flex-column align-items-center text-center">
-                {/* Location Icon */}
+                
                 <FaMapMarkerAlt
                   size={34}
                   color="#004AAD"
@@ -99,7 +102,7 @@ const Contact = () => {
                   style={{ marginBottom: "10px" }}
                 />
 
-                {/* Company Info */}
+                
                 <h5
                   className="fw-bold mb-1"
                   style={{ color: "#003366", fontSize: "1.1rem" }}
@@ -119,7 +122,7 @@ const Contact = () => {
                   {loc.address}
                 </p>
 
-                {/* Rectangle Flag (wider look) */}
+              
                 <motion.img
                   src={loc.flag}
                   alt={loc.country}
@@ -141,7 +144,7 @@ const Contact = () => {
           ))}
         </div>
       </div>
-    </section>
+    </section> */}
   
 
             {/* CONTACT INFO SECTION */}

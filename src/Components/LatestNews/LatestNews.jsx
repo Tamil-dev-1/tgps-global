@@ -105,6 +105,7 @@ const LatestNews = () => {
           </div>
         </div>
       </section>
+      
     </>
   );
 };

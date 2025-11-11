@@ -27,8 +27,8 @@ export default function Navbar() {
   const menuItems = [
     { label: "AboutUs", path: "/aboutus" },
     { label: "The Group", path: "/the-group" },
-    { label: "News", path: "/news" },
     { label: "Careers", path: "/careers" },
+    { label: "News", path: "/news" },
     { label: "Contact", path: "/contact" },
   ];
 

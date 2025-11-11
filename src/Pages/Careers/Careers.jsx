@@ -64,7 +64,7 @@ const Careers = () => {
       {/* ===== PERKS & BENEFITS ===== */}
       <section className="bg-light py-5">
         <div className="container text-center">
-          <h2 className="fw-bold mb-5">Why Work With Us?</h2>
+          <h2 className="fw-bold mb-5 text-primary">Why Work With Us?</h2>
           <div className="row g-4">
             {[
               { icon: "bi-heart", title: "Health Benefits" },
@@ -83,9 +83,9 @@ const Careers = () => {
 
       {/* ===== OPEN POSITIONS ===== */}
       <section id="openings" className="container py-5">
-        <h2 className="fw-bold text-center mb-4">Current Openings</h2>
+        <h2 className="fw-bold text-center mb-4 text-primary">Current Openings</h2>
         <p className="text-center text-muted mb-5">
-          Explore our open roles and be part of our growing team.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis est illo expedita?
         </p>
 
         <div className="row g-4">
@@ -120,7 +120,7 @@ const Careers = () => {
         }}
       >
         <div className="container">
-          <h2 className="fw-bold text-center mb-4">Apply for a Position</h2>
+          <h2 className="fw-bold text-center mb-4 text-primary">Apply for a Position</h2>
           <p className="text-center text-muted mb-5">
             Fill in your details below and we’ll get in touch with you soon.
           </p>
