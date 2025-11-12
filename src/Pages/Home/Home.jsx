@@ -135,7 +135,7 @@ const Home = () => {
       {/* 🔹 CTA Button */}
       <div className="mt-5 text-center">
   <div
-    className="d-inline-flex align-items-center btn-hover"
+    className="d-inline-flex align-items-center btn-hover button"
     style={{
       borderRadius: 0,
       overflow: "hidden",

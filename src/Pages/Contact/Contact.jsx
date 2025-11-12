@@ -361,20 +361,25 @@ const Contact = () => {
 
 
 
-      {/* ===== FOOTER CTA ===== */}
-      <section
-        className="text-center text-white p-5"
-        style={{
-          background:
-            "linear-gradient(90deg, #0047BA 0%, #36BDC2 50%, #57C785 100%)",
-        }}
-      >
-        <h3 className="fw-bold mb-2">Let’s Work Together</h3>
-        <p className="mb-4">
-          Have a project in mind or just want to say hello? Drop us a line!
-        </p>
-        <button className="btn btn-light px-4">Start a Conversation</button>
-      </section>
+   
+
+         {/* ===== CALL TO ACTION / FOOTER ===== */}
+    <section
+  className="text-center p-5"
+  style={{
+    borderTop: "1px solid #001F82",
+    color:'#0D6EFD',
+    // borderBottom: "1px solid #001F82",
+  }}
+>
+  <h3 className="fw-bold mb-3">Let’s Work Together</h3>
+  <p className="mb-4">
+    Have a project in mind or just want to say hello? Drop us a line!
+  </p>
+  <button className="btn btn-light text-white px-4" style={{backgroundColor:'#0D6EFD'}}>
+    Start a Conversation
+  </button>
+</section>
     </div>
   );
 };

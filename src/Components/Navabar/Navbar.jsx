@@ -56,6 +56,7 @@ export default function Navbar() {
           <Box
             sx={{
               flexBasis: { xs: "30%", md: "20%" },
+              borderBottom:'1px solid blue',
               backgroundColor: "#fff",
               display: "flex",
               alignItems: "center",

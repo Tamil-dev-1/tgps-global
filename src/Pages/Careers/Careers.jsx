@@ -170,20 +170,24 @@ const Careers = () => {
       </section>
 
       {/* ===== CALL TO ACTION / FOOTER ===== */}
-      <section
-        className="text-center text-white p-5"
-        style={{
-          background:
-            "linear-gradient(90deg, #0047BA 0%, #36BDC2 50%, #57C785 100%)",
-        }}
-      >
-        <h3 className="fw-bold mb-3">Didn’t find your role?</h3>
-        <p className="mb-4">
-          We’re always looking for talented individuals — share your resume and
-          we’ll get in touch.
-        </p>
-        <button className="btn btn-light px-4">Send Resume</button>
-      </section>
+    <section
+  className="text-center p-5"
+  style={{
+    borderTop: "1px solid #001F82",
+    color:'#0D6EFD',
+    // borderBottom: "1px solid #001F82",
+  }}
+>
+  <h3 className="fw-bold mb-3">Didn’t find your role?</h3>
+  <p className="mb-4">
+    We’re always looking for talented individuals — share your resume and
+    we’ll get in touch.
+  </p>
+  <button className="btn btn-light text-white px-4" style={{backgroundColor:'#0D6EFD'}}>
+    Send Resume
+  </button>
+</section>
+
     </div>
   );
 };
