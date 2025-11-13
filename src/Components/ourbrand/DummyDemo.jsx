@@ -98,3 +98,143 @@ const ScrollSlideSection = () => {
 };
 
 export default ScrollSlideSection;
+
+
+
+
+
+
+
+
+
+// import React, { useEffect, useRef } from "react";
+// import "./Dummy.css";
+
+// const ScrollJackEffect = () => {
+//   const wrapperRef = useRef(null);
+//   const overlayRef = useRef(null);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const wrapper = wrapperRef.current;
+//       const overlay = overlayRef.current;
+//       if (!wrapper || !overlay) return;
+
+//       const rect = wrapper.getBoundingClientRect();
+//       const windowHeight = window.innerHeight;
+
+//       // Calculate how far the section is in view
+//       let progress = 1 - rect.top / windowHeight;
+//       progress = Math.min(Math.max(progress, 0), 1);
+
+//       // Animate overlay sliding in from the right
+//       overlay.style.clipPath = `inset(0 0 0 ${100 - progress * 100}%)`;
+//     };
+
+//     window.addEventListener("scroll", handleScroll);
+//     return () => window.removeEventListener("scroll", handleScroll);
+//   }, []);
+
+//   return (
+//     <section className="scrolljack-wrapper" ref={wrapperRef}>
+//       <div className="base-section">
+//         <div className="content">
+//           <h2>Engineered for today and tomorrow</h2>
+//           <p>
+//             A car should be built to go the distance with you. It’s why we design
+//             every feature to make your drive safer and more enjoyable.
+//           </p>
+//           <a href="#" className="btn">Learn More</a>
+//         </div>
+//       </div>
+
+//       <div className="overlay-section" ref={overlayRef}>
+//         <div className="content dark">
+//           <h2>Built for the Future</h2>
+//           <p>
+//             Every new generation of engineering brings us closer to a more
+//             efficient and connected world.
+//           </p>
+//           <a href="#" className="btn light">Explore</a>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default ScrollJackEffect;
+
+
+
+
+
+
+
+// * {
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// /* Wrapper fits in normal page flow */
+// .scrolljack-wrapper {
+//   position: relative;
+//   height: 100vh; /* only one full screen section */
+//   overflow: hidden;
+// }
+
+// /* Base white background */
+// .base-section {
+//   position: absolute;
+//   inset: 0;
+//   background: #fff;
+//   z-index: 1;
+// }
+
+// /* Overlay dark background */
+// .overlay-section {
+//   position: absolute;
+//   inset: 0;
+//   background: #111;
+//   color: #fff;
+//   clip-path: inset(0 0 0 100%);
+//   z-index: 2;
+//   transition: clip-path 0.3s ease-out;
+// }
+
+// /* Text content */
+// .content {
+//   max-width: 700px;
+//   margin: 0 auto;
+//   padding: 200px 20px;
+// }
+
+// .content h2 {
+//   font-size: 2.5rem;
+//   margin-bottom: 20px;
+// }
+
+// .content p {
+//   font-size: 1.1rem;
+//   line-height: 1.6;
+// }
+
+// .btn {
+//   display: inline-block;
+//   margin-top: 20px;
+//   padding: 10px 25px;
+//   background: #000;
+//   color: #fff;
+//   text-decoration: none;
+//   border-radius: 6px;
+//   transition: all 0.3s ease;
+// }
+
+// .btn.light {
+//   background: #fff;
+//   color: #000;
+// }
+
+// .btn:hover {
+//   transform: translateY(-3px);
+// }

@@ -1,7 +1,7 @@
 import React from "react";
 import bgImage from "../../assets/images/About/about-bg.png";
 import { Link } from "react-router-dom";
-import Dummy from '..//..//Components/ourbrand/Dummy'
+
 
 
 const AboutUs = () => {
@@ -107,7 +107,7 @@ const AboutUs = () => {
           View our company →
         </a>
       </div>
-      <Dummy />
+      
     </>
   );
 };

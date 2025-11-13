@@ -6,6 +6,7 @@ import "./Home.css";
 import OurBrand from '../../Components/ourbrand/OurBrand';
 import BlogCarousel from '../../Components/Blog/BlogCarousel';
 import LatestNews from '../../Components/LatestNews/LatestNews';
+import Dummy from '..//..//Components/ourbrand/Dummy'
 //import HeroSection from '../../Components/HeroSection';
 const Home = () => {
 
@@ -348,14 +349,14 @@ const Home = () => {
 </section>
 
                          {/* OUR BRANDS--section */}
+<Dummy />
 
-
-<div style={{ backgroundColor: "#F7F7EF", padding: "60px 80px" }}> {/* Increased side padding */}
+{/* <div style={{ backgroundColor: "#F7F7EF", padding: "60px 80px" }}> 
   <div className="container text-center">
-    {/* Heading */}
+   
     <h2 style={{ fontWeight: "700", color: "#0032A0" }}>Our Brands</h2>
 
-    {/* Paragraph */}
+    
     <p
       className="mt-3 mb-5"
       style={{
@@ -371,7 +372,7 @@ const Home = () => {
       Ducimus, deleniti?
     </p>
 
-    {/* Logo Grid */}
+   
     <div
       className="d-flex flex-wrap justify-content-center gap-4"
       style={{ maxWidth: "1000px", margin: "0 auto" }}
@@ -381,9 +382,9 @@ const Home = () => {
           key={index}
           className="responsive-brand-box p-3 border rounded-3 bg-white d-flex align-items-center justify-content-center shadow-sm"
           style={{
-            flex: "1 1 calc(28% - 1rem)", // narrower cards
-            maxWidth: "260px", // reduced width
-            height: "100px", // slightly smaller height
+            flex: "1 1 calc(28% - 1rem)", 
+            maxWidth: "260px", 
+            height: "100px", 
           }}
         >
           <img
@@ -396,7 +397,7 @@ const Home = () => {
       ))}
     </div>
   </div>
-</div>
+</div> */}
 
 
 
