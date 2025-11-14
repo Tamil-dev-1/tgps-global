@@ -103,7 +103,16 @@ export default ScrollSlideSection;
 
 
 
-
+ import DemaskLogo from "../../assets/images/logo/demask.png"
+ import frecx from "../../assets/images/logo/frecx.png"
+ import Fun from "../../assets/images/logo/Fun.png"
+ import fv from "../../assets/images/logo/fv.png"
+ import greenc from "../../assets/images/logo/greenc.png"
+ import mettawatts from "../../assets/images/logo/mettawatts.png"
+ import tgpsinfo from "../../assets/images/logo/tgpsinfo.png"
+ import zigoo from "../../assets/images/logo/zigoo.png"
+ import transcendent from "../../assets/images/logo/transcendent.png"
+ import freccharge from "../../assets/images/logo/freccharge.png"
 
 
 

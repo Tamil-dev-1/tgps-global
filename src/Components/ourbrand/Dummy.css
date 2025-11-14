@@ -31,7 +31,8 @@
 }
 
 .overlay-section {
-  background: #000000;
+  /* background: #000000; */
+  background: #A14DC3;
   color: #ffffff;
   z-index: 2;
   clip-path: inset(0 100% 0 0);
@@ -88,9 +89,9 @@
 /* Logo Box Style */
 .logo-box {
   width: 100%;
-  max-width: 200px;
-  height: 100px;
-  background: #fff;
+  max-width: 250px;
+  height: 130px;
+  background: #ffff;
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -99,8 +100,8 @@
 }
 
 .logo-box img {
-  max-width: 130px;
-  max-height: 100px;
+  max-width: 170px;
+  max-height: 120px;
   object-fit: contain;
 }
 

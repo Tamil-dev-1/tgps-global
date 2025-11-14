@@ -4,11 +4,12 @@ import React from 'react'
  
 import "./Home.css";
 import OurBrand from '../../Components/ourbrand/OurBrand';
+import { motion } from "framer-motion";
 import BlogCarousel from '../../Components/Blog/BlogCarousel';
 import LatestNews from '../../Components/LatestNews/LatestNews';
 import Dummy from '..//..//Components/ourbrand/Dummy'
 //import HeroSection from '../../Components/HeroSection';
-const Home = () => {
+const Home = () => {  
 
               // our brand logos image
     const logos = [
@@ -79,7 +80,7 @@ const Home = () => {
       style={{ backgroundColor: "#fff" }}
     >
       {/* 🔹 Section Heading */}
-      <div className="mb-3 ps-5">
+      <div className="mb-3 ps-5" data-aos="fade-right">
         <h2
           className="fw-bold mb-0"
           style={{
@@ -92,7 +93,11 @@ const Home = () => {
       </div>
 
       {/* 🔹 Stats Row */}
-      <div className="container px-3 text-center">
+      <div className="container px-3 text-center"
+       data-aos="fade-left"
+       ata-aos-anchor="#example-anchor"
+       data-aos-offset="500"
+       data-aos-duration="3000">
         <div className="row g-0 text-white justify-content-center">
           {/* 1️⃣ Card */}
           
@@ -134,7 +139,9 @@ const Home = () => {
       </div>
 
       {/* 🔹 CTA Button */}
-      <div className="mt-5 text-center">
+      <div className="mt-5 text-center"
+      data-aos="fade-up"
+     data-aos-duration="3000">
   <div
     className="d-inline-flex align-items-center btn-hover button"
     style={{
@@ -401,14 +408,21 @@ const Home = () => {
 
 
 
+                        
+                        
+                        
+                        
                         {/* PEOPLE ARE THE ENGINE */}
 
            <div style={{ backgroundColor: "#FFFFFF",  }}>
       <div className="container py-5">
         {/* Heading Section */}
-        <div className="text-start mb-5">
+        <div className="text-start mb-5" 
+       data-aos="fade-right"
+       data-aos-offset="300"
+       data-aos-easing="ease-in-sine">
           <h1 className='text-center' style={{ fontWeight: 700, color: "#0032A0" }}>
-            People Are The Engine Of Our Success
+            People are the engine of our success
           </h1>
           <p className="mt-3" style={{ color: "#0032A0", fontSize: "1.1rem" }}>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla minus vero laboriosam maxime ab earum perspiciatis alias? Adipisci, dicta rerum hic ratione sunt eos, illo architecto est quos, minima laboriosam!
@@ -418,7 +432,9 @@ const Home = () => {
         {/* Cards Section */}
         <div className="row g-4">
           {/*  Card---1 */}
-<div className="col-lg-4 col-md-12 d-flex justify-content-center ">
+<div className="col-lg-4 col-md-12 d-flex justify-content-center "
+     data-aos="fade-up"
+     data-aos-duration="3000">
   <div
     className="card border-0 rounded-0"
     style={{
@@ -479,7 +495,9 @@ const Home = () => {
 
 
           {/*  Card ---2 */}
- <div className="col-lg-4 col-md-12 d-flex justify-content-center ">
+ <div className="col-lg-4 col-md-12 d-flex justify-content-center"
+     data-aos="fade-up"
+     data-aos-duration="3000">
   <div
     className="card border-0 rounded-0"
     style={{
@@ -564,7 +582,9 @@ const Home = () => {
     </div>
   </div>
 </div> */}
-<div className="col-lg-4 col-md-12 d-flex justify-content-center ">
+<div className="col-lg-4 col-md-12 d-flex justify-content-center"
+    data-aos="fade-up"
+     data-aos-duration="3000">
   <div
     className="card border-0 rounded-0"
     style={{
@@ -621,12 +641,10 @@ const Home = () => {
       </p>
     </div>
   </div>
+  </div>
+  </div>
+ </div>
 </div>
-
-
-        </div>
-      </div>
-    </div>
      
 {/* 
 <HeroSection /> */}

@@ -22,6 +22,7 @@ const AboutUs = () => {
         <div className="mb-5">
           <h1
             className="fw-bold"
+            data-aos="zoom-in"
             style={{
               fontSize: "clamp(3rem, 5vw, 6rem)", // 🔹 Larger headline
               letterSpacing: "2px",
@@ -33,6 +34,8 @@ const AboutUs = () => {
           </h1>
           <h2
             className="fw-semibold"
+            data-aos="fade-up"
+           data-aos-duration="3000"
             style={{
               fontSize: "clamp(2rem, 3.8vw, 4rem)", // 🔹 Big subheading
               lineHeight: "1.3",
@@ -96,6 +99,7 @@ const AboutUs = () => {
         <a
           href="#"
           className="btn border-0 px-5 py-3 fw-semibold"
+          data-aos="zoom-out-left"
           style={{
             borderRadius: 0,
             backgroundColor: "#FFD700",
@@ -107,7 +111,7 @@ const AboutUs = () => {
           View our company →
         </a>
       </div>
-      
+     
     </>
   );
 };

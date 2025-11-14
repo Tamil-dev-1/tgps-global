@@ -3,6 +3,18 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Dummy.css";
 
+ import DemaskLogo from "../../assets/images/logo/demask.png"
+ import frecx from "../../assets/images/logo/frecx.png"
+ import Fun from "../../assets/images/logo/Fun.png"
+ import fv from "../../assets/images/logo/fv.png"
+ import greenc from "../../assets/images/logo/greenc.png"
+ import mettawatts from "../../assets/images/logo/mettawatts.png"
+ import tgpsinfo from "../../assets/images/logo/tgpsinfo.png"
+ import zigoo from "../../assets/images/logo/zigoo.png"
+ import transcendent from "../../assets/images/logo/transcendent.png"
+ import freccharge from "../../assets/images/logo/freccharge.png"
+
+// import DemaskLogo from "../../assets/images/logo/DEMASKLOGO.png"
 gsap.registerPlugin(ScrollTrigger);
 
 const ScrollCinematicBrands = () => {
@@ -10,15 +22,15 @@ const ScrollCinematicBrands = () => {
   const overlayRef = useRef(null);
 
   const brands = [
-    { id: 1, name: "Pepsi", img: "https://upload.wikimedia.org/wikipedia/commons/1/19/Pepsi_logo_2014.svg" },
-    { id: 2, name: "Coca-Cola", img: "https://upload.wikimedia.org/wikipedia/commons/7/78/Coca-Cola_logo.svg" },
-    { id: 3, name: "Nike", img: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" },
-    { id: 4, name: "Adidas", img: "https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" },
-    { id: 5, name: "Apple", img: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" },
-    { id: 6, name: "Samsung", img: "https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" },
-    { id: 7, name: "Toyota", img: "https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_carlogo.svg" },
-    { id: 8, name: "Google", img: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" },
-    { id: 9, name: "Amazon", img: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" },
+    { id: 1, name: "DEMASKLOGO", img: DemaskLogo},
+    { id: 2, name: "FrcX", img: frecx},
+    { id: 3, name: "Fun", img: Fun },
+    { id: 4, name: "Fv", img: fv },
+    { id: 5, name: "Green Carpet", img:greenc },
+    { id: 6, name: "Mettawatts", img: mettawatts},
+    { id: 7, name: "Tgpsinfo", img: tgpsinfo},
+    { id: 8, name: "Zigoo", img: zigoo},
+    { id: 9, name: "transcendent", img: transcendent},
   ];
 
   useEffect(() => {
