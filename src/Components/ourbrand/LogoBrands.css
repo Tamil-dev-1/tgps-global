@@ -1,9 +1,4 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
+/* Wrapper */
 .cinematic-wrapper {
   position: relative;
   width: 100%;
@@ -14,27 +9,23 @@
 .base-section,
 .overlay-section {
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  inset: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  
 }
 
 .base-section {
   background: #ffffff;
-  color: #000000;
   z-index: 1;
 }
 
 .overlay-section {
-  /* background: #000000; */
   background: #A14DC3;
-  color: #ffffff;
   z-index: 2;
+  color: #ffffff;
   clip-path: inset(0 100% 0 0);
 }
 
@@ -42,7 +33,6 @@
   width: 90%;
   max-width: 1200px;
   text-align: center;
-  margin: 0 auto;
 }
 
 /* Headings */
@@ -51,71 +41,105 @@
   margin-bottom: 1rem;
   font-weight: 700;
 }
+
+.brand-heading dark{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
 .brand-text {
   font-size: 1.1rem;
   margin-bottom: 2.5rem;
   line-height: 1.5;
 }
 
-/* GRID LAYOUT — Responsive & Consistent */
+/* GRID */
 .brand-grid {
   display: grid;
+  gap: 1.5rem;
   justify-items: center;
   align-items: center;
-  gap: 1.5rem;
 }
 
-/* Desktop: 3x3 layout */
-@media (min-width: 1025px) {
+
+/* 💻 Desktop & Tablet – 3 Columns */
+@media (min-width: 768px) {
   .brand-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
-/* Tablet: also 3x3 layout, scaled */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .brand-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Mobile: 5 rows × 2 columns */
+/* 📱 Mobile – 2 Columns */
 @media (max-width: 767px) {
   .brand-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
   }
 }
 
-/* Logo Box Style */
+
+/* ⭐ LOGO BOX – FIXED & CLEAN */
 .logo-box {
   width: 100%;
-  max-width: 250px;
-  height: 130px;
-  background: #ffff;
-  border-radius: 12px;
+  max-width: 220px;
+  height: 120px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+ /* margin-bottom: 30px; once check if face any alignment problem */
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;             /* 🔥 IMPORTANT FIX */
+  padding: 12px;                /* ensures space inside */
 }
 
+/* ⭐ IMAGE FIX – WILL NEVER OVERFLOW */
 .logo-box img {
-  max-width: 170px;
-  max-height: 120px;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;          /* 🔥 PERFECT FIT INSIDE BOX */
 }
 
-/* B/W vs Color Styles */
+
+/* 📱 Mobile Box Resize */
+@media (max-width: 767px) {
+  .logo-box {
+    max-width: 150px;
+    height: 100px;
+    padding: 8px;
+  }
+}
+
+
+/* Extra Small (0–480px) */
+@media (max-width: 480px) {
+  .brand-grid {
+    gap: 1rem;
+  }
+
+  .logo-box {
+    max-width: 130px;
+    height: 90px;
+  }
+}
+
+
+/* Grayscale / Color */
 .grayscale-logo {
   filter: grayscale(100%) brightness(0.75);
   opacity: 0.9;
 }
+
 .color-logo {
   filter: none;
   opacity: 1;
 }
 
-/* Responsive Text Adjustments */
+
+/* Text Responsive */
 @media (max-width: 1024px) {
   .brand-heading {
     font-size: 2.4rem;
@@ -129,10 +153,6 @@
   .brand-text {
     font-size: 1rem;
   }
-  .logo-box {
-    max-width: 130px;
-    height: 90px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -141,12 +161,5 @@
   }
   .brand-text {
     font-size: 0.9rem;
-  }
-  /* .logo-box {
-    max-width: 110px;
-    height: 80px;
-  } */
-  .brand-grid {
-    gap: 1rem;
   }
 }

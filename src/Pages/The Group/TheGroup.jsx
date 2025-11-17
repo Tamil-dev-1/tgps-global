@@ -103,7 +103,10 @@ const TheGroup = () => {
       </section>
 
       {/* ===== GLOBAL PRESENCE ===== */}
-  <section className="py-5 text-center bg-white">
+  <section className="py-5 text-center bg-white"
+  data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
       <div className="container">
         {/* Heading */}
         <h2
@@ -218,6 +221,8 @@ const TheGroup = () => {
         </div>
       </div>
     </section>
+
+             {/* Our Brands cards */}
     <OurBrands />
 
     {/* ======================================== */}

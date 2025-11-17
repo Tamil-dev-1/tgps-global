@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from '../Pages/Home/Home';
 import AboutUs from '../Pages/About/AboutUs';
 import TheGroup from '../Pages/The Group/TheGroup';
@@ -15,7 +15,7 @@ import AtAGlance from '../Pages/Glance/AtGlance';
 const AppRouter = () => {
   return (
    
-   <Router>
+   <>
      {/* Header */}
       <Header />
       <Routes>
@@ -29,7 +29,7 @@ const AppRouter = () => {
       </Routes>
       {/* <Footer /> */}
      <Footer />
-    </Router>
+    </>
   )
 }
 

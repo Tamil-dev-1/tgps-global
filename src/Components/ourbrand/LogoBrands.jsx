@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "./Dummy.css";
+import "./LogoBrands.css";
 
  import DemaskLogo from "../../assets/images/logo/demask.png"
  import frecx from "../../assets/images/logo/frecx.png"
@@ -31,6 +31,7 @@ const ScrollCinematicBrands = () => {
     { id: 7, name: "Tgpsinfo", img: tgpsinfo},
     { id: 8, name: "Zigoo", img: zigoo},
     { id: 9, name: "transcendent", img: transcendent},
+    { id: 10, name: "transcendent", img: freccharge},
   ];
 
   useEffect(() => {

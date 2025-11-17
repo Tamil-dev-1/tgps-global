@@ -35,13 +35,13 @@ const  OurBrands= () => {
               </div>
             </div>
 
-            <button className="btn btn-danger fw-bold px-4 py-2">
+            <button className="btn btn-danger fw-bold px-4 py-2"  data-aos="zoom-in">
               Transcendent
             </button>
           </div>
 
           {/* ⚪ Right White Logo Card */}
-          <div className="brand-right bg-white shadow text-center">
+          <div className="brand-right bg-white shadow text-center" >
             <img
               src="https://tgpsglobal.com/static/media/tets.12f9575cbbcda75fd882.png"
               alt="brand Logo"
@@ -81,7 +81,7 @@ const  OurBrands= () => {
               </div>
             </div>
 
-            <button className="btn btn-danger fw-bold px-4 py-2">
+            <button className="btn btn-danger fw-bold px-4 py-2" data-aos="zoom-in">
               Frequency Vehicle
             </button>
           </div>
@@ -128,7 +128,7 @@ const  OurBrands= () => {
               </div>
             </div>
 
-            <button className="btn btn-danger fw-bold px-4 py-2">
+            <button className="btn btn-danger fw-bold px-4 py-2"data-aos="zoom-in">
               FreC Charge
             </button>
           </div>
@@ -173,7 +173,7 @@ const  OurBrands= () => {
               </div>
             </div>
 
-            <button className="btn btn-danger fw-bold px-4 py-2">
+            <button className="btn btn-danger fw-bold px-4 py-2" data-aos="zoom-in">
               ZiGoo
             </button>
           </div>
@@ -220,7 +220,7 @@ const  OurBrands= () => {
               </div>
             </div>
 
-            <button className="btn btn-danger fw-bold px-4 py-2">
+            <button className="btn btn-danger fw-bold px-4 py-2" data-aos="zoom-in">
             TGPS Infotech
             </button>
           </div>
@@ -267,7 +267,7 @@ const  OurBrands= () => {
               </div>
             </div>
 
-            <button className="btn btn-danger fw-bold px-4 py-2">
+            <button className="btn btn-danger fw-bold px-4 py-2" data-aos="zoom-in">
               Frequency Chain X
             </button>
           </div>
@@ -293,7 +293,7 @@ const  OurBrands= () => {
               ab accusamus incidunt illo quae doloremque?
             </p>
 
-            <div className="d-flex flex-wrap gap-4 mb-4 justify-content-center justify-content-lg-start">
+            <div className="d-flex flex-wrap gap-4 mb-4 justify-content-center justify-content-lg-start" >
               <div className="text-center">
                 <i className="bi bi-link-45deg fs-3 d-block"></i>
                 <small className="fw-bold">CRM</small>
@@ -312,7 +312,7 @@ const  OurBrands= () => {
               </div>
             </div>
 
-            <button className="btn btn-danger fw-bold px-4 py-2">
+            <button className="btn btn-danger fw-bold px-4 py-2" data-aos="zoom-in">
               Green Carpet
             </button>
           </div>

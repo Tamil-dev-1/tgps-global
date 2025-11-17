@@ -7,7 +7,7 @@ import OurBrand from '../../Components/ourbrand/OurBrand';
 import { motion } from "framer-motion";
 import BlogCarousel from '../../Components/Blog/BlogCarousel';
 import LatestNews from '../../Components/LatestNews/LatestNews';
-import Dummy from '..//..//Components/ourbrand/Dummy'
+import LogoBrands from '..//..//Components/ourbrand/LogoBrands'
 //import HeroSection from '../../Components/HeroSection';
 const Home = () => {  
 
@@ -62,11 +62,11 @@ const Home = () => {
       <img
         src="https://images.pexels.com/photos/31314841/pexels-photo-31314841.jpeg"
         alt="Hero"
-        className="img-fluid w-100"
-        style={{
-          objectFit: "cover",
-          height: "70vh", // 👈 image height matches section height
-        }}
+        className="img-fluid w-100 responsive-img"
+        // style={{
+        //   objectFit: "cover",
+        //   height: "70vh", 
+        // }}
       />
     </div>
   </div>
@@ -97,7 +97,7 @@ const Home = () => {
        data-aos="fade-left"
        ata-aos-anchor="#example-anchor"
        data-aos-offset="500"
-       data-aos-duration="3000">
+       data-aos-duration="500">
         <div className="row g-0 text-white justify-content-center">
           {/* 1️⃣ Card */}
           
@@ -296,7 +296,7 @@ const Home = () => {
     {/* 2️⃣ SECOND COLUMN - Image Card 1 */}
     <div className="col-lg-4 col-md-6 col-12"  data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+     data-aos-duration="1000">
       <div
         className="card border-0 shadow-sm h-100"
         style={{
@@ -326,7 +326,7 @@ const Home = () => {
     {/* 3️⃣ THIRD COLUMN - Image Card 2 */}
     <div className="col-lg-4 col-md-6 col-12"  data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+     data-aos-duration="1000">
       <div
         className="card border-0 shadow-sm h-100"
         style={{
@@ -356,7 +356,7 @@ const Home = () => {
 </section>
 
                          {/* OUR BRANDS--section */}
-<Dummy />
+<LogoBrands />
 
 {/* <div style={{ backgroundColor: "#F7F7EF", padding: "60px 80px" }}> 
   <div className="container text-center">
@@ -406,12 +406,6 @@ const Home = () => {
   </div>
 </div> */}
 
-
-
-                        
-                        
-                        
-                        
                         {/* PEOPLE ARE THE ENGINE */}
 
            <div style={{ backgroundColor: "#FFFFFF",  }}>

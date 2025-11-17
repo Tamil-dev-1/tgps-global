@@ -1,3 +1,61 @@
+
+.responsive-img {
+  width: 100%;
+  object-fit: cover;
+  height: 70vh; /* default for large screens */
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .responsive-img {
+    height: 55vh;
+  }
+}
+
+/* Mobile Landscape & Small Tablets */
+@media (max-width: 768px) {
+  .responsive-img {
+    height: 45vh;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .responsive-img {
+    height: 35vh;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 400px) {
+  .responsive-img {
+    height: 30vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hero-title {
   color: #0047ba;
   font-weight: 900;
@@ -35,3 +93,6 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+
+

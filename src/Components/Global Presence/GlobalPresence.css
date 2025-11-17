@@ -75,3 +75,76 @@
 .pin:hover::after {
   opacity: 1;
 }
+.map-container {
+  max-width: 900px;
+  position: relative;
+}
+
+.world-map {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pin {
+  position: absolute;
+  cursor: pointer;
+  font-size: 26px;
+  transform: translate(-50%, -50%);
+  transition: 0.2s ease;
+  z-index: 50 !important; /* PIN ALWAYS ON TOP */
+}
+
+.pin:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+
+/* Start */
+
+
+/* Tooltip Box */
+.tooltip-box {
+  position: absolute;
+  top: 50%;
+  left: 30px; /* tooltip RIGHT SIDE la varum */
+  transform: translateY(-50%);
+  background: white;
+  border-radius: 10px;
+  padding: 12px;
+  width: 220px;
+  text-align: left;
+  box-shadow: 0px 4px 14px rgba(0,0,0,0.2);
+  z-index: 10; /* tooltip BELOW the pin */
+}
+
+.tooltip-box h5 {
+  margin: 0;
+  font-size: 16px;
+  color: #004AAD;
+  font-weight: bold;
+}
+
+.tooltip-box p {
+  margin: 4px 0 8px;
+  font-size: 13px;
+}
+
+/* Brand Logos */
+.brand-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.brand-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

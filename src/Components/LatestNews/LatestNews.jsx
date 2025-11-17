@@ -19,7 +19,10 @@ const LatestNews = () => {
             </h2>
 
             {/* LEFT MAIN CARD */}
-            <div className="col-lg-5 col-md-12">
+            <div className="col-lg-5 col-md-12"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
               <div
                 className="card rounded-2 border-0 shadow-sm h-100"
                 style={{ overflow: "hidden" }}
@@ -52,7 +55,10 @@ const LatestNews = () => {
             </div>
 
             {/* RIGHT SIDE SMALL CARDS */}
-            <div className="col-lg-7 col-md-12 d-flex flex-column gap-3">
+            <div className="col-lg-7 col-md-12 d-flex flex-column gap-3"
+             data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
               {[
                 {
                   img: "https://images.pexels.com/photos/1369476/pexels-photo-1369476.jpeg",
