@@ -7,7 +7,7 @@ import OurBrand from '../../Components/ourbrand/OurBrand';
 import { motion } from "framer-motion";
 import BlogCarousel from '../../Components/Blog/BlogCarousel';
 import LatestNews from '../../Components/LatestNews/LatestNews';
-import LogoBrands from '..//..//Components/ourbrand/LogoBrands'
+ import LogoBrands from '..//..//Components/ourbrand/LogoBrands'
 //import HeroSection from '../../Components/HeroSection';
 const Home = () => {  
 
@@ -38,7 +38,7 @@ const Home = () => {
   <div 
     className="row g-0 align-items-center"
     style={{
-      minHeight: "70vh", // 👈 overall height (adjusts with zoom)
+      minHeight: "70vh",
     }}
   >
     {/* Left Side - Text */}
@@ -48,7 +48,7 @@ const Home = () => {
         style={{
           color: "#0047BA",
           fontWeight: 900,
-          fontSize: "clamp(2.5rem, 5vw, 6.5rem)", // responsive text
+          fontSize: "clamp(2.5rem, 5vw, 6.5rem)", 
           lineHeight: "1.2",
         }}
       >

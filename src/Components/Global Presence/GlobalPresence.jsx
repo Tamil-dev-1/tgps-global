@@ -8,50 +8,50 @@ const locations = [
     name: "Qatar",
     address: "Doha, Qatar",
     brands: [
-      "/assets/brands/brand1.png",
-      "/assets/brands/brand2.png",
+      "https://images.pexels.com/photos/3069345/pexels-photo-3069345.jpeg",
+      "https://images.pexels.com/photos/2239422/pexels-photo-2239422.jpeg",
     ],
-    position: { top: "40%", left: "55%" }
+    position: { top: "42%", left: "61%" }
   },
   {
     id: "dubai",
     name: "Dubai",
     address: "Dubai, UAE",
     brands: [
-      "https://media.istockphoto.com/id/525034854/photo/dubai-downtown-skyline-dubai-united-arab-emirates.jpg?b=1&s=612x612&w=0&k=20&c=nalJlp43d_Sp2d8g-hYBSmEgiA6hm1KPp42dv-q_EUc=",
-      "/assets/brands/brand4.png",
+      "https://images.pexels.com/photos/1470502/pexels-photo-1470502.jpeg",
+      "https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg",
     ],
-    position: { top: "45%", left: "52%" }
+    position: { top: "44%", left: "63%" }
   },
   {
     id: "india",
     name: "India",
     address: "Coimbatore, India",
     brands: [
-      "/assets/brands/india1.png",
-      "/assets/brands/india2.png",
+      "https://images.pexels.com/photos/574324/pexels-photo-574324.jpeg",
+      "https://images.pexels.com/photos/1007427/pexels-photo-1007427.jpeg",
     ],
-    position: { top: "60%", left: "50%" }
+    position: { top: "45%", left: "69%" }
   },
   {
     id: "thailand",
     name: "Thailand",
     address: "Bangkok, Thailand",
     brands: [
-      "/assets/brands/thai1.png",
-      "/assets/brands/thai2.png",
+      "https://images.pexels.com/photos/208444/pexels-photo-208444.jpeg",
+      "https://images.pexels.com/photos/2240361/pexels-photo-2240361.jpeg",
     ],
-    position: { top: "55%", left: "58%" }
+    position: { top: "48%", left: "76%" }
   },
   {
     id: "srilanka",
     name: "Sri Lanka",
     address: "Colombo, Sri Lanka",
     brands: [
-      "/assets/brands/sl1.png",
-      "/assets/brands/sl2.png",
+      "https://images.pexels.com/photos/319892/pexels-photo-319892.jpeg",
+      "https://media.istockphoto.com/id/521090024/photo/dambulla-cave-temple-buddha-statues-sri-lanka.jpg?s=2048x2048&w=is&k=20&c=YHt6hylgZJSjbmuGgkIdBfT5JcEtDnjUsfH8MSlVSj0=",
     ],
-    position: { top: "65%", left: "52%" }
+    position: { top: "52%", left: "70%" }
   }
 ];
 
