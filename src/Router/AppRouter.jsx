@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes, Route } from "react-router-dom";
 import Home from '../Pages/Home/Home';
 import AboutUs from '../Pages/About/AboutUs';
-import TheGroup from '../Pages/The Group/TheGroup';
+import TheGroup from '../Pages/TheGroup/TheGroup';
 import News from '../Pages/News/News';
 import Careers from '../Pages/Careers/Careers';
 import Contact from '../Pages/Contact/Contact';
@@ -19,6 +19,7 @@ const AppRouter = () => {
      {/* Header */}
       <Header />
       <Routes>
+
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/the-group" element={<TheGroup />} />

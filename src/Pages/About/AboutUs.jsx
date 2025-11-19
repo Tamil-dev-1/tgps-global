@@ -1,12 +1,12 @@
 import React from "react";
 import bgImage from "../../assets/images/About/about-bg.png";
 import { Link } from "react-router-dom";
-
-
+// import LogoBrands from '..//..//Components/ourbrand/LogoBrands'
+// import ErrorBoundary from "../../error/errorBoundary";
 
 const AboutUs = () => {
   return (
-    <>
+    <div>
       <div
         className="d-flex flex-column justify-content-center align-items-center text-center text-white"
         style={{
@@ -111,8 +111,8 @@ const AboutUs = () => {
           View our company →
         </a>
       </div>
-     
-    </>
+      
+    </div>
   );
 };
 

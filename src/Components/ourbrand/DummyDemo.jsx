@@ -247,3 +247,105 @@ export default ScrollSlideSection;
 // .btn:hover {
 //   transform: translateY(-3px);
 // }
+
+
+
+
+
+
+// naviagte working code
+
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "./LogoBrands.css";
+
+import DemaskLogo from "../../assets/images/logo/demask.png";
+import frecx from "../../assets/images/logo/frecx.png";
+import Fun from "../../assets/images/logo/Fun.png";
+import fv from "../../assets/images/logo/fv.png";
+import greenc from "../../assets/images/logo/greenc.png";
+import mettawatts from "../../assets/images/logo/mettawatts.png";
+import tgpsinfo from "../../assets/images/logo/tgpsinfo.png";
+import zigoo from "../../assets/images/logo/zigoo.png";
+import transcendent from "../../assets/images/logo/transcendent.png";
+import freccharge from "../../assets/images/logo/freccharge.png";
+
+gsap.registerPlugin(ScrollTrigger);
+
+export default function LogoBrands() {
+  const containerRef = useRef(null);
+  const overlayRef = useRef(null);
+
+  useEffect(() => {
+    // 🚨 Clear all previous triggers
+    ScrollTrigger.getAll().forEach((t) => t.kill());
+    gsap.killTweensOf("*");
+
+    gsap.set(overlayRef.current, {
+      clipPath: "inset(0 100% 0 0)",
+    });
+
+    const anim = gsap.to(overlayRef.current, {
+      clipPath: "inset(0 0% 0 0)",
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+        // ❌ NO PIN HERE
+      },
+    });
+
+    return () => {
+      // Cleanup on unmount
+      anim.kill();
+      ScrollTrigger.getAll().forEach((t) => t.kill());
+      gsap.killTweensOf("*");
+
+      const body = document.body;
+      body.style.removeProperty("overflow");
+      body.style.removeProperty("position");
+    };
+  }, []);
+
+  const brands = [
+    { id: 1, img: DemaskLogo },
+    { id: 2, img: frecx },
+    { id: 3, img: Fun },
+    { id: 4, img: fv },
+    { id: 5, img: greenc },
+    { id: 6, img: mettawatts },
+    { id: 7, img: tgpsinfo },
+    { id: 8, img: zigoo },
+    { id: 9, img: transcendent },
+    { id: 10, img: freccharge },
+  ];
+
+  return (
+    <section className="cinematic-wrapper" ref={containerRef}>
+      <div className="base-section">
+        <h1 className="brand-heading">Our Brands</h1>
+        <div className="brand-grid">
+          {brands.map((b) => (
+            <div className="logo-box" key={b.id}>
+              <img src={b.img} className="grayscale-logo" />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="overlay-section" ref={overlayRef}>
+        <h1 className="brand-heading dark">Our Brands</h1>
+        <div className="brand-grid">
+          {brands.map((b) => (
+            <div className="logo-box" key={b.id}>
+              <img src={b.img} className="color-logo" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

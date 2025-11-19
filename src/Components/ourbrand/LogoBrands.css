@@ -42,6 +42,21 @@
   font-weight: 700;
 }
 
+.brand-heading {
+  width: 100%;
+  text-align: center;   /* Center the text */
+  position: absolute;
+  top: 40px;            /* Adjust heading position */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* Push grid down so it doesn’t overlap the heading */
+.brand-grid {
+  margin-top: 60px; 
+}
+
 .brand-heading dark{
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -163,3 +178,35 @@
     font-size: 0.9rem;
   }
 }
+
+                   /* Extra responsive meadia class */
+
+/* iPad Mini / iPad Air — Reduce Height */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cinematic-wrapper {
+    min-height: 70vh;      /* Reduced height */
+  }
+}
+
+
+/* Nest Hub (Landscape) */
+@media (max-height: 800px) and (min-width: 1024px) {
+  .cinematic-wrapper {
+    min-height: 80vh;      /* Adjust to shorter display */
+  }
+}
+
+/* Nest Hub (600px height) */
+@media (max-height: 600px) {
+  .cinematic-wrapper {
+    min-height: 75vh;
+  }
+}
+
+
+@media (max-height: 900px) and (min-width: 600px) {
+  .cinematic-wrapper {
+    min-height: 85vh;
+  }
+}
+

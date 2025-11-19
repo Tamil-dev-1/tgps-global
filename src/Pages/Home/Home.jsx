@@ -7,8 +7,9 @@ import OurBrand from '../../Components/ourbrand/OurBrand';
 import { motion } from "framer-motion";
 import BlogCarousel from '../../Components/Blog/BlogCarousel';
 import LatestNews from '../../Components/LatestNews/LatestNews';
- import LogoBrands from '..//..//Components/ourbrand/LogoBrands'
+import LogoBrands from '..//..//Components/ourbrand/LogoBrands'
 //import HeroSection from '../../Components/HeroSection';
+import ErrorBoundary from "../../error/errorBoundary";
 const Home = () => {  
 
               // our brand logos image
@@ -25,7 +26,7 @@ const Home = () => {
     
   ];
   return (
-    <>
+    <div>
 <section data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="1500"
@@ -94,10 +95,7 @@ const Home = () => {
 
       {/* 🔹 Stats Row */}
       <div className="container px-3 text-center"
-       data-aos="fade-left"
-       ata-aos-anchor="#example-anchor"
-       data-aos-offset="500"
-       data-aos-duration="500">
+       >
         <div className="row g-0 text-white justify-content-center">
           {/* 1️⃣ Card */}
           
@@ -185,7 +183,7 @@ const Home = () => {
 </div>
 
 
-      {/* ✅ Custom Styles */}
+       {/* ✅ Custom Styles */}
       <style jsx>{`
         /* Base Styles */
         .stat-card {
@@ -355,8 +353,10 @@ const Home = () => {
   </div>
 </section>
 
-                         {/* OUR BRANDS--section */}
-<LogoBrands />
+     <ErrorBoundary>
+      <LogoBrands />
+      </ErrorBoundary>                    {/* OUR BRANDS--section */}
+
 
 {/* <div style={{ backgroundColor: "#F7F7EF", padding: "60px 80px" }}> 
   <div className="container text-center">
@@ -647,7 +647,7 @@ const Home = () => {
 
 
 
-    </>
+    </div>
 
 
   )

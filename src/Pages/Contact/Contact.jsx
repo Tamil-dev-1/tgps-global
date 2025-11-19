@@ -43,12 +43,12 @@ const Contact = () => {
       >
         <div>
          
-          <p  className="text-center fw-bold mt-5 mb-5"
+          <p  className="text-center fw-bold mt-5 mb-5 px-5"
           style={{
            
             color: "#0D6EFD",
-            letterSpacing: "1px",
             fontSize: "2rem",
+          
           }} >
             We’d love to hear from you! Let’s start a conversation.
           </p>

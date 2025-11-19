@@ -75,34 +75,36 @@ const Footer = () => {
       >
         <div className="container text-center text-md-start">
           <div className="d-flex flex-column flex-md-row flex-wrap justify-content-center justify-content-md-start gap-3 mb-4 pb-3">
-            <Link to="/">
-            <a href="#" className="text-white text-decoration-underline fw-semibold" style={{textDecorationColor:'#00BFFF'}}>
+            <Link to="/"
+              className="text-white text-decoration-underline fw-semibold" style={{textDecorationColor:'#00BFFF'}}>
               Contact Thai Green Power Solution Company Limited
-            </a>
+            
             </Link>
-           <Link to='/aboutus'>
-            <a href="#" className="text-white text-decoration-underline fw-semibold">
+           <Link to='/aboutus'
+              className="text-white text-decoration-underline fw-semibold">
               AboutUs
-            </a>
+            
            </Link>
-            <Link to='/the-group'>
-            <a href="#" className="text-white text-decoration-underline fw-semibold">
+            <Link to='/the-group'
+            className="text-white text-decoration-underline fw-semibold">
               The Group
-            </a>
+            
             </Link>
-           <Link to='/news'>
-            <a href="#" className="text-white text-decoration-underline fw-semibold">
+           <Link to='/news'
+             className="text-white text-decoration-underline fw-semibold">
               News
-            </a>
+           
            </Link>
-           <Link to='/careers'>
-            <a href="#" className="text-white text-decoration-underline fw-semibold">
+           <Link to='/careers'
+             className="text-white text-decoration-underline fw-semibold">
               Careers
-            </a>
+            
            </Link>
-            <a href="#" className="text-white text-decoration-underlinefw-semibold">
+            <Link to='/contact'
+             className="text-white text-decoration-underlinefw-semibold">
               Contact
-            </a>
+            
+            </Link>
             <a href="#" className="text-white text-decoration-underline fw-semibold">
               Accessibility
             </a>
