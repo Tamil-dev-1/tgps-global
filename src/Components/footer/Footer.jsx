@@ -77,7 +77,7 @@ const Footer = () => {
           <div className="d-flex flex-column flex-md-row flex-wrap justify-content-center justify-content-md-start gap-3 mb-4 pb-3">
             <Link to="/"
               className="text-white text-decoration-underline fw-semibold" style={{textDecorationColor:'#00BFFF'}}>
-              Contact Thai Green Power Solution Company Limited
+              Contact - Thai Green Power Solution Company Limited
             
             </Link>
            <Link to='/aboutus'

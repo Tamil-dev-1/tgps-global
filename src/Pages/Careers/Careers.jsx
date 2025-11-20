@@ -90,9 +90,9 @@ const Careers = () => {
 
         <div className="row g-4">
           {[
-            { title: "Frontend Developer", exp: "1–3 years", loc: "xyz" },
-            { title: "UI/UX Designer", exp: "2–4 years", loc: "xyz" },
-            { title: "Backend Engineer", exp: "3–5 years", loc: "xyz" },
+            { title: "Frontend Developer", exp: "1–3 years", loc: "Coimbatore" },
+            { title: "UI/UX Designer", exp: "2–4 years", loc: "Coimbatore" },
+            { title: "Backend Engineer", exp: "3–5 years", loc: "Coimbatore" },
           ].map((job, i) => (
             <div className="col-md-4" key={i}>
               <div className="card p-4 border-0 shadow-sm h-100" style={{backgroundColor:'#01D7C5'}}>

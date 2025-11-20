@@ -1,4 +1,10 @@
+/* GLOBAL FIX — REMOVE HORIZONTAL SCROLL ANYWHERE */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
+/* IMAGE RESPONSIVE */
 .responsive-img {
   width: 100%;
   object-fit: cover;
@@ -33,31 +39,7 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* HERO TITLE */
 .hero-title {
   color: #0047ba;
   font-weight: 900;
@@ -65,12 +47,18 @@
     2px 2px 0 #00bfff,
     4px 4px 0 #b3e0ff;
 }
+
+/* BUTTON HOVER */
 .button:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
   background-color: #7705BC;
 }
-/* ==== brand logo responsive==== */
+
+/* BRAND LOGOS */
+.responsive-brand-box {
+  flex: 1 1 calc(25% - 1rem);
+}
 
 @media (max-width: 992px) { /* Tablets */
   .responsive-brand-box {
@@ -83,6 +71,8 @@
     flex: 1 1 100% !important; /* 1 per row */
   }
 }
+
+/* ANIMATED BACKGROUND */
 .animated-bg {
   height: 75vh;
   background: linear-gradient(270deg, #ff7e5f, #feb47b, #6a11cb, #2575fc);
@@ -96,9 +86,74 @@
   100% { background-position: 0% 50%; }
 }
 
+/* STATISTICS CARDS */
+.stat-card {
+  border-radius: 0;
+  min-height: 140px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.2rem;
+  margin-right: 0;       /* Removed 1.5px → CAUSE OF SCROLL */
+  width: 100%;           /* Fix any overflow */
+}
 
+.bg-primary-alt {
+  background-color: #0054e5;
+}
+.bg-blue-alt {
+  background-color: #005eff;
+}
 
+/* Text sizes */
+.stat-card h1 {
+  font-size: 3rem;
+}
+.stat-card h5 {
+  font-size: 1.5rem;
+}
+.stat-card p {
+  font-size: 0.95rem;
+}
 
+/* Very large monitors */
+@media (min-width: 1800px) {
+  .container {
+    max-width: 80% !important;
+  }
+  .stat-card {
+    min-height: 160px;
+    padding: 2rem 1rem;
+  }
+  .stat-card h1 {
+    font-size: 3.3rem;
+  }
+  .stat-card h5 {
+    font-size: 1.6rem;
+  }
+  .stat-card p {
+    font-size: 1rem;
+  }
+}
 
+/* Mobile fix */
+@media (max-width: 768px) {
+  .stat-card {
+    margin-bottom: 10px;
+    min-height: auto;
+    width: 100%;
+  }
+}
 
+/* GLOBAL FIX — REMOVE HORIZONTAL SCROLL ANYWHERE */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
+.container,
+.row,
+section {
+  overflow-x: hidden;
+}

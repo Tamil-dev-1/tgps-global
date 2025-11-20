@@ -1,4 +1,10 @@
 import React from "react";
+import mainNewsImg from '../../assets/images/News/news1.jpeg'
+import NewsImg1 from '../../assets/images/News/news2.jpeg'
+import NewsImg2 from '../../assets/images/News/news3.jpg'
+import NewsImg3 from '../../assets/images/News/news4.jpeg'
+import NewsImg4 from '../../assets/images/News/news5.jpg'
+
 
 const LatestNews = () => {
   return (
@@ -28,7 +34,7 @@ const LatestNews = () => {
                 style={{ overflow: "hidden" }}
               >
                 <img
-                  src="https://images.pexels.com/photos/3944454/pexels-photo-3944454.jpeg"
+                  src={mainNewsImg}
                   className="card-img-top rounded-0"
                   alt="Main news"
                 />
@@ -61,19 +67,19 @@ const LatestNews = () => {
             data-aos-easing="ease-in-sine">
               {[
                 {
-                  img: "https://images.pexels.com/photos/1369476/pexels-photo-1369476.jpeg",
+                  img: NewsImg1,
                   date: "27 October 2025",
                 },
                 {
-                  img: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg",
+                  img: NewsImg2,
                   date: "23 October 2025",
                 },
                 {
-                  img: "https://images.pexels.com/photos/935979/pexels-photo-935979.jpeg",
+                  img: NewsImg3,
                   date: "10 October 2025",
                 },
                 {
-                  img: "https://images.pexels.com/photos/1369476/pexels-photo-1369476.jpeg",
+                  img: NewsImg4,
                   date: "05 October 2025",
                 },
               ].map((item, i) => (

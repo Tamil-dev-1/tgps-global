@@ -10,6 +10,7 @@ import LatestNews from '../../Components/LatestNews/LatestNews';
 import LogoBrands from '..//..//Components/ourbrand/LogoBrands'
 //import HeroSection from '../../Components/HeroSection';
 import ErrorBoundary from "../../error/errorBoundary";
+import HeroBgImg from '..//..//assets/images/Home/heroimg.jpeg'
 const Home = () => {  
 
               // our brand logos image
@@ -61,7 +62,7 @@ const Home = () => {
     {/* Right Side - Image */}
     <div className="col-lg-6 col-md-12 col-12">
       <img
-        src="https://images.pexels.com/photos/31314841/pexels-photo-31314841.jpeg"
+        src={HeroBgImg}
         alt="Hero"
         className="img-fluid w-100 responsive-img"
         // style={{
@@ -184,65 +185,7 @@ const Home = () => {
 
 
        {/* ✅ Custom Styles */}
-      <style jsx>{`
-        /* Base Styles */
-        .stat-card {
-          border-radius: 0;
-          min-height: 140px;
-          font-weight: 700;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 1.2rem;
-          margin-right: 1.5px;
-        }
-
-        .bg-primary-alt {
-          background-color: #0054e5;
-        }
-        .bg-blue-alt {
-          background-color: #005eff;
-        }
-
-        /* Text sizes */
-        .stat-card h1 {
-          font-size: 3rem;
-        }
-        .stat-card h5 {
-          font-size: 1.5rem;
-        }
-        .stat-card p {
-          font-size: 0.95rem;
-        }
-
-        /* ✅ When zoomed out (large viewport width >1800px) */
-        @media (min-width: 1800px) {
-          .container {
-            max-width: 80% !important;
-          }
-          .stat-card {
-            min-height: 160px;
-            padding: 2rem 1rem;
-          }
-          .stat-card h1 {
-            font-size: 3.3rem;
-          }
-          .stat-card h5 {
-            font-size: 1.6rem;
-          }
-          .stat-card p {
-            font-size: 1rem;
-          }
-        }
-
-        /* Smaller devices (stack cards) */
-        @media (max-width: 768px) {
-          .stat-card {
-            margin-bottom: 10px;
-            min-height: auto;
-          }
-        }
-      `}</style>
+    
     </section>
 
 <LatestNews />
