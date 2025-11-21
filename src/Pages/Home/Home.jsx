@@ -3,7 +3,7 @@ import React from 'react'
 
  
 import "./Home.css";
-import OurBrand from '../../Components/ourbrand/OurBrand';
+// import OurBrand from '../../Components/ourbrand/OurBrand';
 import { motion } from "framer-motion";
 import BlogCarousel from '../../Components/Blog/BlogCarousel';
 import LatestNews from '../../Components/LatestNews/LatestNews';
@@ -584,8 +584,8 @@ const Home = () => {
 </div>
      
 {/* 
-<HeroSection /> */}
-<OurBrand />
+
+{/* <OurBrand /> */}
 <BlogCarousel />
 
 

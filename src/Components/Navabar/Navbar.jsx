@@ -130,7 +130,7 @@ export default function Navbar() {
                         flexWrap: "wrap",
                       }}
                     >
-                      Thai Green Power Solution
+               <Link to="/" className="text-white fw-bold text-decoration-none"> Thai Green Power Solution</Link>      
                       <Typography
                         component="a"
                         href="#"
@@ -271,7 +271,7 @@ export default function Navbar() {
                 variant="body2"
                 sx={{ lineHeight: 1.4, fontSize: "0.9rem" }}
               >
-                Thai Green Power Solution
+                <Link to="/" className="text-white fw-bold text-decoration-none"> Thai Green Power Solution</Link> 
               </Typography>
               <Typography
                 component="a"

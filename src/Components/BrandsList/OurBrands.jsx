@@ -8,6 +8,8 @@ const  OurBrands= () => {
     <section className="brand-section py-5">
       <h1 className="text-center fw-bold mb-4 font" style={{color:'#1F36C7'}}>Our Brand</h1>
       <div className="container position-relative">
+
+                          {/* box----1 */}
         <div className="brand-box new-bg-1 d-flex flex-lg-row flex-column align-items-center justify-content-between position-relative" style={{marginBottom:'90px'}}>
           {/* 🔸 Left Content Box */}
           <div className="brand-left text-white p-5">

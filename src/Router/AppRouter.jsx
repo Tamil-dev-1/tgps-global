@@ -8,7 +8,7 @@ import Careers from '../Pages/Careers/Careers';
 import Contact from '../Pages/Contact/Contact';
 import Header from '../Components/Header/Header';
 import Footer from '../Components/footer/Footer';
-import AtAGlance from '../Pages/Glance/AtGlance';
+
 
 
 
@@ -26,7 +26,7 @@ const AppRouter = () => {
         <Route path="/news" element={<News />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/glance" element={<AtAGlance />} />
+
       </Routes>
       {/* <Footer /> */}
      <Footer />

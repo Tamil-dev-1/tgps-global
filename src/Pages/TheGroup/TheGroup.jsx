@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaBuilding, FaUsers, FaGlobe, FaLightbulb, FaHandshake } from "react-icons/fa";
-import OurBrands from "../../Components/Transcendent/OurBrands";
+import OurBrands from "../../Components/BrandsList/OurBrands";
 
 const TheGroup = () => {
   return (
@@ -225,7 +225,7 @@ const TheGroup = () => {
              {/* Our Brands cards */}
     <OurBrands />
 
-    {/* ======================================== */}
+    
 
     
     </>

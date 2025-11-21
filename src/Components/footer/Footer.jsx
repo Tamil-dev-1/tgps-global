@@ -19,14 +19,24 @@ const Footer = () => {
            <FaShareAlt size={30}/>
             <span>Share this page</span>
           </div>
-          <div className="d-flex gap-4 fs-5 align-items-center ms-3">
-            <FaFacebookF />
-            <FaXTwitter />
-            <GrLinkedin />
-           <IoMailSharp size={27} />
+         <div className="d-flex gap-4 fs-5 align-items-center justify-content-center">
+  <a href="https://www.facebook.com/thaigreenpowersolutions" target="_blank" rel="noopener noreferrer">
+    <FaFacebookF style={{ color: "white" }} />
+  </a>
 
+  <a href="https://x.com/thai_solution" target="_blank" rel="noopener noreferrer">
+    <FaXTwitter style={{ color: "white" }} />
+  </a>
 
-          </div>
+  <a href="https://www.instagram.com/tgps_global/" target="_blank" rel="noopener noreferrer">
+    <GrLinkedin style={{ color: "white" }} />
+  </a>
+
+  <a href="https://medium.com/@admin_33552" target="_blank" rel="noopener noreferrer">
+    <IoMailSharp size={27} style={{ color: "white" }} />
+  </a>
+</div>
+
         </div>
       </div>
 

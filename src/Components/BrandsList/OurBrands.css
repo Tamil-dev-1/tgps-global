@@ -30,7 +30,7 @@
 }
 .new-bg-1{
    /* ✅ Background Glow Animation */
-  background: linear-gradient(45deg, #001F82, #0055FF, #00E0FF, #001F82);
+  background:  #001F82;
   background-size: 400% 400%;
   animation: leftBoxGlow 8s ease-in-out infinite;
   box-shadow: 0 0 25px rgba(0, 136, 255, 0.4);
@@ -49,8 +49,8 @@
 }
 
 .new-bg-2{
-   /* ✅ Background Glow Animation */
-  background: linear-gradient(45deg, #1e8200, #f700ff, #3300ff, #001F82);
+   
+  background: #000000;
   background-size: 400% 400%;
   animation: leftBoxGlow 8s ease-in-out infinite;
   box-shadow: 0 0 25px rgba(0, 136, 255, 0.4);
@@ -68,9 +68,30 @@
   }
 }
 
+/* 
+.new-bg-2{
+   
+  background: linear-gradient(45deg, #1e8200, #f700ff, #3300ff, #001F82);
+  background-size: 400% 400%;
+  animation: leftBoxGlow 8s ease-in-out infinite;
+  box-shadow: 0 0 25px rgba(0, 136, 255, 0.4);
+}
+
+@keyframes leftBoxGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
 .new-bg-3{
    /* ✅ Background Glow Animation */
-  background: linear-gradient(45deg, #668200, #ff006f, #00d0ff, #001F82);
+  background: #212971;
   background-size: 400% 400%;
   animation: leftBoxGlow 8s ease-in-out infinite;
   box-shadow: 0 0 25px rgba(0, 136, 255, 0.4);
@@ -90,7 +111,7 @@
 
 .new-bg-4{
    /* ✅ Background Glow Animation */
-  background: linear-gradient(45deg, #7c8200, #aa00ff, #00ffbf, #001F82);
+  background: #540863;
   background-size: 400% 400%;
   animation: leftBoxGlow 8s ease-in-out infinite;
   box-shadow: 0 0 25px rgba(0, 136, 255, 0.4);
@@ -110,7 +131,7 @@
 
 .new-bg-5{
    /* ✅ Background Glow Animation */
-  background: linear-gradient(45deg, #620082, #00ddff, #00a6ff, #001F82);
+  background: #0BC4F1;
   background-size: 400% 400%;
   animation: leftBoxGlow 8s ease-in-out infinite;
   box-shadow: 0 0 25px rgba(0, 136, 255, 0.4);
@@ -130,7 +151,7 @@
 
 .new-bg-6{
    /* ✅ Background Glow Animation */
-  background: linear-gradient(45deg, #270082d9, #ff0077, #3700ff, #008257);
+  background: #BB0E82;
   background-size: 400% 400%;
   animation: leftBoxGlow 8s ease-in-out infinite;
   box-shadow: 0 0 25px rgba(0, 136, 255, 0.4);
@@ -150,7 +171,7 @@
 
 .new-bg-7{
    /* ✅ Background Glow Animation */
-  background: linear-gradient(45deg, #3d8200, #049B35, #1100ff, #640082);
+  background: #174143;
   background-size: 400% 400%;
   animation: leftBoxGlow 8s ease-in-out infinite;
   box-shadow: 0 0 25px rgba(0, 136, 255, 0.4);

@@ -73,14 +73,14 @@ const AboutUs = () => {
         {/* Bottom Navigation */}
         <div className="d-flex flex-wrap justify-content-center gap-5 mb-5">
           {[
-            "At a glance",
-            "Our strategy",
-            "Our team",
-            "Innovation and R&D",
+            {name:"At a glance",path:"/"},
+            {name:"Our strategy",path:"/"},
+            {name:"Our team",path:"/"},
+            {name:"Innovation and R&D",path:"/"}
           ].map((item, index) => (
-            <a
+            <Link
               key={index}
-              href="#"
+              to={item.path}
               className="text-white fw-semibold text-decoration-underline"
               style={{
                 fontSize: "clamp(1.3rem, 2vw, 1.6rem)", // 🔹 Bigger underline links
@@ -90,8 +90,8 @@ const AboutUs = () => {
               onMouseEnter={(e) => (e.target.style.color = "#FFD700")}
               onMouseLeave={(e) => (e.target.style.color = "white")}
             >
-              {item}
-            </a>
+              {item.name}
+            </Link>
           ))}
         </div>
 
