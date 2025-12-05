@@ -1,0 +1,27 @@
+
+
+.center-section {
+  max-width: 800px;      
+  margin: 0 auto;        
+  text-align: left;    
+  padding: 0 30px;      
+  line-height: 1.7;      
+}
+
+/* .center-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+} */
+
+/* .center-section p {
+  margin-bottom: 18px;
+} */
+.text{
+  color: #001F82;
+  font-weight: 600;
+}
+.text-p{
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}

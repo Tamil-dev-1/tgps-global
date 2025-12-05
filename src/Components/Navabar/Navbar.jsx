@@ -20,13 +20,20 @@ import { DarkMode, Language, Search, Menu } from "@mui/icons-material";
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
-  // home page navigation
-
   const navigate = useNavigate();
 
+  // UPDATED MENU WITH EXTERNAL LINK
   const menuItems = [
-    { label: "AboutUs", path: "/aboutus" },
-    { label: "The Group", path: "/the-group" },
+    { label: "Our Company", path: "/ourcompany" },
+    { label: "Brands", path: "/the-brands" },
+
+    // ✅ NEW EXTERNAL LINK
+    {
+      label: "Green Carpet",
+      external: true,
+      url: "https://greencarpet.world/", // PUT YOUR REAL WEBSITE LINK
+    },
+
     { label: "Careers", path: "/careers" },
     { label: "News", path: "/news" },
     { label: "Contact", path: "/contact" },
@@ -39,7 +46,7 @@ export default function Navbar() {
       <AppBar
         position="static"
         sx={{
-          backgroundColor: "#005EFF",
+          backgroundColor: "#001F82",
           color: "#fff",
           boxShadow: "none",
         }}
@@ -56,7 +63,7 @@ export default function Navbar() {
           <Box
             sx={{
               flexBasis: { xs: "30%", md: "20%" },
-              borderBottom:'1px solid blue',
+              borderBottom: "1px solid blue",
               backgroundColor: "#fff",
               display: "flex",
               alignItems: "center",
@@ -68,13 +75,13 @@ export default function Navbar() {
               component="img"
               src={Logo}
               alt="Tgps Logo"
-              onClick={()=>navigate('/')}
+              onClick={() => navigate("/")}
               sx={{
-                 width: { xs: 100, sm: 150, md: 257 }, // responsive sizes
+                width: { xs: 100, sm: 150, md: 257 },
                 height: "auto",
                 maxHeight: { xs: 80, md: 100 },
                 objectFit: "cover",
-                cursor:'pointer'
+                cursor: "pointer",
               }}
             />
           </Box>
@@ -90,7 +97,7 @@ export default function Navbar() {
               py: { xs: 1.5, md: 2 },
             }}
           >
-            {/* --- Top Row --- */}
+            {/* --- Top Row (Desktop Only) --- */}
             <Grid
               container
               alignItems="center"
@@ -126,11 +133,16 @@ export default function Navbar() {
                         fontSize: { md: "0.8rem", lg: "0.8rem" },
                         display: "flex",
                         alignItems: "center",
-                         fontWeight: 500,
+                        fontWeight: 500,
                         flexWrap: "wrap",
                       }}
                     >
-               <Link to="/" className="text-white fw-bold text-decoration-none"> Thai Green Power Solution</Link>      
+                      <Link
+                        to="/"
+                        className="text-white fw-bold text-decoration-none"
+                      >
+                        Thai Green Power Solution
+                      </Link>
                       <Typography
                         component="a"
                         href="#"
@@ -138,7 +150,7 @@ export default function Navbar() {
                           color: "#fff",
                           textDecoration: "underline",
                           fontWeight: 600,
-                           fontSize: { md: "0.8rem", lg: "0.8rem" },
+                          fontSize: { md: "0.8rem", lg: "0.8rem" },
                           ml: "11px",
                         }}
                       >
@@ -159,7 +171,6 @@ export default function Navbar() {
                       px: { md: 2, lg: 1.5 },
                       py: { md: 0.7, lg: 0.7 },
                       borderRadius: 0,
-                     
                       fontSize: { md: "0.9rem", lg: "0.9rem" },
                     }}
                   >
@@ -169,36 +180,56 @@ export default function Navbar() {
               </Grid>
             </Grid>
 
-            {/* --- Bottom Row Menu --- */}
+            {/* --- Bottom Menu (Desktop) --- */}
             <Box
               display={{ xs: "none", md: "flex" }}
               justifyContent="flex-end"
               gap={{ md: 3, lg: 4 }}
-              sx={{
-                flexWrap: "wrap",
-              }}
             >
-              {menuItems.map((item) => (
-                <Typography
-                  key={item.label}
-                  variant="subtitle1"
-                  component={Link}
-                  to={item.path}
-                  sx={{
-                    fontWeight: 700,
-                    cursor: "pointer",
-                    color: "inherit",
-                    textDecoration: "none",
-                    "&:hover": { textDecoration: "underline" },
-                    fontSize: { md: "0.95rem", lg: "1.05rem" },
-                  }}
-                >
-                  {item.label} ▾
-                </Typography>
-              ))}
+              {menuItems.map((item) =>
+                item.external ? (
+                  // 🔗 External Link
+                  <Typography
+                    key={item.label}
+                    variant="subtitle1"
+                    component="a"
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      fontWeight: 700,
+                      cursor: "pointer",
+                      color: "inherit",
+                      textDecoration: "none",
+                      "&:hover": { textDecoration: "underline" },
+                      fontSize: { md: "0.95rem", lg: "1.05rem" },
+                    }}
+                  >
+                    {item.label}
+                  </Typography>
+                ) : (
+                  // 🔗 Internal Link
+                  <Typography
+                    key={item.label}
+                    variant="subtitle1"
+                    component={Link}
+                    to={item.path}
+                    sx={{
+                      fontWeight: 700,
+                      cursor: "pointer",
+                      color: "inherit",
+                      textDecoration: "none",
+                      "&:hover": { textDecoration: "underline" },
+                      fontSize: { md: "0.95rem", lg: "1.05rem" },
+                    }}
+                  >
+                    {item.label}
+                  </Typography>
+                )
+              )}
             </Box>
 
-            {/* === Mobile Hamburger === */}
+            {/* === Mobile Hamburger Menu === */}
             <Box
               display={{ xs: "flex", md: "none" }}
               justifyContent="flex-end"
@@ -212,7 +243,7 @@ export default function Navbar() {
         </Toolbar>
       </AppBar>
 
-      {/* === Drawer for Mobile Menu === */}
+      {/* === Mobile Drawer === */}
       <Drawer
         anchor="right"
         open={drawerOpen}
@@ -234,31 +265,59 @@ export default function Navbar() {
           >
             Menu
           </Typography>
+
           <Divider sx={{ borderColor: "rgba(255,255,255,0.2)" }} />
 
           <List>
-            {menuItems.map((item) => (
-              <ListItem
-                key={item.label}
-                component={Link}
-                to={item.path}
-                onClick={toggleDrawer(false)}
-                sx={{
-                  "&:hover": {
-                    backgroundColor: "rgba(255,255,255,0.1)",
-                  },
-                }}
-              >
-                <ListItemText
-                  primary={item.label}
-                  primaryTypographyProps={{
-                    fontWeight: 600,
-                    fontSize: "1rem",
-                    color: "#fff",
+            {menuItems.map((item) =>
+              item.external ? (
+                // 🔗 External Link in Drawer
+                <ListItem
+                  key={item.label}
+                  component="a"
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={toggleDrawer(false)}
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "rgba(255,255,255,0.1)",
+                    },
                   }}
-                />
-              </ListItem>
-            ))}
+                >
+                  <ListItemText
+                    primary={item.label}
+                    primaryTypographyProps={{
+                      fontWeight: 600,
+                      fontSize: "1rem",
+                      color: "#fff",
+                    }}
+                  />
+                </ListItem>
+              ) : (
+                // 🔗 Internal Link in Drawer
+                <ListItem
+                  key={item.label}
+                  component={Link}
+                  to={item.path}
+                  onClick={toggleDrawer(false)}
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "rgba(255,255,255,0.1)",
+                    },
+                  }}
+                >
+                  <ListItemText
+                    primary={item.label}
+                    primaryTypographyProps={{
+                      fontWeight: 600,
+                      fontSize: "1rem",
+                      color: "#fff",
+                    }}
+                  />
+                </ListItem>
+              )
+            )}
           </List>
 
           <Divider sx={{ borderColor: "rgba(255,255,255,0.2)", mb: 2 }} />
@@ -271,7 +330,12 @@ export default function Navbar() {
                 variant="body2"
                 sx={{ lineHeight: 1.4, fontSize: "0.9rem" }}
               >
-                <Link to="/" className="text-white fw-bold text-decoration-none"> Thai Green Power Solution</Link> 
+                <Link
+                  to="/"
+                  className="text-white fw-bold text-decoration-none"
+                >
+                  Thai Green Power Solution
+                </Link>
               </Typography>
               <Typography
                 component="a"
@@ -288,7 +352,7 @@ export default function Navbar() {
             </Box>
           </Box>
 
-          {/* Theme section */}
+          {/* Theme Section */}
           <Box display="flex" alignItems="center" gap={1}>
             <DarkMode fontSize="small" />
             <Typography
@@ -303,24 +367,3 @@ export default function Navbar() {
     </>
   );
 }
-// import React from 'react'
-
-// const Navbar = () => {
-//   return (
-//     <div className='header-main'>
-//       <div className='header-logo'>
-//           <h1>Logo</h1>
-//       </div>
-
-//       <div className='header-controls'>
-//         <div className='header-tools'></div>
-//         <nav className='header-nav'>
-
-//         </nav>
-//       </div>
-      
-//     </div>
-//   )
-// }
-
-// export default Navbar

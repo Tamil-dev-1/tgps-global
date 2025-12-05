@@ -11,6 +11,11 @@ import LogoBrands from '..//..//Components/ourbrand/LogoBrands'
 //import HeroSection from '../../Components/HeroSection';
 import ErrorBoundary from "../../error/errorBoundary";
 import HeroBgImg from '..//..//assets/images/Home/heroimg.jpeg'
+
+import image2 from '..//..//assets/images/Home/image2.jpeg'
+import image3 from '..//..//assets/images/Home/image3.jpeg'
+import image1 from '..//..//assets/images/Home/image1.jpg'
+
 const Home = () => {  
 
               // our brand logos image
@@ -50,12 +55,14 @@ const Home = () => {
         style={{
           color: "#0047BA",
           fontWeight: 900,
-          fontSize: "clamp(2.5rem, 5vw, 6.5rem)", 
+          fontSize: "clamp(2rem, 4vw, 6.5rem)", 
           lineHeight: "1.2",
         }}
       >
-        Welcome to <br />
-        Thai Green Power Solution
+        The World of <br />
+        Thai Green Power Solution <br />
+        Company Limited
+
       </h1>
     </div>
 
@@ -82,60 +89,112 @@ const Home = () => {
       style={{ backgroundColor: "#fff" }}
     >
       {/* 🔹 Section Heading */}
-      <div className="mb-3 ps-5" data-aos="fade-right">
-        <h2
-          className="fw-bold mb-0"
-          style={{
-            color: "#005EFF",
-             fontSize: "clamp(1.2rem, 2vw, 1.8rem)",
-          }}
-        >
-          We are Thai Green Power Solution
-        </h2>
-      </div>
+    <div className="mb-3 ps-lg-5 text-center text-md-start" data-aos="fade-right">
+  <h2
+    className="fw-bold mb-0"
+    style={{
+      color: "#005EFF",
+      fontSize: "clamp(1.2rem, 2vw, 1.8rem)",
+    }}
+  >
+    We are TGPS Global, Thailand
+  </h2>
+</div>
+
 
       {/* 🔹 Stats Row */}
-      <div className="container px-3 text-center"
+      {/* <div className="container px-3 text-center"
        >
         <div className="row g-0 text-white justify-content-center">
-          {/* 1️⃣ Card */}
+          
           
           <div className="col-lg-3 col-md-6 col-12">
             <div className="stat-card bg-primary-alt">
-              <h1 className="fw-bold mb-1">90+</h1>
+              <h1 className="fw-bold mb-1">8+</h1>
               <h5 className="fw-bold mb-1">years</h5>
-              <p className="m-0">Lorem, ipsum dolor.</p>
+              <p className="m-0">Driving Renewable Innovation Across Asia.</p>
             </div>
           </div>
 
-          {/* 2️⃣ Card */}
+          
           <div className="col-lg-3 col-md-6 col-12">
             <div className="stat-card bg-blue-alt">
-              <h1 className="fw-bold mb-1">50+</h1>
-              <h5 className="fw-bold mb-1">FMCG brands</h5>
-              <p className="m-0">Lorem, ipsum </p>
+              <h1 className="fw-bold mb-1">1ˢᵗ</h1>
+              <h5 className="fw-bold mb-1">Layer</h5>
+              <p className="m-0">of-its-kind Blockchain for the Global Energy Sector (Frequency Chain X).
+</p>
             </div>
           </div>
 
-          {/* 3️⃣ Card */}
+          
           <div className="col-lg-3 col-md-6 col-12 border-top">
             <div className="stat-card bg-primary-alt">
-              <h1 className="fw-bold mb-1">No. 1</h1>
-              <h5 className="fw-bold mb-1">employer</h5>
-              <p className="m-0"> Lorem, ipsum dolor.</p>
+              <h1 className="fw-bold mb-1">Top </h1>
+              <h5 className="fw-bold mb-1">Choice</h5>
+              <p className="m-0"> 
+            for Governments, Corporates & Clean-Tech Partners.
+</p>
             </div>
           </div>
 
-          {/* 4️⃣ Card */}
+          
           <div className="col-lg-3 col-md-6 col-12  border-top">
             <div className="stat-card bg-blue-alt">
-              <h1 className="fw-bold mb-1">₹60,680</h1>
-              <h5 className="fw-bold mb-1">crore turnover</h5>
-              <p className="m-0">Lorem, ipsum dolor.</p>
+              <h1 className="fw-bold mb-1">4</h1>
+              <h5 className="fw-bold mb-1">Countries</h5>
+              <p className="m-0">for Growing or Sustainable ReachOperations .</p>
             </div>
           </div>
         </div>
+      </div> */}
+      <div className="container px-3 text-center">
+  <div className="row g-0 text-white justify-content-center align-items-stretch">
+    
+    {/* 1️⃣ Card */}
+    <div className="col-lg-3 col-md-6 col-12">
+      <div className="stat-card bg-primary-alt h-100">
+        <h1 className="fw-bold mb-1">8+</h1>
+        <h5 className="fw-bold mb-1">years</h5>
+        <p className="m-0">Driving Renewable Innovation Across Asia.</p>
       </div>
+    </div>
+
+    {/* 2️⃣ Card */}
+    <div className="col-lg-3 col-md-6 col-12">
+      <div className="stat-card bg-blue-alt h-100">
+        <h1 className="fw-bold mb-1">1ˢᵗ</h1>
+        <h5 className="fw-bold mb-1">Layer</h5>
+        <p className="m-0">
+          of-its-kind Blockchain for the Global Energy Sector (Frequency Chain X).
+        </p>
+      </div>
+    </div>
+
+    {/* 3️⃣ Card */}
+    <div className="col-lg-3 col-md-6 col-12">
+      <div className="stat-card bg-primary-alt h-100">
+        <h1 className="fw-bold mb-1">Top</h1>
+        <h5 className="fw-bold mb-1">Choice</h5>
+        <p className="m-0">
+          for Governments, Corporates & Clean-Tech Partners.
+        </p>
+      </div>
+    </div>
+
+    {/* 4️⃣ Card */}
+    <div className="col-lg-3 col-md-6 col-12">
+      <div className="stat-card bg-blue-alt h-100">
+        <h1 className="fw-bold mb-1">4</h1>
+        <h5 className="fw-bold mb-1">Countries</h5>
+        <p className="m-0">
+          for Growing or Sustainable Reach Operations.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
       {/* 🔹 CTA Button */}
       <div className="mt-5 text-center"
@@ -188,7 +247,7 @@ const Home = () => {
     
     </section>
 
-<LatestNews />
+
 
 
 
@@ -216,11 +275,12 @@ const Home = () => {
         className="fw-bold mb-3"
         style={{
           color: "#0047BA",
-          fontSize: "clamp(2rem, 3vw + 1rem, 3.5rem)",
+          // fontSize: "clamp(2rem, 3vw + 1rem, 3.5rem)",
+          fontSize: "clamp(2rem, 1.5rem, 3.5rem)",
           lineHeight: "1.2",
         }}
       >
-        <span style={{ color: "#1F36C7" }}>The Group</span>
+        <span style={{ color: "#1F36C7" }}>Redefining Energy for a Clean, Smart & Decentralized</span>
       </h1>
       <p
         style={{
@@ -229,8 +289,22 @@ const Home = () => {
           maxWidth: "450px",
         }}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        veniam cupiditate, enim suscipit autem delectus. Veritatis.
+      Whether it is renewable energy, advanced solar solutions, EV infrastructure, EV fleet management, or blockchain-integrated energy systems, our purpose remains <br /> clear:
+      To build a greener, smarter, and more inclusive energy future for everyone.
+
+
+      </p>
+
+       <p
+        style={{
+          fontSize: "clamp(1rem, 0.8vw + 0.5rem, 1.25rem)",
+          color: "#1F36C7",
+          maxWidth: "450px",
+        }}
+      >
+        At TGPS Global, we believe that caring for communities, empowering industries, and protecting the planet is not just good business “it is the only way forward”.
+
+
       </p>
     </div>
 
@@ -384,7 +458,7 @@ const Home = () => {
     {/* Image with Wave */}
     <div style={{ position: "relative" }}>
       <img
-        src="https://images.pexels.com/photos/53135/hydrangea-blossom-bloom-flower-53135.jpeg"
+        src={image1}
         alt="Sustainability"
         className="img-fluid rounded-0 w-100"
         style={{
@@ -447,7 +521,7 @@ const Home = () => {
     {/* Image with Wave */}
     <div style={{ position: "relative" }}>
       <img
-        src="https://images.pexels.com/photos/2295213/pexels-photo-2295213.jpeg"
+        src={image2}
         alt="Sustainability"
         className="img-fluid rounded-0 w-100"
         style={{
@@ -534,7 +608,7 @@ const Home = () => {
     {/* Image with Wave */}
     <div style={{ position: "relative" }}>
       <img
-        src="https://images.pexels.com/photos/46974/muscari-common-grape-hyacinth-blossom-bloom-46974.jpeg"
+        src={image3}
         alt="Sustainability"
         className="img-fluid rounded-0 w-100"
         style={{
@@ -582,6 +656,8 @@ const Home = () => {
   </div>
  </div>
 </div>
+
+<LatestNews />
      
 {/* 
 

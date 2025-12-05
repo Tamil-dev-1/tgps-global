@@ -1,6 +1,9 @@
 import React from "react";
 import bubbleImg from '..//..//assets/images/Careers/bubbles.jpg'
 import waterdropImg from '..//..//assets/images/Careers/water-drops.jpg'
+import teamImg1 from '..//..//assets/images/Careers/team1.jpeg'
+import teamImg2 from '..//..//assets/images/Careers/team2.jpeg'
+import teamImg3 from '..//..//assets/images/Careers/team3.jpeg'
 
 const Careers = () => {
   return (
@@ -36,7 +39,7 @@ const Careers = () => {
         <div className="row px-3 g-4">
           <div className="col-md-4">
             <img
-              src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg"
+              src={teamImg1}
               className="img-fluid rounded shadow-sm"
               alt="Team Collaboration"
             />
@@ -44,7 +47,7 @@ const Careers = () => {
           </div>
           <div className="col-md-4">
             <img
-              src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"
+              src={teamImg2}
               className="img-fluid rounded shadow-sm"
               alt="Workspace"
             />
@@ -52,7 +55,7 @@ const Careers = () => {
           </div>
           <div className="col-md-4">
             <img
-              src="https://images.pexels.com/photos/6519176/pexels-photo-6519176.jpeg"
+              src={teamImg3}
               className="img-fluid rounded shadow-sm"
               alt="Events"
             />
