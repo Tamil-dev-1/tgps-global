@@ -1,0 +1,126 @@
+/* ------------------ SECTION 1 (Hero Background Fixed) ------------------ */
+.hero-section {
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/13327867/pexels-photo-13327867.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Important */
+  position: relative;
+  padding: 60px 0;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* dark overlay */
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 3;
+}
+
+/* ------------------ SECTION 2 (Premium Snap Carousel) ------------------ */
+.feature-scroll {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+}
+
+.feature-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.feature-card {
+  min-width: 85%; /* Mobile - 1 item */
+  scroll-snap-align: start;
+  border: 1px solid #eee;
+  transition: 0.3s ease;
+  background: #fff;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+@media (min-width: 768px) {
+  .feature-card { min-width: 45%; } /* Tablet - 2 items */
+}
+
+@media (min-width: 992px) {
+  .feature-card { min-width: 30%; } /* Desktop - 3 items */
+}
+
+/* ------------------ SECTION 3 (2×2 Grid Boxes) ------------------ */
+.bg-white {
+  background: #fff;
+}
+
+.rounded-4 {
+  border-radius: 18px;
+}
+
+
+
+
+
+
+      /* INNOVATIVE CAROUSEL SECTION */
+
+
+      .feature-slide-card {
+  background: #ffffff;
+  border: 1px solid #eee;
+  transition: 0.3s ease;
+  height: 100%;
+}
+
+.feature-slide-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.swiper {
+  padding-bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+  background: #000 !important;
+  opacity: 0.3;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000 !important;
+  opacity: 1;
+}
+
+
+
+/* Outer wrapper */
+.excel-wrapper {
+  width: 100%;
+}
+
+/* Top section gradient */
+.excel-top {
+  background: linear-gradient(90deg, #3a3dbf, #2b2f8c);
+}
+
+/* Bottom section background */
+.excel-bottom {
+  background: #0c1c59;
+}
+
+/* Bullet dot */
+.excel-dot {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  margin-right: 12px;
+  margin-top: 8px;
+  flex-shrink: 0;
+}

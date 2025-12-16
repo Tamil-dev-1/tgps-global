@@ -1,0 +1,175 @@
+.brand-wrapper {
+  width: 100%;
+  min-height: 50vh;
+  overflow: hidden;
+  display: flex;
+}
+
+/* LEFT SIDE */
+
+/* .left-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+} */
+.left-side {
+  background: #ffffff;
+  min-height: 50vh;
+  padding: 40px 20px;
+}
+
+.brand-logo {
+  width: 180px;
+  max-width: 80%;
+}
+
+/* RIGHT SIDE */
+.right-side {
+  background: #4276ff;
+  min-height: 50vh;
+  color: #fff;
+  padding: 40px 20px;
+  clip-path: polygon(18% 0%, 100% 0, 100% 100%, 0% 100%);
+  border-bottom-left-radius: 30px;
+}
+
+.signature-text {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.1;
+}
+
+/* ------------ MOBILE FIXES ------------ */
+
+@media (max-width: 768px) {
+  .left-side,
+  .right-side {
+    min-height: auto;        /* FIX 1 – remove VH height */
+    height: auto;            /* FIX 2 */
+    padding: 50px 20px;
+  }
+
+  .right-side {
+    clip-path: none;         /* FIX 3 – angle is removed for mobile so text doesn’t hide */
+    border-radius: 0;
+  }
+
+  .signature-text {
+    font-size: 32px;         /* FIX 4 – reduce heading size */
+    text-align: center;
+  }
+
+  .brand-logo {
+    width: 150px;            /* FIX 5 – adjust logo for mobile */
+  }
+}
+
+
+
+                          /* Section ======= 2 */
+
+.section-limit{
+    width: 70%;
+    margin: 0 auto;
+}                          
+
+ .circle-wrapper {
+  background: #ffffff;
+}
+
+/* LEFT SECTION */
+.main-title {
+  font-size: clamp(28px, 3vw, 50px);
+  font-weight: 600;
+  color: #1a0f7a;
+  line-height: 1.1;
+}
+
+.highlight {
+  background: #c4ffb1;      /* green highlight */
+  padding: 5px 15px;
+  border-radius: 40px;
+  display: inline-block;
+  margin: 8px 0;
+}
+
+/* RIGHT SECTION */
+.right-section {
+  border-left: 2px solid #dadada;
+  padding-left: 40px;
+}
+
+.right-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3232ff; /* bright blue like screenshot */
+  letter-spacing: 1px;
+}
+
+.right-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* BULLET POINTS */
+.points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.points li {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background: #3232ff;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+/* ---- MOBILE RESPONSIVE ---- */
+
+@media (max-width:768px){
+    .section-limit{
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+  .right-section {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
+  .main-title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .highlight {
+    display: inline-block;
+    margin: 5px auto;
+  }
+
+  .right-heading, .right-text, .points li {
+    text-align: left;
+  }
+}
+                         
+.bi {
+  margin-right: 8px;
+  color: green;
+  font-size: 1.8rem;
+}

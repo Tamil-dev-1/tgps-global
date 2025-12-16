@@ -113,106 +113,142 @@ const AboutUs = () => {
         >
           View our company →
         </a> */}
-                   <section className="py-5" style={{ background: "#001F82" }}>
+           
+      </div>
 
-                        <div className="container">
-                           {/* ROW */}
-                           <div className="row text-white align-items-start">
 
-                            {/* 1 — At a glance */}
-          <div className="col-lg-2 col-md-4 col-sm-6 mb-4 text-center">
-            <img
-              src="https://images.pexels.com/photos/31653093/pexels-photo-31653093.jpeg"
-              alt="At a glance"
-              className="img-fluid rounded"
-              
-            />
-        <Link to='/infocus' className="text-white"><p className="mt-3 fw-bold">In Foucus</p></Link>    
-            <div className="border-bottom border-white opacity-50"></div>
+                           
+                           {/* SECTION ========= 2 */}
+
+
+          <section className="py-5" style={{ background: "#001F82" }}>
+      <div className="container">
+
+        {/* === 4 IMAGES + 1 TEXT LINKS BOX (ALL IN ONE ROW) === */}
+        <div className="row g-4">
+
+          {/* CARD 1 */}
+          <div className="col-lg-2 col-md-4 col-6">
+            <div className="card premium-card text-white border-0">
+              <img src="https://images.pexels.com/photos/2763246/pexels-photo-2763246.jpeg" className="premium-img" alt="" />
+              <div className="card-body text-center px-1 py-2">
+               <Link to='/infocus'><h6 className="fw-semibold m-0 text-light">In Focus</h6></Link> 
+              </div>
+            </div>
           </div>
 
-          {/* 2 - Our strategy */}
-
-          <div className="col-lg-2 col-md-4 col-sm-6 mb-4 text-center">
-            <img src="https://images.pexels.com/photos/31653093/pexels-photo-31653093.jpeg" alt=""
-            className="img-fluid rounded" />
-            <Link to='/our-playbook' className="text-white"><p className="mt-3 fw-bold">Our Playbook</p></Link>
-            <div className="border-bottom border-white opacity-50"></div>
-
+          {/* CARD 2 */}
+          <div className="col-lg-2 col-md-4 col-6">
+            <div className="card premium-card text-white border-0">
+              <img src="https://images.pexels.com/photos/2763246/pexels-photo-2763246.jpeg" className="premium-img" alt="" />
+              <div className="card-body text-center px-1 py-2">
+               <Link to='/our-playbook'><h6 className="fw-semibold m-0 text-light">Our Playbook</h6></Link> 
+              </div>
+            </div>
           </div>
 
-           {/* 4 — guild force */}
-          <div className="col-lg-2 col-md-4 col-sm-6 mb-4 text-center">
-            <img
-              src="https://images.pexels.com/photos/31653093/pexels-photo-31653093.jpeg"
-              alt="tgps History"
-              className="img-fluid rounded"
-            />
-            <Link to='/guiding-force' className="text-white"><p className="mt-3 fw-bold">Guiding Force</p></Link>
-            <div className="border-bottom border-white opacity-50"></div>
+          {/* CARD 3 */}
+          <div className="col-lg-2 col-md-4 col-6">
+            <div className="card premium-card text-white border-0">
+              <img src="https://images.pexels.com/photos/2763246/pexels-photo-2763246.jpeg" className="premium-img" alt="" />
+              <div className="card-body text-center px-1 py-2">
+                <Link to='/guiding-force'><h6 className="fw-semibold m-0 text-light">Guiding Force</h6></Link>
+              </div>
+            </div>
           </div>
 
-          {/* 3 — the tgps story */}
-          <div className="col-lg-3 col-md-4 col-sm-6 mb-4 text-center">
-            <img
-              src="https://images.pexels.com/photos/31653093/pexels-photo-31653093.jpeg"
-              alt="Our leadership"
-              className="img-fluid rounded"
-               style={{
-            height: "160px",
-            width: "70%",
-            objectFit: "cover",
-            borderRadius: "12px"
-          }}
-            />
-           <Link to='/thetgps-story' className="text-white"><p className="mt-3 fw-bold">The TGPS Story</p></Link> 
-            <div className="border-bottom border-white opacity-50"></div>
+          {/* CARD 4 */}
+          <div className="col-lg-2 col-md-4 col-6">
+            <div className="card premium-card text-white border-0">
+              <img src="https://images.pexels.com/photos/2763246/pexels-photo-2763246.jpeg" className="premium-img" alt="" />
+              <div className="card-body text-center px-1 py-2">
+                <Link to='/thetgps-story'><h6 className="fw-semibold m-0 text-light">The TGPS Story</h6></Link>
+              </div>
+            </div>
           </div>
-          {/* Right side links */}
-          <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <ul className="list-unstyled fw-bold">
-              <li className="mb-2">
-               <Link to='/innovation-hub'> <p className="text-white text-decoration-none">
-                  Innovation Hub
-                </p></Link>
-              </li>
-              <li className="mb-2">
-                <Link to='/the-tgpshonour'><p className="text-white text-decoration-none">
-                  The TGPS Honour Wall
-                </p></Link>
-              </li>
-              <li className="mb-2">
-             <Link to='/brand-signature'><p className="text-white text-decoration-none">
-                Brand Signature
-                </p></Link>   
-              </li>
-              <li className="mb-2">
-              <Link to='/view-point'><p className="text-white text-decoration-none">
-                  Our Viewpoint
-                </p></Link>  
-              </li>
-            </ul>
+
+          {/* === TEXT LINKS BOX (REPLACES 5th IMAGE) === */}
+          <div className="col-lg-4 col-md-6 col-12">
+            <div className="p-3 d-flex flex-column gap-2 text-white text-start link-box">
+
+              <Link to="/innovation-hub" className="fw-semibold text-white text-decoration-none">
+                Innovation Hub
+              </Link>
+
+              <Link to="/the-tgpshonour" className="fw-semibold text-white text-decoration-none">
+               The TGPS Honour Wall
+              </Link>
+
+              <Link to="/brand-signature" className="fw-semibold text-white text-decoration-none">
+               Brand Signature
+              </Link>
+
+              <Link to="/view-point" className="fw-semibold text-white text-decoration-none">
+                Our Viewpoint
+              </Link>
+
+            </div>
           </div>
-          </div>
-           {/* Button */}
+
+        </div>
+
+        {/* Button */}
         <div className="text-center mt-4">
-          <button className="btn px-4 py-2 fw-bold" style={{backgroundColor:'#77DDF5',borderRadius:'0'}}>
+          <button className="btn fw-bold px-4" style={{backgroundColor:'#77DDF5',borderRadius:'0px'}}>
             View Our Company →
           </button>
         </div>
-           </div>
-
-                         
-                         
-          </section>
       </div>
+
+      {/* STYLE */}
+      <style>
+        {`
+          .premium-img {
+            height: 160px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+          }
+
+          .premium-card {
+            background: transparent;
+          }
+
+          .premium-card:hover {
+            transform: translateY(-4px);
+            transition: .3s;
+          }
+
+          .link-box {
+            background: rgba(255,255,255,0.05);
+            border-radius: 6px;
+          }
+        `}
+      </style>
+    </section>
       
 
                           {/* PHOTO WITH NAVIGATION SECTION */}
 
 
 
-               
+                 {/* <div className="d-flex">
+            <div>
+              <img src="https://images.pexels.com/photos/34995714/pexels-photo-34995714.jpeg" alt="" />
+              <a href="">link1</a>
+            </div>
+
+            <div>
+              <img src="https://images.pexels.com/photos/34995714/pexels-photo-34995714.jpeg" alt="" />
+              <a href="">link1</a>
+            </div>
+
+            <div>
+              <img src="https://images.pexels.com/photos/34995714/pexels-photo-34995714.jpeg" alt="" />
+              <a href="">link1</a>
+            </div>
+          </div> */}
+
 
 
 

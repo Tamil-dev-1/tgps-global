@@ -1,0 +1,35 @@
+.feature-scroll {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+}
+
+.feature-scroll::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+.feature-card {
+  min-width: 85%;         /* Mobile → 1 card */
+  scroll-snap-align: start;
+  background: #ffffff;
+  border: 1px solid #eee;
+  transition: 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .feature-card {
+    min-width: 45%;       /* Tablet → 2 cards */
+  }
+}
+
+@media (min-width: 992px) {
+  .feature-card {
+    min-width: 30%;       /* Desktop → 3 cards */
+  }
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+}

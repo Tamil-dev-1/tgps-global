@@ -90,14 +90,14 @@ const Footer = () => {
               Contact - Thai Green Power Solution Company Limited
             
             </Link>
-           <Link to='/aboutus'
+           <Link to='/ourcompany'
               className="text-white text-decoration-underline fw-semibold">
-              AboutUs
+              Our Company
             
            </Link>
-            <Link to='/the-group'
+            <Link to='/the-brands'
             className="text-white text-decoration-underline fw-semibold">
-              The Group
+              Brand
             
             </Link>
            <Link to='/news'
@@ -115,6 +115,9 @@ const Footer = () => {
               Contact
             
             </Link>
+            <a href="https://greencarpet.world/" className="text-white text-decoration-underline fw-semibold">
+              Green Carpet
+            </a>
             <a href="#" className="text-white text-decoration-underline fw-semibold">
               Accessibility
             </a>
