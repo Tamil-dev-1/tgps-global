@@ -1,167 +1,247 @@
-.brand-wrapper {
-  width: 100%;
-  min-height: 50vh;
-  overflow: hidden;
-  display: flex;
+.brand-header {
+  text-align: center;
+  padding: clamp(48px, 8vw, 96px) 0;
 }
 
-/* LEFT SIDE */
-.left-side {
-  background: #ffffff;
-  min-height: 50vh;
-  padding: 40px 20px;
-}
-
-.brand-logo {
-  width: 180px;
-  max-width: 80%;
-}
-
-/* RIGHT SIDE */
-.right-side {
-  background: #4276ff;
-  min-height: 50vh;
-  color: #fff;
-  padding: 40px 20px;
-  clip-path: polygon(18% 0%, 100% 0, 100% 100%, 0% 100%);
-  border-bottom-left-radius: 30px;
-}
-
-.signature-text {
-  font-size: 48px;
+.brand-title {
+  font-size: clamp(28px, 5vw, 56px);
   font-weight: 700;
-  text-align: left;
-  line-height: 1.1;
-}
-
-/* ------------ MOBILE FIXES ------------ */
-
-@media (max-width: 768px) {
-  .left-side,
-  .right-side {
-    min-height: auto;        /* FIX 1 – remove VH height */
-    height: auto;            /* FIX 2 */
-    padding: 50px 20px;
-  }
-
-  .right-side {
-    clip-path: none;         /* FIX 3 – angle is removed for mobile so text doesn’t hide */
-    border-radius: 0;
-  }
-
-  .signature-text {
-    font-size: 32px;         /* FIX 4 – reduce heading size */
-    text-align: center;
-  }
-
-  .brand-logo {
-    width: 150px;            /* FIX 5 – adjust logo for mobile */
-  }
-}
-
-
-
-                          /* Section ======= 2 */
-
-.section-limit{
-    width: 70%;
-    margin: 0 auto;
-}                          
-
- .circle-wrapper {
-  background: #ffffff;
-}
-
-/* LEFT SECTION */
-.main-title {
-  font-size: clamp(28px, 3vw, 50px);
-  font-weight: 600;
-  color: #1a0f7a;
-  line-height: 1.1;
-}
-
-.highlight {
-  background: #c4ffb1;      /* green highlight */
-  padding: 5px 15px;
-  border-radius: 40px;
-  display: inline-block;
-  margin: 8px 0;
-}
-
-/* RIGHT SECTION */
-.right-section {
-  border-left: 2px solid #dadada;
-  padding-left: 40px;
-}
-
-.right-heading {
-  font-size: 18px;
-  font-weight: 700;
-  color: #3232ff; /* bright blue like screenshot */
-  letter-spacing: 1px;
-}
-
-.right-text {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-/* BULLET POINTS */
-.points {
-  list-style: none;
-  padding: 0;
+  letter-spacing: -0.8px;
+  color: #001F82;
   margin: 0;
 }
 
-.points li {
+/* Optional underline accent */
+.brand-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #005EFF;
+  margin: 14px auto 0;
+  border-radius: 4px;
+}
+
+
+
+.text-section {
+  min-height: 100vh;
+  
+  background: #ffffff;
   display: flex;
   align-items: center;
-  font-size: 17px;
-  margin-bottom: 12px;
 }
 
-.dot {
-  width: 14px;
-  height: 14px;
-  background: #3232ff;
+/* CENTER WRAPPER */
+.content-wrapper {
+  width: 60%;            /* left 20% + right 20% */
+  max-width: 1100px;     /* prevents too wide on big screens */
+  margin: 0 auto;        /* center align */
+}
+
+/* Heading */
+.text-title {
+ font-size: clamp(28px, 5vw, 45px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111;
+}
+
+/* Sub text */
+.hero-subtext {
+  margin-top: 16px;
+  color: #777;
+  font-size: 15px;
+}
+
+.hero-subtext span {
+  font-weight: 600;
+  color: #111;
+}
+
+/* Search */
+.search-box {
+  margin-top: 36px;
+  max-width: 680px;
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  padding: 8px;
+  /* border: 2px solid black; */
+}
+
+.search-input {
+  border: none;
+  padding: 16px;
+  font-size: 14px;
+}
+
+.search-input:focus {
+  box-shadow: none;
+}
+
+.search-btn {
+  background: #111;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0 22px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.search-btn:hover {
+  background: #000;
+}
+
+/* Popular Card */
+.popular-card {
+  margin-top: 28px;
+  max-width: 680px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+.popular-title {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.popular-title span {
+  color: #999;
+}
+
+/* Candidate Row */
+.candidate {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.candidate img {
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  margin-right: 12px;
 }
 
-/* ---- MOBILE RESPONSIVE ---- */
+.candidate p {
+  font-size: 13px;
+  margin: 0;
+  color: #555;
+}
 
-@media (max-width:768px){
-    .section-limit{
-        width: 90%;
-    }
+.candidate strong {
+  color: #111;
+}
+
+
+
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 1200px) {
+  .content-wrapper {
+    width: 75%;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-wrapper {
+    width: 85%;
+  }
 }
 
 @media (max-width: 768px) {
-  .right-section {
-    border-left: none;
-    padding-left: 0;
-    margin-top: 40px;
+  .content-wrapper {
+    width: 90%;
   }
 
-  .main-title {
-    font-size: 40px;
-    text-align: center;
-  }
-
-  .highlight {
-    display: inline-block;
-    margin: 5px auto;
-  }
-
-  .right-heading, .right-text, .points li {
-    text-align: left;
+  .text-title {
+    font-size: 36px;
   }
 }
-                         
-.bi {
-  margin-right: 8px;
-  color: green;
-  font-size: 1.8rem;
+
+@media (max-width: 576px) {
+  .content-wrapper {
+    width: 100%;
+    padding: 0 16px;     /* mobile safe padding */
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+/* .text-title {
+  font-weight: 700;
+  color: #1f36c7;
+} */
+
+/* .search-box {
+  max-width: 420px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.search-input {
+  border: none;
+  box-shadow: none;
+} */
+
+/* .search-btn {
+  background: #1f36c7;
+  color: #fff;
+  border-radius: 0;
+} */
+/* 
+.popular-card {
+  max-width: 700px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+} */
+
+/* .candidate {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.candidate img {
+  width: 24px;
+  height: 24px;
+} */
+
+.multi-list {
+  list-style: none;
+  padding-left: 22px;
+}
+
+.multi-list li {
+  position: relative;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #333;
+}
+
+.multi-list li::before {
+  content: "✔";
+  position: absolute;
+  left: -22px;
+  color: #1f36c7;
+  font-weight: bold;
 }

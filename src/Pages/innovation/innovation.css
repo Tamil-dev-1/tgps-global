@@ -1,126 +1,64 @@
-/* ------------------ SECTION 1 (Hero Background Fixed) ------------------ */
+/* Hero section with overlay */
 .hero-section {
-  height: 100vh;
-  background-image: url("https://images.pexels.com/photos/13327867/pexels-photo-13327867.jpeg");
+  height: 70vh;
+  background: url('https://images.pexels.com/photos/934062/pexels-photo-934062.jpeg') no-repeat center center;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed; /* Important */
   position: relative;
-  padding: 60px 0;
 }
 
-.hero-section::before {
-  content: "";
+.hero-section::after {
+  content: '';
   position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55); /* dark overlay */
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(2,74,127,0.7);
+  z-index: 0; /* behind text */
 }
 
 .hero-section .container {
-  position: relative;
-  z-index: 3;
+  position: relative; 
+  z-index: 1; /* above overlay */
 }
 
-/* ------------------ SECTION 2 (Premium Snap Carousel) ------------------ */
-.feature-scroll {
-  overflow-x: auto;
+
+/* Carousel cards */
+.story-carousel {
   scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 10px;
+}
+.story-card {
+  min-width: 250px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+.story-card:hover {
+  transform: translateY(-10px);
 }
 
-.feature-scroll::-webkit-scrollbar {
-  display: none;
+/* Future Tracks cards hover */
+.track-card {
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.track-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
-.feature-card {
-  min-width: 85%; /* Mobile - 1 item */
-  scroll-snap-align: start;
-  border: 1px solid #eee;
-  transition: 0.3s ease;
+/* Sidebar */
+.sidebar {
   background: #fff;
 }
 
-.feature-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+/* Participation cards hover */
+.participation-card {
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.participation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
-@media (min-width: 768px) {
-  .feature-card { min-width: 45%; } /* Tablet - 2 items */
-}
-
-@media (min-width: 992px) {
-  .feature-card { min-width: 30%; } /* Desktop - 3 items */
-}
-
-/* ------------------ SECTION 3 (2×2 Grid Boxes) ------------------ */
-.bg-white {
-  background: #fff;
-}
-
-.rounded-4 {
-  border-radius: 18px;
-}
-
-
-
-
-
-
-      /* INNOVATIVE CAROUSEL SECTION */
-
-
-      .feature-slide-card {
-  background: #ffffff;
-  border: 1px solid #eee;
-  transition: 0.3s ease;
-  height: 100%;
-}
-
-.feature-slide-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
-
-.swiper {
-  padding-bottom: 50px;
-}
-
-.swiper-pagination-bullet {
-  background: #000 !important;
-  opacity: 0.3;
-}
-
-.swiper-pagination-bullet-active {
-  background: #000 !important;
-  opacity: 1;
-}
-
-
-
-/* Outer wrapper */
-.excel-wrapper {
-  width: 100%;
-}
-
-/* Top section gradient */
-.excel-top {
-  background: linear-gradient(90deg, #3a3dbf, #2b2f8c);
-}
-
-/* Bottom section background */
-.excel-bottom {
-  background: #0c1c59;
-}
-
-/* Bullet dot */
-.excel-dot {
-  width: 10px;
-  height: 10px;
-  background: white;
-  border-radius: 50%;
-  margin-right: 12px;
-  margin-top: 8px;
-  flex-shrink: 0;
+/* CTA section */
+.cta-section {
+  background: linear-gradient(90deg, #024A7F, #24A7F7);
 }

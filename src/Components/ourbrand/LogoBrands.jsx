@@ -21,16 +21,23 @@ const ScrollCinematicBrands = () => {
   const overlayRef = useRef(null);
 
   const brands = [
-    { id: 1, name: "DEMASKLOGO", img: DemaskLogo },
-    { id: 2, name: "FrcX", img: frecx },
-    { id: 3, name: "Fun", img: Fun },
-    { id: 4, name: "Fv", img: fv },
-    { id: 5, name: "Green Carpet", img: greenc },
-    { id: 6, name: "Mettawatts", img: mettawatts },
     { id: 7, name: "Tgpsinfo", img: tgpsinfo },
-    { id: 8, name: "Zigoo", img: zigoo },
+    { id: 2, name: "FrcX", img: frecx },
     { id: 9, name: "Transcendent", img: transcendent },
-    { id: 10, name: "Freccharge", img: freccharge },
+    { id: 4, name: "Fv", img: fv },
+     { id: 10, name: "Freccharge", img: freccharge },
+    { id: 3, name: "Fun", img: Fun },
+    { id: 8, name: "Zigoo", img: zigoo },
+     { id: 6, name: "Mettawatts", img: mettawatts },
+    
+    { id: 5, name: "Green Carpet", img: greenc },
+   
+    
+    
+    
+   
+    { id: 1, name: "DEMASKLOGO", img: DemaskLogo },
+    
   ];
 
   useEffect(() => {

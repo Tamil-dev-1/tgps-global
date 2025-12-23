@@ -41,10 +41,10 @@ const Footer = () => {
       </div>
 
       {/* Middle Section */}
-      <div className="py-5" style={{backgroundColor:'#F7F7EF'}}>
+      {/* <div className="py-5" style={{backgroundColor:'#F7F7EF'}}>
         <div className="container">
           <div className="row text-center text-md-start align-items-center">
-            {/* Left */}
+            
             <div className="col-md-6 mb-4 mb-md-0">
               <h2 className="fw-bold fs-1 fs-md-1 fs-lg-1" style={{color:'#005EFF'}}>
                 Connect with us
@@ -59,7 +59,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Right */}
+            
             <div className="col-md-6 ">
               <h2 className="fw-bold fs-1 fs-md-1 fs-lg-1" style={{color:'#005EFF'}}>
                 Contact us
@@ -67,16 +67,18 @@ const Footer = () => {
               <p className="mt-3 mb-4 fs-6 fs-md-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, similique voluptatem. Voluptatibus, veniam.
               </p>
+              <Link to='/contact'>
               <button
                 className="btn btn-info fw-semibold border-0 rounded-0 px-4 py-2"
                 style={{ fontSize: "1rem", color:'#7705BC'}}
               >
                 Contact us <FaArrowRight className="ms-2" size={18} />
               </button>
+              </Link>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Bottom Blue Footer */}
       <div
@@ -111,7 +113,7 @@ const Footer = () => {
             
            </Link>
             <Link to='/contact'
-             className="text-white text-decoration-underlinefw-semibold">
+             className="text-white text-decoration-underline fw-semibold">
               Contact
             
             </Link>
@@ -129,7 +131,7 @@ const Footer = () => {
           <div className="text-center text-md-start mt-4">
             <h6 className="fw-semibold mb-3">Thai Green Power Solution Company Limited</h6>
             <small>
-              © 2025 Copyright:TGPSAll rights Reserved |{" "}
+              © 2025 Copyright:TGPSAll rights Reserved |{""}
               <a
                 href="#"
                 className="text-white text-decoration-underline fw-semibold"

@@ -1,0 +1,28 @@
+    .news-bg {
+  background-image: url("/src/assets/images/News/gradientbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-bg {
+  background-color: #0A29FE;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-bg:hover {
+  background-color: #005EFF;
+  color: #ffffff;
+}
+
+.left-card-bg {
+  background-color: #0A29FE;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.left-card-bg:hover {
+  background-color: #005EFF;
+  color: #ffffff;
+}

@@ -1,409 +1,166 @@
-
-
-
+// InnovationHubPremium.js
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./innovation.css";
-import InnovationCarousel from "./InnovationCarousel";
-export default function InnovationHub() {
-  return (
-    <>
-      {/* ------------------- SECTION 1 (Fixed Background Hero) ------------------- */}
-      <section className="hero-section d-flex align-items-center">
-         <div
-    className="container text-white text-center text-md-start"
-    style={{
-      fontSize: "clamp(14px, 2.5vw, 18px)",
-      lineHeight: "1.6",
-    }}
-  >
-    <h1 className="display-4 fw-bold">
-      INNOVATION HUB – FreCx LABS BY TGPS
-    </h1>
+import  './innovation.css';
 
-    <p className="lead mt-4 w-100 w-md-75 mx-auto mx-md-0 text-center text-md-start">
-      Where industries evolve, ideas transform, and the future takes shape.
-      <br /><br />
-      Innovation isn’t a department here — it’s a culture. Future Labs is
-      our global R&D ecosystem where clean energy, electric mobility,
-      decentralization, and sustainability merge to create solutions that
-      shape tomorrow.
-      <br /><br />
-      Every concept we explore, every prototype we build, and every
-      partnership we form has one purpose: To make the world cleaner,
-      smarter, and interconnected.
-    </p>
-  </div>
+const InnovationHub = () => {
+  return (
+    <div className="innovation-hub">
+
+      {/* Hero Section */}
+      <section className="hero-section text-white d-flex align-items-center">
+        <div className="container text-center">
+          <h1 className="display-4 fw-bold">INNOVATION HUB – FreCx LABS by TGPS</h1>
+          <p className="lead mt-3">
+            Where industries evolve, ideas transform, and the future takes shape.
+          </p>
+          <p>Innovation isn’t a department here — <strong>it’s a culture.</strong></p>
+        </div>
       </section>
 
-      {/* ------------------- SECTION 2 (Premium Carousel) ------------------- */}
-
-
-   <InnovationCarousel  />
-
-
-
-
-
-
-      {/* ------------------- SECTION 3 (2×2 Text Box Grid) ------------------- */}
-
-
-      
-  <section className="py-5" >
-    <div className="container-fluid">
-     <div className="text-center">
-       <h1 className="fw-bold" style={{color:'#001F82'}}>FUTURE TRACKS</h1>
-      <p style={{color:'#3232FF'}}>Choose your track. Explore your future</p>
-     </div>
-      <section className="circle-wrapper py-5">
-      <div className="container-fluid section-limit">
-        <div className="row align-items-start">
-
-          {/* LEFT SIDE */}
-          <div className="col-md-6 left-section">
-            <h1 className="main-title">
-              <span className="highlight">Clean Energy  </span>
-              <br />
-              Futures
-            </h1>
+      {/* Innovation Stories Carousel */}
+      <section className="py-5">
+        <div className="container">
+          <h2 className="mb-4 text-center">Innovation Stories</h2>
+          <div className="d-flex overflow-auto story-carousel gap-4 py-3">
+            {[
+              {
+                title: "The Solar Shift",
+                desc: "High-efficiency solar grids powering industries and reducing energy dependency."
+              },
+              {
+                title: "Mobility Without Emissions",
+                desc: "From EV manufacturing to predictive fleet management, redefining how the world moves."
+              },
+              {
+                title: "The Rise of Decentralized Work",
+                desc: "DeMask — an identity-secure, decentralized meeting platform transforming communication."
+              },
+              {
+                title: "Blockchain for a Greener Planet",
+                desc: "Frequency Chain X turning renewable energy tracking into a transparent global system."
+              }
+            ].map((story, idx) => (
+              <div key={idx} className="card story-card shadow-sm flex-shrink-0">
+                <div className="card-body">
+                  <h5 className="card-title">{story.title}</h5>
+                  <p className="card-text">{story.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
-
-          {/* RIGHT SIDE */}
-          <div className="col-md-6 right-section">
-           
-
-           
-
-            <ul className="points list-unstyled ">
-              <li><span className="dot"></span>  Solar Innovation</li>
-              <li><span className="dot"></span> Net Zero Missions</li>
-              <li><span className="dot"></span> Carbon Reduction Models</li>
-            </ul>
-              <p className="right-text">
-           Where sustainability meets technology to build planet-positive systems. 
-            </p>
-          </div>
-
         </div>
-      </div>
-    </section> 
+      </section>
 
+      {/* Sidebar + Main Content Layout */}
+      <section className="py-5 bg-light">
+        <div className="container">
+          <div className="row">
+            {/* Sidebar */}
+            <div className="col-lg-3 mb-4 mb-lg-0">
+              <div className="sidebar shadow-sm p-4 rounded">
+                <h5 className="fw-bold mb-3">Quick Navigation</h5>
+                <ul className="nav flex-column">
+                  <li className="nav-item"><a href="#future-tracks" className="nav-link">Future Tracks</a></li>
+                  <li className="nav-item"><a href="#pipeline" className="nav-link">Idea-to-Impact Pipeline</a></li>
+                  <li className="nav-item"><a href="#participation" className="nav-link">Participation Zone</a></li>
+                </ul>
+              </div>
+            </div>
 
+            {/* Main Content */}
+            <div className="col-lg-9">
+              {/* Future Tracks */}
+              <div id="future-tracks" className="mb-5">
+                <h2 className="mb-4">Future Tracks</h2>
+                <div className="row g-4">
+                  {[
+                    {
+                      title: "Clean Energy Futures",
+                      items: ["Solar Innovation", "Net Zero Missions", "Carbon Reduction Models"],
+                      desc: "Where sustainability meets technology to build planet-positive systems."
+                    },
+                    {
+                      title: "Mobility 2.0",
+                      items: ["EV Manufacturing", "Charging Networks", "Fleet Automation", "Zero-Emission Deliveries"],
+                      desc: "Reimagining transportation from factories to last-mile logistics."
+                    },
+                    {
+                      title: "Decentralized World",
+                      items: ["Frequency Chain X", "DApp Development", "DeMask", "Cliff Chat"],
+                      desc: "Empowering industries with transparency, security, and digital freedom."
+                    },
+                    {
+                      title: "Innovation Alliances",
+                      items: ["College Collaboration", "Startup Partnerships", "Developer Community", "Joint Ventures & Corporate Alliances"],
+                      desc: "Co-creating solutions with the world’s brightest minds."
+                    }
+                  ].map((track, idx) => (
+                    <div key={idx} className="col-md-6">
+                      <div className="card track-card h-100 shadow-sm">
+                        <div className="card-body">
+                          <h5 className="card-title">{track.title}</h5>
+                          <ul>
+                            {track.items.map((item, i) => <li key={i}>{item}</li>)}
+                          </ul>
+                          <p className="card-text">{track.desc}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
-  <section className="circle-wrapper py-5">
-      <div className="container-fluid section-limit">
-        <div className="row align-items-start">
+              {/* Idea-to-Impact Pipeline */}
+              <div id="pipeline" className="mb-5">
+                <h2 className="mb-4">Idea-to-Impact Pipeline</h2>
+                <ol className="list-group list-group-numbered">
+                  <li className="list-group-item">Discover the Challenge: Identify gaps in energy, mobility, or digital ecosystems.</li>
+                  <li className="list-group-item">Prototype the Solution: Engineers and research partners co-create functional models.</li>
+                  <li className="list-group-item">Test, Validate & Improve: Proof-of-concept deployments and user trials.</li>
+                  <li className="list-group-item">Scale Globally: Solutions become products, services, and technologies deployed worldwide.</li>
+                </ol>
+              </div>
 
-          {/* LEFT SIDE */}
-          <div className="col-md-6 left-section">
-            <h1 className="main-title">
-              <span className="highlight">Mobility </span>
-              <br />
-              2.0 
-            </h1>
+              {/* Participation Zone */}
+              <div id="participation">
+                <h2 className="mb-4">Participation Zone</h2>
+                <div className="row g-4">
+                  {[
+                    {title: "Students 🎓", items: ["Real-time industry projects", "Innovation challenges", "Internships & research access"]},
+                    {title: "Startups 🚀", items: ["Acceleration & co-incubation", "Market access", "Tech integration & testing"]},
+                    {title: "Developers 💻", items: ["Build on Frequency Chain X", "Hackathons", "API & SDK access"]},
+                    {title: "Corporates 🏢", items: ["R&D partnerships", "Technology licensing", "Turnkey project solutions"]},
+                    {title: "Innovators 💡", items: ["Submit ideas", "Join think tanks", "Mentorship from TGPS experts"]}
+                  ].map((zone, idx) => (
+                    <div key={idx} className="col-md-6 col-lg-4">
+                      <div className="card participation-card h-100 shadow-sm">
+                        <div className="card-body">
+                          <h5 className="card-title">{zone.title}</h5>
+                          <ul>
+                            {zone.items.map((item,i) => <li key={i}>{item}</li>)}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+            </div>
           </div>
-
-          {/* RIGHT SIDE */}
-          <div className="col-md-6 right-section">
-            <ul className="points list-unstyled ">
-              <li><span className="dot"></span>  EV Manufacturing</li>
-              <li><span className="dot"></span> Charging Network</li>
-              <li><span className="dot"></span>  Fleet Automation</li>
-              <li><span className="dot"></span>  Zero-Emission Deliveries</li>
-            </ul>
-              <p className="right-text">
-           Reimagining transportation from factories to last-mile logistics. 
-            </p>
-          </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
-
-    <section className="circle-wrapper py-5">
-      <div className="container-fluid section-limit">
-        <div className="row align-items-start">
-
-          {/* LEFT SIDE */}
-          <div className="col-md-6 left-section">
-            <h1 className="main-title">
-              <span className="highlight"> Decentralized</span>
-              <br />
-              World 
-            </h1>
-          </div>
-
-          {/* RIGHT SIDE */}
-          <div className="col-md-6 right-section">
-            <ul className="points list-unstyled ">
-              <li><span className="dot"></span>  Frequency Chain X</li>
-              <li><span className="dot"></span> DApp Development</li>
-              <li><span className="dot"></span>  DeMask (Decentralized Meetings)</li>
-              <li><span className="dot"></span>  Cliff Chat (Decentralized Communication)</li>
-            </ul>
-              <p className="right-text">
-           Empowering industries with transparency, security, and limitless digital freedom.
-            </p>
-          </div>
-
+      {/* Footer CTA */}
+      <section className="py-5 text-center text-white cta-section">
+        <div className="container">
+          <h2>Join the Innovation Hub</h2>
+          <p>Shape the future with TGPS. Together, we engineer the world of tomorrow.</p>
         </div>
-      </div>
-    </section>
-
-
-      <section className="circle-wrapper py-5">
-      <div className="container-fluid section-limit">
-        <div className="row align-items-start">
-
-          {/* LEFT SIDE */}
-          <div className="col-md-6 left-section">
-            <h1 className="main-title">
-              <span className="highlight">  Innovation </span>
-              <br />
-              Alliances 
-            </h1>
-          </div>
-
-          {/* RIGHT SIDE */}
-          <div className="col-md-6 right-section">
-            <ul className="points list-unstyled ">
-              <li><span className="dot"></span>  College Collaboration</li>
-              <li><span className="dot"></span> Startup Partnerships</li>
-              <li><span className="dot"></span>  Developer Community</li>
-              <li><span className="dot"></span> Joint Ventures & Corporate Alliances</li>
-            </ul>
-              <p className="right-text">
-           Co-creating solutions with the world’s brightest minds.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-      
+      </section>
     </div>
-  </section>
-
-    
-
-
-
-
-
-
-     
-
-
-                                      {/* Idea-to-Impact Pipeline */}
-
-                                      <div className="container my-5">
-      <div className="excel-wrapper  rounded-4 overflow-hidden">
-
-        {/* ---- TOP HEADING SECTION ---- */}
-        <div className="excel-top p-4 text-center">
-          <h3 className="fw-bold text-white m-0">Idea-to-Impact Pipeline</h3>
-          <p className="text-white mt-2 mb-0">
-            A simple, powerful map of how TGPS turns ideas into global solutions.
-          </p>
-        </div>
-
-        {/* ---- LIST SECTION ---- */}
-        <div className="excel-bottom p-4">
-
-          <ul className="list-unstyled m-0">
-
-            <li className="d-flex mb-4">
-              <span className="excel-dot"></span>
-              <p className="m-0 text-white">
-                <strong>Discover the Challenge:</strong> We identify real-world gaps in energy, mobility, or digital ecosystems.
-              </p>
-            </li>
-
-            <li className="d-flex mb-4">
-              <span className="excel-dot"></span>
-              <p className="m-0 text-white">
-                <strong>Prototype the Solution:</strong> Our engineers, developers, and research partners co-create functional models.
-              </p>
-            </li>
-
-            <li className="d-flex mb-4">
-              <span className="excel-dot"></span>
-              <p className="m-0 text-white">
-                <strong>Test, Validate & Improve:</strong> Proof-of-concept deployments, user trials, energy audits, and system evaluations.
-              </p>
-            </li>
-
-            <li className="d-flex mb-4">
-              <span className="excel-dot"></span>
-              <p className="m-0 text-white">
-                <strong>Scale Globally:</strong> Solutions become products, services, and technologies deployed across industries.
-              </p>
-            </li>
-
-           
-
-          </ul>
-        </div>
-      </div>
-    </div>
-
-                                  {/* Participation Zone */}
-
-
-   <div className="d-flex justify-content-center py-5" style={{ background: "#001F82" }}>
-  {/* Center rectangle */}
-  <div
-    className="w-100"
-    style={{
-      maxWidth: "900px",
-      borderRadius: "12px",
-      overflow: "hidden",
-    }}
-  >
-    <h1 className="text-center text-white">Participation Zone</h1>
-    <p className="text-white fw-bold text-center mb-5">
-      Innovation grows faster when more minds enter the room.
-    </p>
-
-    {/* ---------- REUSABLE STYLE ---------- */}
-    
-
-    {/* ---------- ROW 1 ---------- */}
-    <div className="row align-items-center py-4 mx-0" style={{ background: "#0d2abf" }}>
-      <div className="col-md-3 text-center py-3  border-end border-light">
-        <div
-          className="d-flex justify-content-center align-items-center text-center fw-bold"
-          style={{
-            width: "120px",
-            height: "120px",
-            color: "#fff",
-            fontSize: "clamp(16px, 3vw, 30px)",
-            margin: "0 auto",
-          }}
-        >
-          For Students
-        </div>
-      </div>
-
-      <div className="col-md-9 text-white">
-        <ul style={{ lineHeight: "1.6" }}>
-          <li>Real-time industry projects</li>
-          <li>Innovation challenges</li>
-          <li>Internships & research access</li>
-        </ul>
-      </div>
-    </div>
-
-    {/* ---------- ROW 2 ---------- */}
-    <div className="row align-items-center py-4 mx-0" style={{ background: "#203ccf" }}>
-      <div className="col-md-3 text-center py-3 border-end border-light">
-        <div
-          className="d-flex justify-content-center align-items-center text-center fw-bold"
-          style={{
-            width: "120px",
-            height: "120px",
-            color: "#fff",
-            fontSize: "clamp(16px, 3vw, 30px)",
-            margin: "0 auto",
-          }}
-        >
-          For Startups
-        </div>
-      </div>
-
-      <div className="col-md-9 text-white">
-        <ul style={{ lineHeight: "1.6" }}>
-          <li>Acceleration and co-incubation</li>
-          <li>Market access</li>
-          <li>Tech integration & testing</li>
-        </ul>
-      </div>
-    </div>
-
-    {/* ---------- ROW 3 ---------- */}
-    <div className="row align-items-center py-4 mx-0" style={{ background: "#0d2abf" }}>
-      <div className="col-md-3 text-center py-3 border-end border-light">
-        <div
-          className="d-flex justify-content-center align-items-center text-center fw-bold"
-          style={{
-            width: "120px",
-            height: "120px",
-            color: "#fff",
-            fontSize: "clamp(16px, 3vw, 30px)",
-            margin: "0 auto",
-          }}
-        >
-          For Developers
-        </div>
-      </div>
-
-      <div className="col-md-9 text-white">
-        <ul style={{ lineHeight: "1.6" }}>
-          <li>Build on Frequency Chain X</li>
-          <li>Attend hackathons</li>
-          <li>API & SDK access</li>
-        </ul>
-      </div>
-    </div>
-
-    {/* ---------- ROW 4 ---------- */}
-    <div className="row align-items-center py-4 mx-0" style={{ background: "#203ccf" }}>
-      <div className="col-md-3 text-center py-3 border-end border-light">
-        <div
-          className="d-flex justify-content-center align-items-center text-center fw-bold"
-          style={{
-            width: "120px",
-            height: "120px",
-            color: "#fff",
-            fontSize: "clamp(16px, 3vw, 30px)",
-            margin: "0 auto",
-          }}
-        >
-          For Corporates
-        </div>
-      </div>
-
-      <div className="col-md-9 text-white">
-        <ul style={{ lineHeight: "1.6" }}>
-          <li>R&D partnerships</li>
-          <li>Technology licensing</li>
-          <li>Turnkey project solutions</li>
-        </ul>
-      </div>
-    </div>
-
-    {/* ---------- ROW 5 ---------- */}
-    <div className="row align-items-center py-4 mx-0" style={{ background: "#0d2abf" }}>
-      <div className="col-md-3 text-center py-3 border-end border-light">
-        <div
-          className="d-flex justify-content-center align-items-center text-center fw-bold"
-          style={{
-            width: "120px",
-            height: "120px",
-            color: "#fff",
-            fontSize: "clamp(16px, 3vw, 30px)",
-            margin: "0 auto",
-          }}
-        >
-          For Innovators
-        </div>
-      </div>
-
-      <div className="col-md-9 text-white">
-        <ul style={{ lineHeight: "1.6" }}>
-          <li>Submit ideas</li>
-          <li>Join think tanks</li>
-          <li>Get mentorship from TGPS experts</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-    </>
   );
-}
+};
 
+export default InnovationHub;

@@ -25,7 +25,7 @@ export default function Navbar() {
   // UPDATED MENU WITH EXTERNAL LINK
   const menuItems = [
     { label: "Our Company", path: "/ourcompany" },
-    { label: "Brands", path: "/the-brands" },
+    { label: "The Group", path: "/the-group" },
 
     // ✅ NEW EXTERNAL LINK
     {
@@ -47,6 +47,7 @@ export default function Navbar() {
         position="static"
         sx={{
           backgroundColor: "#001F82",
+          // backgroundColor: "#40E0D0",
           color: "#fff",
           boxShadow: "none",
         }}
@@ -174,7 +175,7 @@ export default function Navbar() {
                       fontSize: { md: "0.9rem", lg: "0.9rem" },
                     }}
                   >
-                    Search site
+                    Download
                   </Button>
                 </Box>
               </Grid>

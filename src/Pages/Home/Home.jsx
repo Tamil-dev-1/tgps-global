@@ -1,20 +1,28 @@
 
-import React from 'react'
-
- 
+import React from 'react' 
 import "./Home.css";
 // import OurBrand from '../../Components/ourbrand/OurBrand';
 import { motion } from "framer-motion";
 import BlogCarousel from '../../Components/Blog/BlogCarousel';
 import LatestNews from '../../Components/LatestNews/LatestNews';
 import LogoBrands from '..//..//Components/ourbrand/LogoBrands'
+import HorizontalScroll from '..//..//Components/horizontalScroll/HorizontalScroll'
+// import LogoGoals from '..//..//Components/logoGoals/LogoGoals'
+import { Link } from 'react-router-dom';
 //import HeroSection from '../../Components/HeroSection';
 import ErrorBoundary from "../../error/errorBoundary";
 import HeroBgImg from '..//..//assets/images/Home/heroimg.jpeg'
 
 import image2 from '..//..//assets/images/Home/image2.jpeg'
 import image3 from '..//..//assets/images/Home/image3.jpeg'
-import image1 from '..//..//assets/images/Home/image1.jpg'
+// import image1 from '..//..//assets/images/Home/image1.jpg'
+import Tgps1 from '..//..//assets/images/Home/tgps-1.jpeg'
+import Tgps2 from '..//..//assets/images/Home/tgps-2.jpeg'
+import Tgps3 from '..//..//assets/images/Home/tgps-3.jpeg'
+import Dummy6 from '..//..//assets/images/Home/dummy6.jpg'
+import Dummy5 from '..//..//assets/images/Home/dummy5.jpg'
+import { Opacity } from '@mui/icons-material';
+// import Dummy4 from '..//..//assets/images/Home/dummy4.jpg'
 
 const Home = () => {  
 
@@ -33,27 +41,34 @@ const Home = () => {
   ];
   return (
     <div>
-<section data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500"
+<section 
+
+
   id="home"
-  className="container-fluid p-0 m-0"
-  style={{
-    background: "#77DDF5",
+  className="hero-bg container-fluid p-0 m-0"
+  // style={{
+  //   background: "#6EE6F3",
+  // }}
+
+    style={{
+    // background: "#005EFF",
   }}
 >
   <div 
-    className="row g-0 align-items-center"
+    className=" row g-0 align-items-center"
     style={{
       minHeight: "70vh",
     }}
   >
     {/* Left Side - Text */}
-    <div className="col-lg-6 col-md-12 col-12 d-flex flex-column justify-content-center p-5 text-center text-md-start hero-title">
+    <div className=" col-lg-6 col-md-12 col-12 d-flex flex-column justify-content-center p-5 text-center text-md-start">
+
+      {/* <img src='' alt="" /> */}
       <h1
         className="mb-3 fw-bold"
         style={{
-          color: "#0047BA",
+          // color: "#001F82",
+          color:"#fff",
           fontWeight: 900,
           fontSize: "clamp(2rem, 4vw, 6.5rem)", 
           lineHeight: "1.2",
@@ -84,16 +99,21 @@ const Home = () => {
 
 
                         {/* SATISTICS CARD SECTION */}
-    <section 
-      className="container-fluid py-4 my-2 stats-section"
-      style={{ backgroundColor: "#fff" }}
+    <motion.section 
+   initial={{opacity: 0, translateX: "100%"}}
+   whileInView={{opacity: 1, translateX: 0}}
+   transition={{duration: 2}}
+      className="container-fluid py-5 stats-section"
+      // style={{ backgroundColor: "#fff" }}
+      style={{ backgroundColor: "#001F82" }}
     >
       {/* 🔹 Section Heading */}
     <div className="mb-3 ps-lg-5 text-center text-md-start" data-aos="fade-right">
   <h2
     className="fw-bold mb-0"
     style={{
-      color: "#005EFF",
+      // color: "#005EFF",
+      color:"#fff",
       fontSize: "clamp(1.2rem, 2vw, 1.8rem)",
     }}
   >
@@ -102,70 +122,26 @@ const Home = () => {
 </div>
 
 
-      {/* 🔹 Stats Row */}
-      {/* <div className="container px-3 text-center"
-       >
-        <div className="row g-0 text-white justify-content-center">
-          
-          
-          <div className="col-lg-3 col-md-6 col-12">
-            <div className="stat-card bg-primary-alt">
-              <h1 className="fw-bold mb-1">8+</h1>
-              <h5 className="fw-bold mb-1">years</h5>
-              <p className="m-0">Driving Renewable Innovation Across Asia.</p>
-            </div>
-          </div>
-
-          
-          <div className="col-lg-3 col-md-6 col-12">
-            <div className="stat-card bg-blue-alt">
-              <h1 className="fw-bold mb-1">1ˢᵗ</h1>
-              <h5 className="fw-bold mb-1">Layer</h5>
-              <p className="m-0">of-its-kind Blockchain for the Global Energy Sector (Frequency Chain X).
-</p>
-            </div>
-          </div>
-
-          
-          <div className="col-lg-3 col-md-6 col-12 border-top">
-            <div className="stat-card bg-primary-alt">
-              <h1 className="fw-bold mb-1">Top </h1>
-              <h5 className="fw-bold mb-1">Choice</h5>
-              <p className="m-0"> 
-            for Governments, Corporates & Clean-Tech Partners.
-</p>
-            </div>
-          </div>
-
-          
-          <div className="col-lg-3 col-md-6 col-12  border-top">
-            <div className="stat-card bg-blue-alt">
-              <h1 className="fw-bold mb-1">4</h1>
-              <h5 className="fw-bold mb-1">Countries</h5>
-              <p className="m-0">for Growing or Sustainable ReachOperations .</p>
-            </div>
-          </div>
-        </div>
-      </div> */}
+      
       <div className="container px-3 text-center">
   <div className="row g-0 text-white justify-content-center align-items-stretch">
     
     {/* 1️⃣ Card */}
     <div className="col-lg-3 col-md-6 col-12">
       <div className="stat-card bg-primary-alt h-100">
-        <h1 className="fw-bold mb-1">8+</h1>
-        <h5 className="fw-bold mb-1">years</h5>
-        <p className="m-0">Driving Renewable Innovation Across Asia.</p>
+        <h2 className="fw-bold mb-1">8+ years</h2>
+        <h5 className="fw-bold mb-1"></h5>
+        <p className="m-0">Driving Renewable Innovation <br /> Across Asia.</p>
       </div>
     </div>
 
     {/* 2️⃣ Card */}
     <div className="col-lg-3 col-md-6 col-12">
       <div className="stat-card bg-blue-alt h-100">
-        <h1 className="fw-bold mb-1">1ˢᵗ</h1>
-        <h5 className="fw-bold mb-1">Layer</h5>
-        <p className="m-0">
-          of-its-kind Blockchain for the Global Energy Sector (Frequency Chain X).
+        <h6 className="fw-bold mb-1"></h6>
+        <h2 className="fw-bold mb-1">Layer-1 Blockchain</h2>
+        <p className="m-0 fw-bold">
+        For the Global Energy Sector <br />(Frequency ChainX)
         </p>
       </div>
     </div>
@@ -173,10 +149,10 @@ const Home = () => {
     {/* 3️⃣ Card */}
     <div className="col-lg-3 col-md-6 col-12">
       <div className="stat-card bg-primary-alt h-100">
-        <h1 className="fw-bold mb-1">Top</h1>
-        <h5 className="fw-bold mb-1">Choice</h5>
+        <h1 className="fw-bold mb-1"></h1>
+        <h2 className="fw-bold mb-1">Top Choice</h2>
         <p className="m-0">
-          for Governments, Corporates & Clean-Tech Partners.
+          For Governments, Corporates & <br /> Clean-Tech Partners.
         </p>
       </div>
     </div>
@@ -184,10 +160,10 @@ const Home = () => {
     {/* 4️⃣ Card */}
     <div className="col-lg-3 col-md-6 col-12">
       <div className="stat-card bg-blue-alt h-100">
-        <h1 className="fw-bold mb-1">4</h1>
-        <h5 className="fw-bold mb-1">Countries</h5>
+        <h2 className="fw-bold mb-1"> 100+ Green-Tech</h2>
+        <h5 className="fw-bold mb-1"></h5>
         <p className="m-0">
-          for Growing or Sustainable Reach Operations.
+          Deployments in Solar, Storage & <br />Power Management
         </p>
       </div>
     </div>
@@ -209,8 +185,8 @@ const Home = () => {
     }}
   >
     {/* Left side – text */}
-    <a
-      href="#"
+    <Link
+      to="/ourcompany"
       className="btn border-0 fw-semibold"
       style={{
         backgroundColor: "#6EE6F3",
@@ -221,7 +197,7 @@ const Home = () => {
       }}
     >
       Find out more about Our Company
-    </a>
+    </Link>
 
     {/* Right side – arrow */}
     <a
@@ -245,14 +221,35 @@ const Home = () => {
 
        {/* ✅ Custom Styles */}
     
-    </section>
+    </motion.section>
+
+
+  
+
+{/* <div className="fullwidth-image">
+  <img
+    src={Dummy4}
+    alt="Innovation"
+    className="img-fluid w-100"
+    style={{ objectFit: "contain", height: "" }}
+  />
+</div> */}
+
+
+
+                     {/* SUSTAINABLE GOALS */}
+
+                     {/* <LogoGoals /> */}
 
 
 
 
 
                   {/* THE GROUP SECTION */}
- <section
+ <motion.section
+   initial={{opacity: 0, rotateX: "90deg"}}
+whileInView={{opacity: 1, rotateX: 0}}
+transition={{duration: 2}}
   className="container-fluid py-5"
   style={{
     background: "#FEA29A",
@@ -330,7 +327,7 @@ const Home = () => {
           }}
         />
         <div className="card-body">
-          <h5 className="card-title text-primary fw-bold">Sustainability</h5>
+          <h5 className="card-title text-primary fw-bold">Green Carpet</h5>
           <p className="card-text text-muted">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </p>
@@ -368,7 +365,11 @@ const Home = () => {
       </div>
     </div>
   </div>
-</section>
+</motion.section>
+
+            {/* HORIZONTAL SCROLL --- SECTION */}
+
+         <HorizontalScroll />   
 
      <ErrorBoundary>
       <LogoBrands />
@@ -435,8 +436,8 @@ const Home = () => {
           <h1 className='text-center' style={{ fontWeight: 700, color: "#0032A0" }}>
             People are the engine of our success
           </h1>
-          <p className="mt-3" style={{ color: "#0032A0", fontSize: "1.1rem" }}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla minus vero laboriosam maxime ab earum perspiciatis alias? Adipisci, dicta rerum hic ratione sunt eos, illo architecto est quos, minima laboriosam!
+          <p className="mt-3 text-center" style={{ color: "#0032A0", fontSize: "1.1rem" }}>
+            TGPS Global is not driven by hierarchy it’s driven by impact. Where purpose meets everyday work.
           </p>
         </div>
 
@@ -458,7 +459,7 @@ const Home = () => {
     {/* Image with Wave */}
     <div style={{ position: "relative" }}>
       <img
-        src={image1}
+        src={Tgps1}
         alt="Sustainability"
         className="img-fluid rounded-0 w-100"
         style={{
@@ -493,12 +494,12 @@ const Home = () => {
           className="text-decoration-none"
           style={{ color: "#0056d2", fontWeight: 700 }}
         >
-          lorem
+          Life at TGPS Global
         </a>
       </h5>
       <p style={{ color: "#555", fontSize: "1rem" }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-        perspiciatis repellendus, quo commodi beatae et.
+        Sustainability here isn’t a poster on the wall. It’s how decisions are made .....
+        <Link to="/careers">Read More</Link>
       </p>
     </div>
   </div>
@@ -521,7 +522,7 @@ const Home = () => {
     {/* Image with Wave */}
     <div style={{ position: "relative" }}>
       <img
-        src={image2}
+        src={Tgps2}
         alt="Sustainability"
         className="img-fluid rounded-0 w-100"
         style={{
@@ -556,12 +557,12 @@ const Home = () => {
           className="text-decoration-none"
           style={{ color: "#0056d2", fontWeight: 700 }}
         >
-          lorem
+          Our Ethos
         </a>
       </h5>
       <p style={{ color: "#555", fontSize: "1rem" }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-        perspiciatis repellendus, quo commodi beatae et.
+        Values that guide decisions, not just words. Innovation isn’t locked inside a department .....
+        <Link to="/careers">Read More</Link>
       </p>
     </div>
   </div>
@@ -608,7 +609,7 @@ const Home = () => {
     {/* Image with Wave */}
     <div style={{ position: "relative" }}>
       <img
-        src={image3}
+        src={Tgps3}
         alt="Sustainability"
         className="img-fluid rounded-0 w-100"
         style={{
@@ -643,12 +644,12 @@ const Home = () => {
           className="text-decoration-none"
           style={{ color: "#0056d2", fontWeight: 700 }}
         >
-          lorem
+          Work, Impact & Beyond
         </a>
       </h5>
       <p style={{ color: "#555", fontSize: "1rem" }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-        perspiciatis repellendus, quo commodi beatae et.
+        Your work here shapes more than a career. But no role exists in isolation. Every .....
+        <Link to="/careers">Read More</Link>
       </p>
     </div>
   </div>
@@ -663,6 +664,39 @@ const Home = () => {
 
 {/* <OurBrand /> */}
 <BlogCarousel />
+
+
+                               {/* final section */}
+
+
+
+                   
+
+
+       <section
+       
+       >
+
+    <div className="fullwidth-image">
+  <img
+    src={Dummy6}
+    alt="Innovation"
+    className="img-fluid w-100"
+    style={{ objectFit: "contain", height: "" }}
+  />
+</div>
+
+ <div className="fullwidth-image">
+  <img
+    src={Dummy5}
+    alt="Innovation"
+    className="img-fluid w-100"
+    style={{ objectFit: "contain", height: "" }}
+  />
+</div>
+  
+</section>
+                        
 
 
 

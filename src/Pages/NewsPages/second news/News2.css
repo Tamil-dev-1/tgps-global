@@ -1,0 +1,102 @@
+/* ==============================
+   BREADCRUMB BAR
+================================ */
+.breadcrumb-bar {
+  background: #2b3cc7;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+.breadcrumb-bar span {
+  margin-right: 6px;
+  opacity: 0.9;
+}
+
+.breadcrumb-bar .active {
+  font-weight: 600;
+  opacity: 1;
+}
+
+/* ==============================
+   HERO SECTION
+================================ */
+.press-hero {
+  background: #001f82;
+  padding: 80px 20px 100px; /* extra left-right padding */
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* TITLE */
+.press-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* META INFO */
+.press-meta {
+  font-size: 13px;
+  opacity: 0.85;
+  margin-bottom: 25px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 16px;
+  margin-bottom: 28px;
+}
+
+.press-meta::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.press-meta .dot {
+  margin: 0 8px;
+}
+
+/* DESCRIPTION */
+.press-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 90%;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+/* IMAGE */
+.press-image {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.press-image img {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* CONTENT TEXT */
+.press-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 90%;
+  margin: 0 auto 25px;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.press-content hr {
+  border-color: rgba(255, 255, 255, 0.25);
+  margin: 40px 0;
+}

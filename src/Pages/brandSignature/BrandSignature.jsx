@@ -1,365 +1,684 @@
 import React from "react";
-import Logo from "../../assets/images/logo/tgps.png";
 import "./BrandSignature.css";
+ import { motion } from "framer-motion";
+
+import BSLogo from '..//..//assets/images/Bransign/bslogo.jpg'
 
 const BrandSignature = () => {
+
+
+  const sectionVariants = {
+  hidden: {
+    opacity: 0,
+    y: 60
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+      when: "beforeChildren",
+      staggerChildren: 0.15
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: {
+    opacity: 0,
+    y: 30
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut"
+    }
+  }
+};
+
   return (
-    <>
-    <section className="brand-wrapper d-flex align-items-center">
-      <div className="container-fluid px-0">
-        <div className="row gx-0 align-items-center">
+    < >
+    <div className="brand-header">
+  <h1 className="brand-title">Brand Signature</h1>
+</div>
+                     
 
-          {/* LEFT SIDE */}
-          <div className="col-md-6 left-side d-flex flex-column justify-content-center text-center">
-            <img
-              src={Logo}
-              alt="logo"
-              className="brand-title mb-4"
-            />
+                      {/* SECTION ---------- 1 */}
+
+
+    <div className="px-lg-5 mb-5">
+      <motion.section className="text-section py-5" style={{backgroundColor:"#F7F7F7"}}
+       variants={sectionVariants}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.2 }}>
+      <div className="content-wrapper">
+      <div className="container text-center">
+
+        {/* Heading */}
+        <motion.h1 className="text-title"
+         variants={itemVariants}>
+          The Circle –  A Complete Ecosystem
+        </motion.h1>
+
+        {/* Sub text */}
+        <motion.p className="hero-subtext"
+         variants={itemVariants}>
+         The circular form represents wholeness, continuity, and global impact.It reflects our belief that energy, environment, technology, and humanity are not segmented efforts, they are one interconnected system.
+        </motion.p>
+
+        {/* Search Bar */}
+        <motion.div className="search-box mx-auto border border-black"
+        variants={itemVariants}>
+          <input
+            type="text"
+            className="form-control search-input"
+            placeholder="Search"
+          />
+          <button className="btn search-btn">
+            ✨ Search
+          </button>
+        </motion.div>
+
+        {/* Popular Card */}
+        <motion.div className="popular-card mx-auto text-start"
+        variants={itemVariants}>
+          <p className="popular-title">
+            The circle stands for:
+          </p>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p>
+              {/* <strong>Liam Hawthorne</strong> — Recruiter, 5+ years of experience, remote, full-time */}
+              <strong>A unified global mission</strong>
+            </p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p>
+              <strong>Sustainable cycles</strong> 
+            </p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p>
+              <strong>Endless innovation</strong>
+            </p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p>
+              <strong>A world moving toward greener choices</strong>
+            </p>
+          </div>
+        </motion.div>
+
+      </div>
+      </div>
+    </motion.section>
+    </div>
+
+
+                  {/* SECTION ------ 2 */}
+
+    <div className="px-5 mb-5">
+  <motion.section
+    className="text-section py-5"
+    style={{ backgroundColor: "#F7F7F7" }}
+    variants={sectionVariants}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.2 }}
+  >
+    <div className="content-wrapper">
+      <div className="container text-center">
+
+        {/* Heading */}
+        <motion.h1
+          className="text-title"
+          variants={itemVariants}
+        >
+          The Green Gradient – Nature, Balance & Regeneration
+        </motion.h1>
+
+        {/* Sub text */}
+        <motion.p
+          className="hero-subtext"
+          variants={itemVariants}
+        >
+          The shades of green symbolise renewable energy and environmental
+          responsibility.
+        </motion.p>
+
+        {/* Search Bar */}
+        <motion.div
+          className="search-box mx-auto border border-black"
+          variants={itemVariants}
+        >
+          <input
+            type="text"
+            className="form-control search-input"
+            placeholder="Search"
+          />
+          <button className="btn search-btn">✨ Search</button>
+        </motion.div>
+
+        {/* Popular Card */}
+        <motion.div
+          className="popular-card mx-auto text-start"
+          variants={itemVariants}
+        >
+          <p className="popular-title">
+            From deeper green to lighter tones, the gradient expresses:
+          </p>
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Growth</strong></p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Restoration</strong></p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p>
+              <strong>
+                The shift from traditional to renewable power
+              </strong>
+            </p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p>
+              <strong>
+                A planet moving toward cleaner solutions
+              </strong>
+            </p>
+          </div>
+
+          <motion.p
+            className="hero-subtext mt-3"
+            variants={itemVariants}
+          >
+            It reflects our core promise:<br />
+            <strong>
+              To build solutions that honour the planet while empowering people.
+            </strong>
+          </motion.p>
+        </motion.div>
+
+      </div>
+    </div>
+  </motion.section>
+</div>
+      
+
+
+                   {/* SECTION ------- 3   */}
+
+     <div className="px-5 mb-5">
+  <motion.section
+    className="text-section py-5"
+    style={{ backgroundColor: "#F7F7F7" }}
+    variants={sectionVariants}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.2 }}
+  >
+    <div className="content-wrapper">
+      <div className="container text-center">
+
+        {/* Heading */}
+        <motion.h1
+          className="text-title"
+          variants={itemVariants}
+        >
+          The Yellow Lightning Bolt – Power, Speed, Technology
+        </motion.h1>
+
+        {/* Sub text */}
+        <motion.p
+          className="hero-subtext"
+          variants={itemVariants}
+        >
+          The bold yellow lightning bolt is the heart of the logo, the spark of
+          what drives TGPS Global.
+        </motion.p>
+
+        {/* Search Bar */}
+        <motion.div
+          className="search-box mx-auto border border-black"
+          variants={itemVariants}
+        >
+          <input
+            type="text"
+            className="form-control search-input"
+            placeholder="Search"
+          />
+          <button className="btn search-btn">✨ Search</button>
+        </motion.div>
+
+        {/* Popular Card */}
+        <motion.div
+          className="popular-card mx-auto text-start"
+          variants={itemVariants}
+        >
+          <p className="popular-title">
+            It represents :
+          </p>
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Energy in motion</strong></p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Acceleration of innovation</strong></p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Electrification of industries</strong></p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>The strength of our technology</strong></p>
+          </div>
+
+          <motion.p
+            className="hero-subtext mt-3"
+            variants={itemVariants}
+          >
+            The yellow hue reflects <strong>optimism, clarity, and the bright future</strong> we
+            are enabling through solar energy, green mobility, and advanced power
+            solutions.
+          </motion.p>
+        </motion.div>
+
+      </div>
+    </div>
+  </motion.section>
+</div>
+          
+
+
+                   {/* SECTION ------ 4    */}
+
+       <div className="px-5 mb-5">
+  <motion.section
+    className="text-section py-5"
+    style={{ backgroundColor: "#F7F7F7" }}
+    variants={sectionVariants}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.2 }}
+  >
+    <div className="content-wrapper">
+      <div className="container text-center">
+
+        {/* Heading */}
+        <motion.h1
+          className="text-title"
+          variants={itemVariants}
+        >
+          The Blue Outline – Trust, Intelligence & Precision
+        </motion.h1>
+
+        {/* Search Bar */}
+        <motion.div
+          className="search-box mx-auto border border-black"
+          variants={itemVariants}
+        >
+          <input
+            type="text"
+            className="form-control search-input"
+            placeholder="Search"
+          />
+          <button className="btn search-btn">✨ Search</button>
+        </motion.div>
+
+        {/* Popular Card */}
+        <motion.div
+          className="popular-card mx-auto text-start"
+          variants={itemVariants}
+        >
+          <p className="popular-title">
+            The thin blue outline around the bolt signifies:
+          </p>
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Engineering excellence</strong></p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Smart systems</strong></p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Stability and trust</strong></p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Our technological backbone</strong></p>
+          </div>
+
+          <motion.p
+            className="hero-subtext mt-3"
+            variants={itemVariants}
+          >
+            Blue is the colour of intelligence. It reflects our purpose of
+            building <strong>data-driven, connected, and future-ready energy ecosystems.</strong>
+          </motion.p>
+        </motion.div>
+
+      </div>
+    </div>
+  </motion.section>
+</div>
+
+
+                 {/* SECTION -------- 5  */}
+
+
+<div className="px-5 mb-5">
+      <motion.section
+        className="text-section py-5"
+        style={{ backgroundColor: "#F7F7F7" }}
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <div className="content-wrapper">
+          <div className="container text-center">
+
+            {/* 🔹 Heading */}
+            <motion.h1 className="text-title mb-4" variants={itemVariants}>
+              The Horizontal Lines – Structure, Direction & Transformation
+            </motion.h1>
+
+            {/* 🔹 Search Bar */}
             
-          </div>
+           <motion.div
+          className="search-box mx-auto border border-black"
+          variants={itemVariants}
+        >
+          <input
+            type="text"
+            className="form-control search-input"
+            placeholder="Search"
+          />
+          <button className="btn search-btn">✨ Search</button>
+        </motion.div>
+            {/* 🔹 Popular Card */}
+            <motion.div
+              className="popular-card mx-auto text-start mt-4"
+              variants={itemVariants}
+            >
+              <p className="popular-title">
+                The layered green lines within the circle symbolize:
+              </p>
 
-          {/* RIGHT SIDE */}
-          <div className="col-md-6 right-side d-flex align-items-center justify-content-center">
-            <h1 className="signature-text">BRAND<br />SIGNATURE</h1>
-          </div>
+              {/* Item 1 */}
+              <div className="candidate">
+                <img src={BSLogo} alt="icon" />
+                <p><strong>Energy flow</strong></p>
+              </div>
 
+              {/* Item 2 */}
+              <div className="candidate">
+                <img src={BSLogo} alt="icon" />
+                <p>
+                  <strong>
+                    Transformation of old systems into new frameworks
+                  </strong>
+                </p>
+              </div>
+
+              {/* Item 3 Heading */}
+              <div className="candidate">
+                <img src={BSLogo} alt="icon" />
+                <p><strong>The multi-vertical strength of TGPS:</strong></p>
+              </div>
+
+              {/* 🔽 Bottom 3 List */}
+              <ul className="multi-list mt-2">
+                <li>Power Generation</li>
+                <li>Power Storage</li>
+                <li>Power Distribution</li>
+                <li>Power Trading</li>
+                <li>Power Sharing</li>
+              </ul>
+
+              {/* Description */}
+              <motion.p
+                className="hero-subtext mt-3"
+                variants={itemVariants}
+              >
+                The lines show that we bring structure to a world that is
+                shifting rapidly and we guide that direction with clarity
+                and resilience.
+              </motion.p>
+            </motion.div>
+
+          </div>
         </div>
-      </div>
-    </section>
-
-                               {/* SECTION ====== 2 */}
-
-        <section className="circle-wrapper py-5">
-      <div className="container-fluid section-limit">
-        <div className="row align-items-start">
-
-          {/* LEFT SIDE */}
-          <div className="col-md-6 left-section">
-            <h1 className="main-title">
-              The Circle – 
-              <br />
-              <span className="highlight">A Complete</span>
-              <br />
-              Ecosystem
-            </h1>
-          </div>
-
-          {/* RIGHT SIDE */}
-          <div className="col-md-6 right-section">
-            <h5 className="right-heading">
-              THE CIRCULAR FORM REPRESENTS WHOLENESS, CONTINUITY, AND GLOBAL IMPACT.
-            </h5>
-
-            <p className="right-text">
-              It reflects our belief that energy, environment, technology, and humanity are not segmented efforts,<br />
-              they are one interconnected system. The circle stands for:
-            </p>
-
-            <ul className="points">
-              <li><span className="dot"></span> A unified global mission</li>
-              <li><span className="dot"></span> Sustainable cycles</li>
-              <li><span className="dot"></span> Endless innovation</li>
-              <li><span className="dot"></span> A world moving toward greener choices</li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </section>
+      </motion.section>
+    </div>
+       
 
 
-                     {/* SECTION ======= 3 */}
+                  {/* SECTION ------ 6 */}
 
+      <div className="px-5 mb-5">
+  <motion.section
+    className="text-section py-5"
+    style={{ backgroundColor: "#F7F7F7" }}
+    variants={sectionVariants}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.2 }}
+  >
+    <div className="content-wrapper">
+      <div className="container text-center">
 
-         <section className="circle-wrapper py-5">
-      <div className="container-fluid section-limit">
-        <div className="row align-items-start">
+        {/* Heading */}
+        <motion.h1
+          className="text-title"
+          variants={itemVariants}
+        >
+          The Dual Tone Division – Balance of Nature & Technology
+        </motion.h1>
 
-          {/* LEFT SIDE */}
-          <div className="col-md-6 left-section">
-            <h1 className="main-title">
-              The Green Gradient –  
-              <br />
-              <span className="highlight">Nature,</span>
-              <br />
-              Balance & Regeneration
-            </h1>
-          </div>
-
-          {/* RIGHT SIDE */}
-          <div className="col-md-6 right-section">
-            <h5 className="right-heading">
-              The shades of green symbolise <span className="">renewable energy and environmental responsibility.</span>
-            </h5>
-
-            <p className="right-text">
-              From deeper green to lighter tones, the gradient expresses:
-            </p>
-
-            <ul className="points">
-              <li><span className="dot"></span> Growth</li>
-              <li><span className="dot"></span> Restoration</li>
-              <li><span className="dot"></span> The shift from traditional to renewable power</li>
-              <li><span className="dot"></span> A planet moving toward cleaner solutions</li>
-            </ul>
-             <p className="right-text">
-              It reflects our core promise:
-            </p>
-              <p className="right-text fw-bold">
-            To build solutions that honour the planet while empowering people.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>           
-
-
-                       {/* SECTION ====== 4 */}
-
-                   <section className="circle-wrapper py-5">
-      <div className="container-fluid section-limit">
-        <div className="row align-items-start">
-
-          {/* LEFT SIDE */}
-          <div className="col-md-6 left-section">
-            <h1 className="main-title">
-              The Yellow Lightning Bolt –   
-              <br />
-              <span className="highlight">Power, Speed,</span>
-              <br />
-              Technology
-            </h1>
-          </div>
-
-          {/* RIGHT SIDE */}
-          <div className="col-md-6 right-section">
-            <h5 className="right-heading">
-              The bold yellow lightning bolt is the heart of the logo, the spark of what drives TGPS Global.
-            </h5>
-
-            <p className="right-text">
-              It represents:
-            </p>
-
-            <ul className="points">
-              <li><span className="dot"></span> Energy in motion</li>
-              <li><span className="dot"></span> Acceleration of innovation</li>
-              <li><span className="dot"></span> Electrification of industries</li>
-              <li><span className="dot"></span> The strength of our technology</li>
-            </ul>
-             
-              <p className="right-text fw-bold">
-            The yellow hue reflects optimism, clarity, and the bright future we are enabling through solar energy, green mobility, and advanced power solutions.
-
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>         
-
-
-                           {/* SECTION ===== 5 */}
-
-         <section className="circle-wrapper py-5">
-      <div className="container-fluid section-limit">
-        <div className="row align-items-start">
-
-          {/* LEFT SIDE */}
-          <div className="col-md-6 left-section">
-            <h1 className="main-title">
-              The Blue Outline – 
-   
-              <br />
-              <span className="highlight">Trust, </span>
-              <br />
-              Intelligence & Precision
-            </h1>
-          </div>
-
-          {/* RIGHT SIDE */}
-          <div className="col-md-6 right-section">
+        {/* Search Bar */}
+        <motion.div
+          className="search-box mx-auto border border-black"
+          variants={itemVariants}
+        >
+          <input
+            type="text"
+            className="form-control search-input"
+            placeholder="Search"
+          />
+          <button className="btn search-btn">✨ Search</button>
+        </motion.div>
+            
+          
+        {/* Popular Card */}
+        <motion.div
+          className="popular-card mx-auto text-start"
+          variants={itemVariants}
+        >
            
 
-            <p className="right-text">
-              The thin blue outline around the bolt signifies:
+          {/* Left Side */}
+          <motion.p className="popular-title" variants={itemVariants}>
+             <p className="popular-title">
+                The logo is visually divided into two sides — a deliberate reflection of our philosophy:
+              </p> <br /> Left side
+          </motion.p>
 
-            </p>
-
-            <ul className="points">
-              <li><span className="dot"></span> Engineering excellence</li>
-              <li><span className="dot"></span> Smart systems</li>
-              <li><span className="dot"></span> Stability and trust</li>
-              <li><span className="dot"></span> Our technological backbone</li>
-            </ul>
-             
-              <p className="right-text">
-           Blue is the colour of intelligence. It reflects our purpose of building <span className="fw-bold">data-driven, connected, and future-ready energy ecosystems.
-</span>
-
-            </p>
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Nature</strong></p>
           </div>
 
-        </div>
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Sustainability</strong></p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Eco-conscious innovation</strong></p>
+          </div>
+
+          {/* Right Side */}
+          <motion.p className="popular-title mt-4" variants={itemVariants}>
+            Right side
+          </motion.p>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Technology</strong></p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Efficiency</strong></p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Modernisation</strong></p>
+          </div>
+
+          <motion.p
+            className="hero-subtext mt-3"
+            variants={itemVariants}
+          >
+            Together, they show that the future is not Nature vs Technology,
+            but <strong> Nature + Technology</strong>, in perfect harmony.
+          </motion.p>
+
+        </motion.div>
+
       </div>
-    </section>  
+    </div>
+  </motion.section>
+</div>
+  
 
 
-                            {/* SECTION ====== 6 */}
-                <section className="circle-wrapper py-5">
-      <div className="container-fluid section-limit">
-        <div className="row align-items-start">
+                     {/* SECTION ------ 7       */}
 
-          {/* LEFT SIDE */}
-          <div className="col-md-6 left-section">
-            <h1 className="main-title">
-              The Horizontal Lines –  
+      <div className="px-5 mb-5">
+  <motion.section
+    className="text-section py-5"
+    style={{ backgroundColor: "#F7F7F7" }}
+    variants={sectionVariants}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.2 }}
+  >
+    <div className="content-wrapper">
+      <div className="container text-center">
 
-   
-              <br />
-              <span className="highlight">Structure, </span>
-              <br />
-              Direction & Transformation    
-            </h1>
+        {/* Heading */}
+        <motion.h1
+          className="text-title"
+          variants={itemVariants}
+        >
+          Our Logo, Our Identity
+        </motion.h1>
+
+        {/* Search Bar */}
+        <motion.div
+          className="search-box mx-auto border border-black"
+          variants={itemVariants}
+        >
+          <input
+            type="text"
+            className="form-control search-input"
+            placeholder="Search"
+          />
+          <button className="btn search-btn">✨ Search</button>
+        </motion.div>
+
+        {/* Sub text */}
+        <motion.p
+          className="hero-subtext"
+          variants={itemVariants}
+        >
+          
+        </motion.p>
+
+        {/* Popular Card */}
+        <motion.div
+          className="popular-card mx-auto text-start"
+          variants={itemVariants}
+        >
+          <p className="popular-title">
+            The TGPS Global logo stands for:
+          </p>
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Clean Energy</strong></p>
           </div>
 
-          {/* RIGHT SIDE */}
-          <div className="col-md-6 right-section">
-           
-
-            <p className="right-text">
-              The layered green lines within the circle symbolize:
-
-            </p>
-
-            <ul className="points">
-              <li><span className="dot"></span> Energy flow</li>
-              <li><span className="dot"></span> Forward movement</li>
-              <li><span className="dot"></span> Transformation of old systems into new frameworks</li>
-              <li><span className="dot"></span> The multi-vertical strength of TGPS:</li>
-                 <ul className="">
-              <li><span className="dot"></span> Power Generation</li>
-              <li><span className="dot"></span> Power Storage</li>
-              <li><span className="dot"></span> Power Distribution</li>
-              <li><span className="dot"></span> Power Trading</li>
-              <li><span className="dot"></span> Power Sharing</li>
-            </ul>
-            </ul>
-             
-              <p className="right-text">
-           Blue is the colour of intelligence. It reflects our purpose of building <span className="fw-bold">data-driven, connected, and future-ready energy ecosystems.
-</span>
-
-            </p>
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Smart Technology</strong></p>
           </div>
 
-        </div>
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Global Vision</strong></p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Sustainable Growth</strong></p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Responsible Innovation</strong></p>
+          </div>
+
+          <div className="candidate">
+            <img src={BSLogo} alt="" />
+            <p><strong>Human and Environmental Impact</strong></p>
+          </div>
+
+          <motion.p
+            className="hero-subtext mt-3"
+            variants={itemVariants}
+          >
+            It is the symbol of a company that is not just building power
+            solutions <strong>but powering the future.</strong>
+          </motion.p>
+        </motion.div>
+
       </div>
-    </section>            
-
-
-                             {/* SECTION ===== 7      */}
-
-        <section className="circle-wrapper py-5">
-      <div className="container-fluid section-limit">
-        <div className="row align-items-start">
-
-          {/* LEFT SIDE */}
-          <div className="col-md-6 left-section">
-            <h1 className="main-title">
-              The Dual Tone Division – 
- 
-
-   
-              <br />
-              <span className="highlight">Balance of Nature </span>
-              <br />
-            & Technology    
-            </h1>
-          </div>
-
-          {/* RIGHT SIDE */}
-          <div className="col-md-6 right-section">
-           
-
-            <p className="right-text">
-             The logo is visually divided into two sides — a deliberate reflection of our philosophy:
-
-
-            </p>
-
-           <div className="d-flex gap-5">
-               <ul className="points">
-              <li><span className="dot"></span> Nature</li>
-              <li><span className="dot"></span> Sustainability</li>
-              <li><span className="dot"></span> Eco-conscious innovation</li>
-            </ul>
-
-               <ul className="points">
-              <li><span className="dot"></span> Technology</li>
-              <li><span className="dot"></span> Efficiency</li>
-              <li><span className="dot"></span> Modernisation</li>
-            </ul>
-           </div>
+    </div>
+  </motion.section>
+</div>
              
-              <p className="right-text">
-           Together, they show that the future is not Nature vs Technology, but <span className="fw-bold">Nature + Technology,</span>  in perfect harmony.
- 
-
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>                   
-
-
-                                 {/* SECTION ===== 8 */}
-
-        <section className="circle-wrapper py-5">
-      <div className="container-fluid section-limit">
-        <div className="row align-items-start">
-
-          {/* LEFT SIDE */}
-          <div className="col-md-6 left-section">
-            <h1 className="main-title">
-               
-
-   
-              <br />
-              <span className="highlight">Our Logo, </span>
-              <br />
-              Our Identity
-            </h1>
-          </div>
-
-          {/* RIGHT SIDE */}
-          <div className="col-md-6 right-section">
-           
-
-            <p className="right-text">
-              The TGPS Global logo stands for:
-            </p>
-
-            <ul className="points list-unstyled ">
-              <li><span className="dot"></span>  Engineering excellence</li>
-              <li><span className="dot"></span> Smart systems</li>
-              <li><span className="dot"></span> Stability and trust</li>
-              <li><span className="dot"></span> Our technological backbone</li>
-            </ul>
-             
-              <p className="right-text">
-           Blue is the colour of intelligence. It reflects our purpose of building <span className="fw-bold">data-driven, connected, and future-ready energy ecosystems.
-</span>
-
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>                   
     </>
   );
 };

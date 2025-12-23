@@ -1,0 +1,154 @@
+/* HULHistory.css */
+
+.hul-history {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* TOP HEADER */
+.hul-header {
+  position: relative;
+  background: #0d6efd;
+  padding: 80px 0 120px;
+}
+
+/* Curved background shapes */
+.hul-header::before {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  top: -250px;
+  left: 30%;
+}
+
+.hul-header::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  top: -200px;
+  right: -150px;
+}
+
+.hul-title {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-left: 60px;
+}
+
+/* CONTENT SECTION */
+.hul-content {
+  background: #001f7f;
+  padding: 80px 0;
+}
+
+.hul-content p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hul-title {
+    font-size: 2.4rem;
+    margin-left: 20px;
+  }
+
+  .hul-content {
+    padding: 60px 20px;
+  }
+}
+
+
+                           /* section ------- 2 */
+
+
+    /* OtherKeyMilestones.css */
+
+.okm-section {
+  background: #001f7f;
+  padding: 80px 0;
+  color: #fff;
+}
+
+/* Title */
+.okm-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Paragraph text */
+.okm-text {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  max-width: 900px;
+}
+
+/* Highlight box */
+.okm-highlight {
+  border: 1px solid rgba(255,255,255,0.6);
+  margin: 40px 0;
+}
+
+/* Left icon strip */
+.okm-icon {
+  background: #ff5b5b;
+  width: 55px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.okm-icon span {
+  background: #ff5b5b;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Highlight content */
+.okm-highlight-content {
+  background: #002a9e;
+  padding: 25px 30px;
+}
+
+.okm-highlight-content p {
+  margin: 0;
+  line-height: 1.9;
+  font-size: 1.05rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .okm-title {
+    font-size: 2.2rem;
+  }
+
+  .okm-section {
+    padding: 60px 20px;
+  }
+
+  .okm-highlight {
+    flex-direction: column;
+  }
+
+  .okm-icon {
+    width: 100%;
+    height: 45px;
+  }
+}
+                       

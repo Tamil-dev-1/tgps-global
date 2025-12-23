@@ -1,0 +1,53 @@
+/* LOGO BOX */
+.logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* SAME SIZE FOR ALL LOGOS */
+.logo-img-wrap {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* IMAGE */
+.logo-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* TEXT */
+.logo-desc,
+.logo-text {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .logo-img-wrap {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+
+.small-logo {
+  width: 120px;
+  height: 120px;
+}
+
+
+.goal-logo {
+  width: 150px;
+  height: 130px;
+}

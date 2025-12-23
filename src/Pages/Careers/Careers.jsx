@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import bubbleImg from '..//..//assets/images/Careers/bubbles.jpg'
 import waterdropImg from '..//..//assets/images/Careers/water-drops.jpg'
 import teamImg1 from '..//..//assets/images/Careers/team1.jpeg'
@@ -9,7 +10,8 @@ const Careers = () => {
   return (
     <div>
       {/* ===== HERO SECTION ===== */}
-      <section
+      <motion.section
+       
         className=" text-center d-flex align-items-center justify-content-center"
         style={{
                   height: "30vh",
@@ -24,7 +26,7 @@ const Careers = () => {
           </p>
           
         </div>
-      </section>
+      </motion.section>
 
       {/* ===== ABOUT / CULTURE SECTION ===== */}
       <section className="container mt-5  py-5 text-center" style={{ backgroundColor:'#9C44C0',

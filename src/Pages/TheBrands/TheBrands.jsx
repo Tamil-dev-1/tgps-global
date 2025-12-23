@@ -2,7 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaBuilding, FaUsers, FaGlobe, FaLightbulb, FaHandshake } from "react-icons/fa";
 import OurBrands from "../../Components/BrandsList/OurBrands";
+import './TheBrands.css';
+import IndiaFlag from '../../assets/images/Thegroup/indianFlag.png'
+import UAEFlag from '../../assets/images/Thegroup/UAEFlag.png'
+import SrilankaFlag from '../../assets/images/Thegroup/SrilankaFlag.png'
+import USAFlag from '../../assets/images/Thegroup/USAFlag.png'
+import Transcent from '../../assets/images/Thegroup/transcent.png'
+import Binshehab from '../../assets/images/Thegroup/binshehab.png'
+import Savilinka from '../../assets/images/Thegroup/savilanka.png'
+import Minerva from '../../assets/images/Thegroup/minerva.png'
 
+
+// import Minerva from '../../assets/images/Thegroup/minerva.png'
 const TheGroup = () => {
   return (
     <>
@@ -31,13 +42,13 @@ const TheGroup = () => {
     </motion.h1>
     <motion.p
       className="lead"
-      style={{ maxWidth: "750px", margin: "0 auto" }}
+      style={{ maxWidth: "750px", margin: "0 auto",fontSize: "1rem", }}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
     >
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aspernatur reprehenderit, cum neque eius in doloribus cumque hic exercitationem incidunt illo minima ad culpa molestias?
+     The TGPS Group brings together multiple businesses, platforms, and foundations under a shared mission of responsible innovation. From infrastructure to digital ecosystems, every initiative is engineered to deliver measurable impact and long-term value.
     </motion.p>
   </div>
 
@@ -46,61 +57,68 @@ const TheGroup = () => {
 </section>
 
       {/* ===== VISION & MISSION ===== */}
-      <section
-        className="py-5 text-center text-white"
-        style={{
-          background: "#A14DC3",
-        }}
-      >
-        <div className="container">
-          <motion.h2
-            className="fw-bold mb-5"
-            style={{ fontSize: "2rem", letterSpacing: "1px" }}
-            initial={{ opacity: 0, y: -30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+      <motion.section
+
+       initial={{opacity: 0, translateX: "100%"}}
+    whileInView={{opacity: 1, translateX: 0}}
+   transition={{duration: 2}}
+  className="py-5 text-center text-white"
+  style={{ background: "#A14DC3" }}
+>
+  <div className="container">
+
+    {/* TITLE */}
+    <motion.h2
+      className="fw-bold mb-5"
+      style={{ fontSize: "2rem", letterSpacing: "1px" }}
+      initial={{ opacity: 0, y: -30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
+      Our Vision & Mission
+    </motion.h2>
+
+    {/* CONTENT */}
+    <div className="row g-4 justify-content-center align-items-stretch">
+
+      {[
+        {
+          icon: <FaLightbulb size={45} color="#fff" />,
+          title: "Our Vision",
+          desc:
+            "To shape the future by building intelligent, sustainable ecosystems where technology and responsibility advance together.",
+        },
+        {
+          icon: <FaHandshake size={45} color="#fff" />,
+          title: "Our Mission",
+          desc:
+            "To develop interconnected businesses that apply innovation, decentralization, and sustainability to solve real-world challenges at global scale.",
+        },
+      ].map((item, index) => (
+        <motion.div
+          key={index}
+          className="col-lg-5 col-md-6 col-12 d-flex"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: index * 0.2 }}
+          viewport={{ once: true }}
+        >
+          {/* CARD */}
+          <div
+            className="vision-card d-flex flex-column justify-content-center text-center p-4 w-100"
           >
-            Our Vision & Mission
-          </motion.h2>
-          <div className="row g-4 justify-content-center">
-            {[
-              {
-                icon: <FaLightbulb size={45} color="#fff" />,
-                title: "Our Vision",
-                desc: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos obcaecati harum quasi similique quia ipsum maiores saepe.",
-              },
-              {
-                icon: <FaHandshake size={45} color="#fff" />,
-                title: "Our Mission",
-                desc: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos obcaecati harum quasi similique quia ipsum maiores saepe.",
-              },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                className="col-lg-5 col-md-6 col-12"
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: i * 0.2 }}
-                viewport={{ once: true }}
-              >
-                <div
-                  className="p-4 rounded-4 shadow-lg"
-                  style={{
-                    backgroundColor: "rgba(255,255,255,0.1)",
-                    backdropFilter: "blur(5px)",
-                    border: "1px solid rgba(255,255,255,0.2)",
-                  }}
-                >
-                  <div className="mb-3">{item.icon}</div>
-                  <h4 className="fw-bold mb-2">{item.title}</h4>
-                  <p className="text-light">{item.desc}</p>
-                </div>
-              </motion.div>
-            ))}
+            <div className="mb-3">{item.icon}</div>
+            <h4 className="fw-bold mb-2">{item.title}</h4>
+            <p className="text-light mb-0">{item.desc}</p>
           </div>
-        </div>
-      </section>
+        </motion.div>
+      ))}
+
+    </div>
+  </div>
+</motion.section>
+
 
       {/* ===== GLOBAL PRESENCE ===== */}
   <section className="py-5 text-center bg-white"
@@ -129,8 +147,7 @@ const TheGroup = () => {
             margin: "0 auto",
           }}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, amet ab
-          quis quibusdam beatae commodi autem sed. Delectus?
+         Strong global partnerships are the foundation of innovation, sustainability, and progress. Together, we don’t just build solutions—we shape the future
         </p>
 
         {/* Partners Grid */}
@@ -138,13 +155,13 @@ const TheGroup = () => {
           {/* India */}
           <div className="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center justify-content-center">
             <img
-              src="https://www.tgpsglobal.com/static/media/Transcent.904795fa136506397fa1.webp"
+              src={Transcent}
               alt="Transcendent Energy"
               className="img-fluid mb-3"
               style={{ maxHeight: "60px", objectFit: "contain" }}
             />
             <img
-              src="https://flagcdn.com/w320/in.png"
+              src={IndiaFlag}
               alt="India Flag"
               className="img-fluid"
               style={{
@@ -159,13 +176,13 @@ const TheGroup = () => {
           {/* UAE */}
           <div className="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center justify-content-center">
             <img
-              src="https://www.tgpsglobal.com/static/media/binshehab.661590d1ddb501c1ed97.webp"
+              src={Binshehab}
               alt="Bin Shehab"
               className="img-fluid mb-3"
               style={{ maxHeight: "60px", objectFit: "contain" }}
             />
             <img
-              src="https://flagcdn.com/w320/ae.png"
+              src={UAEFlag}
               alt="UAE Flag"
               className="img-fluid"
               style={{
@@ -180,13 +197,13 @@ const TheGroup = () => {
           {/* Sri Lanka */}
           <div className="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center justify-content-center">
             <img
-              src="https://www.tgpsglobal.com/static/media/savilanka.de3fcba2e64b374b8df3.webp"
+              src={Savilinka}
               alt="Savilanka Global"
               className="img-fluid mb-3"
               style={{ maxHeight: "60px", objectFit: "contain" }}
             />
             <img
-              src="https://flagcdn.com/w320/lk.png"
+              src={SrilankaFlag}
               alt="Sri Lanka Flag"
               className="img-fluid"
               style={{
@@ -201,13 +218,13 @@ const TheGroup = () => {
           {/* USA */}
           <div className="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center justify-content-center">
             <img
-              src="https://www.tgpsglobal.com/static/media/minerva.1884020a611cfeba1910.webp"
+              src={Minerva}
               alt="Minerva Energies"
               className="img-fluid mb-3"
               style={{ maxHeight: "60px", objectFit: "contain" }}
             />
             <img
-              src="https://flagcdn.com/w320/us.png"
+              src={USAFlag}
               alt="USA Flag"
               className="img-fluid"
               style={{

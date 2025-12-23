@@ -1,0 +1,53 @@
+/* Full screen background */
+.dummy-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #0f2027,
+    #203a43,
+    #2c5364
+  );
+  display: flex;
+  align-items: center;
+}
+
+/* Glassmorphism card */
+.dummy-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 60px 40px;
+  color: #fff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Typography */
+.dummy-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.dummy-text {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 15px;
+  line-height: 1.7;
+}
+
+/* Buttons */
+.btn-primary {
+  border-radius: 30px;
+}
+
+.btn-outline-secondary {
+  border-radius: 30px;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline-secondary:hover {
+  background-color: #fff;
+  color: #000;
+}

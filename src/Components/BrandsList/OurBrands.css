@@ -1,12 +1,12 @@
 /* =========================== Our Brand Section Styling =========================== */
 .brand-section {
-  background-color: #f9f9f9;
+  background-color: #FFF2E0;
   font-family: "Poppins", sans-serif;
   overflow-x: visible !important; /* ✅ Prevents cropping */
 }
 
 .brand-box {
-  border-radius: 6px;
+  border-radius: 70px;
   position: relative;
   padding: 60px;
   overflow: visible !important; /* ✅ Ensures right box never cuts */
@@ -22,21 +22,34 @@
 .brand-left {
   flex: 1;
   z-index: 2;
-  color: #fff;
+  color: #000;
   position: relative;
   border-radius: 12px;
   padding: 40px;
   overflow: hidden;
+  /* font-weight: 600; */
+}
+
+.text-top{
+  font-weight: 900;
+  font-size: 30px;
 }
 
 /* Glow Background Classes */
-.new-bg-1 { background: #001F82; animation: leftBoxGlow 8s ease-in-out infinite; }
-.new-bg-2 { background: #000; animation: leftBoxGlow 8s ease-in-out infinite; }
-.new-bg-3 { background: #212971; animation: leftBoxGlow 8s ease-in-out infinite; }
-.new-bg-4 { background: #540863; animation: leftBoxGlow 8s ease-in-out infinite; }
-.new-bg-5 { background: #0BC4F1; animation: leftBoxGlow 8s ease-in-out infinite; }
-.new-bg-6 { background: #BB0E82; animation: leftBoxGlow 8s ease-in-out infinite; }
-.new-bg-7 { background: #019A32; animation: leftBoxGlow 8s ease-in-out infinite; }
+/* .new-bg-1 { background: #001F82; animation: leftBoxGlow 8s ease-in-out infinite; } */
+/* .new-bg-2 { background: #000; animation: leftBoxGlow 8s ease-in-out infinite; } */
+/* .new-bg-3 { background: #212971; animation: leftBoxGlow 8s ease-in-out infinite; } */
+.frequencyfv-bg { background: #208da5d0; animation: leftBoxGlow 8s ease-in-out infinite; }
+.zigoo-bg { background: #540863; animation: leftBoxGlow 8s ease-in-out infinite; }
+.frecfast-bg { background: #045F33; animation: leftBoxGlow 8s ease-in-out infinite; }
+.clifchat-bg { background: #644121; animation: leftBoxGlow 8s ease-in-out infinite; }
+.frecx-bg { background: #C9BCFD; animation: leftBoxGlow 8s ease-in-out infinite; }
+/* .new-bg-5 { background: #0BC4F1; animation: leftBoxGlow 8s ease-in-out infinite; } */
+.info-bg { background: #B6EEFE; animation: leftBoxGlow 8s ease-in-out infinite; }
+.freccharge-bg { background: #BB0E82; animation: leftBoxGlow 8s ease-in-out infinite; } 
+.tetsol-bg { background: #FED5B0; animation: leftBoxGlow 8s ease-in-out infinite; }
+.metta-bg { background: #f38a44; animation: leftBoxGlow 8s ease-in-out infinite; }
+.dmask-bg { background: #000000; animation: leftBoxGlow 8s ease-in-out infinite; }
 
 @keyframes leftBoxGlow {
   0% { background-position: 0% 50%; }
@@ -72,8 +85,8 @@
   top: 50%;
   transform: translateY(-50%);
   border-radius: 10px;
-  width: 280px;
-  height: 220px;
+  width: 350px;
+  height: 270px;
   background: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   text-align: center;

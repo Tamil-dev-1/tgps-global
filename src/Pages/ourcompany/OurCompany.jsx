@@ -1,7 +1,15 @@
 import React from "react";
 import bgImage from "../../assets/images/About/about-bg.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import './OurCompany.css'
+import Focus from "../../assets/images/ourcompany/focus2.png";
+import Playbook from "../../assets/images/ourcompany/playbook.png";
+import Honourwall from "../../assets/images/ourcompany/honourwall.png";
+import Story from "../../assets/images/ourcompany/story.png";
+import Innovation from "../../assets/images/ourcompany/innovation.png";
+import Brandsignature from "../../assets/images/ourcompany/tgps3.png";
+import Guiding from "../../assets/images/ourcompany/guiding.jpeg";
 // import LogoBrands from '..//..//Components/ourbrand/LogoBrands'
 // import ErrorBoundary from "../../error/errorBoundary";
 
@@ -11,7 +19,7 @@ const AboutUs = () => {
       <div
         className="d-flex flex-column justify-content-center align-items-center text-center text-white"
         style={{
-          minHeight: "75vh",
+          minHeight: "30vh",
           // backgroundImage: `url(${bgImage})`,
           // backgroundSize: "cover",
           // backgroundPosition: "center",
@@ -121,137 +129,98 @@ const AboutUs = () => {
                            {/* SECTION ========= 2 */}
 
 
-          <section className="py-5" style={{ background: "#001F82" }}>
-      <div className="container">
+    <section className="py-5" style={{ background: "#001F82" }}>
+  <div className="container">
 
-        {/* === 4 IMAGES + 1 TEXT LINKS BOX (ALL IN ONE ROW) === */}
-        <div className="row g-4">
+    {/* ROW */}
+    <div className="row g-4 justify-content-center">
 
-          {/* CARD 1 */}
-          <div className="col-lg-2 col-md-4 col-6">
-            <div className="card premium-card text-white border-0">
-              <img src="https://images.pexels.com/photos/2763246/pexels-photo-2763246.jpeg" className="premium-img" alt="" />
-              <div className="card-body text-center px-1 py-2">
-               <Link to='/infocus'><h6 className="fw-semibold m-0 text-light">In Focus</h6></Link> 
-              </div>
-            </div>
-          </div>
-
-          {/* CARD 2 */}
-          <div className="col-lg-2 col-md-4 col-6">
-            <div className="card premium-card text-white border-0">
-              <img src="https://images.pexels.com/photos/2763246/pexels-photo-2763246.jpeg" className="premium-img" alt="" />
-              <div className="card-body text-center px-1 py-2">
-               <Link to='/our-playbook'><h6 className="fw-semibold m-0 text-light">Our Playbook</h6></Link> 
-              </div>
-            </div>
-          </div>
-
-          {/* CARD 3 */}
-          <div className="col-lg-2 col-md-4 col-6">
-            <div className="card premium-card text-white border-0">
-              <img src="https://images.pexels.com/photos/2763246/pexels-photo-2763246.jpeg" className="premium-img" alt="" />
-              <div className="card-body text-center px-1 py-2">
-                <Link to='/guiding-force'><h6 className="fw-semibold m-0 text-light">Guiding Force</h6></Link>
-              </div>
-            </div>
-          </div>
-
-          {/* CARD 4 */}
-          <div className="col-lg-2 col-md-4 col-6">
-            <div className="card premium-card text-white border-0">
-              <img src="https://images.pexels.com/photos/2763246/pexels-photo-2763246.jpeg" className="premium-img" alt="" />
-              <div className="card-body text-center px-1 py-2">
-                <Link to='/thetgps-story'><h6 className="fw-semibold m-0 text-light">The TGPS Story</h6></Link>
-              </div>
-            </div>
-          </div>
-
-          {/* === TEXT LINKS BOX (REPLACES 5th IMAGE) === */}
-          <div className="col-lg-4 col-md-6 col-12">
-            <div className="p-3 d-flex flex-column gap-2 text-white text-start link-box">
-
-              <Link to="/innovation-hub" className="fw-semibold text-white text-decoration-none">
-                Innovation Hub
-              </Link>
-
-              <Link to="/the-tgpshonour" className="fw-semibold text-white text-decoration-none">
-               The TGPS Honour Wall
-              </Link>
-
-              <Link to="/brand-signature" className="fw-semibold text-white text-decoration-none">
-               Brand Signature
-              </Link>
-
-              <Link to="/view-point" className="fw-semibold text-white text-decoration-none">
-                Our Viewpoint
-              </Link>
-
-            </div>
-          </div>
-
-        </div>
-
-        {/* Button */}
-        <div className="text-center mt-4">
-          <button className="btn fw-bold px-4" style={{backgroundColor:'#77DDF5',borderRadius:'0px'}}>
-            View Our Company →
-          </button>
-        </div>
+      {/* CARD */}
+{[
+  {
+    title: "In Focus",
+    link: "/infocus",
+    img: Focus,
+  },
+  {
+    title: "Our Playbook",
+    link: "/our-playbook",
+    img: Playbook,
+  },
+  {
+    title: "Guiding Force",
+    link: "/guiding-force",
+    img: Guiding,
+  },
+  {
+    title: "The TGPS Story",
+    link: "/thetgps-story",
+    img: Story,
+  },
+  {
+    title: "Innovation Hub",
+    link: "/innovation-hub",
+    img: Innovation,
+  },
+  {
+    title: "The TGPS Honour Wall",
+    link: "/the-tgpshonour",
+    img: Honourwall,
+  },
+  {
+    title: "Brand Signature",
+    link: "/brand-signature",
+    img: Brandsignature,
+  },
+].map((item, index) => (
+  <div
+    key={index}
+    className="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center"
+  >
+    <div className="card premium-card text-white border-0 w-100">
+      <img
+        src={item.img}
+        className="premium-img"
+        alt={item.title}
+      />
+      <div className="card-body text-center px-1 py-2">
+        <Link to={item.link} className="text-decoration-none">
+          <h6 className="fw-semibold m-0 text-light">
+            {item.title}
+          </h6>
+        </Link>
       </div>
+    </div>
+  </div>
+))}
 
-      {/* STYLE */}
-      <style>
-        {`
-          .premium-img {
-            height: 160px;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 4px;
-          }
 
-          .premium-card {
-            background: transparent;
-          }
+    </div>
+  </div>
 
-          .premium-card:hover {
-            transform: translateY(-4px);
-            transition: .3s;
-          }
+  {/* STYLE */}
+  <style>
+    {`
+      .premium-img {
+        height: 160px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+      }
 
-          .link-box {
-            background: rgba(255,255,255,0.05);
-            border-radius: 6px;
-          }
-        `}
-      </style>
-    </section>
+      .premium-card {
+        background: transparent;
+        transition: .3s ease;
+      }
+
+      .premium-card:hover {
+        transform: translateY(-6px);
+      }
+    `}
+  </style>
+</section>
+
       
-
-                          {/* PHOTO WITH NAVIGATION SECTION */}
-
-
-
-                 {/* <div className="d-flex">
-            <div>
-              <img src="https://images.pexels.com/photos/34995714/pexels-photo-34995714.jpeg" alt="" />
-              <a href="">link1</a>
-            </div>
-
-            <div>
-              <img src="https://images.pexels.com/photos/34995714/pexels-photo-34995714.jpeg" alt="" />
-              <a href="">link1</a>
-            </div>
-
-            <div>
-              <img src="https://images.pexels.com/photos/34995714/pexels-photo-34995714.jpeg" alt="" />
-              <a href="">link1</a>
-            </div>
-          </div> */}
-
-
-
-
 
                         {/* PARAGRAP TEXT SECTIONS */}
 
@@ -274,6 +243,8 @@ const AboutUs = () => {
 </p>
       </div>
       </div>
+
+     
     </div>
   );
 };

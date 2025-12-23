@@ -4,6 +4,28 @@ html, body {
   overflow-x: hidden;
 }
 
+      /* NEW CODES FOR HERO SECTION */
+
+    .hero-bg {
+  background-image: url("/src/assets/images/Home/gradientbg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  
+
+
+
+
+.hero-left-img{
+  background-image: url('/src/assets/images/Home/heroimg.jpeg');
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  min-height: clamp(35vh, 70vh, 70vh);
+}
+
+
 /* IMAGE RESPONSIVE */
 .responsive-img {
   width: 100%;

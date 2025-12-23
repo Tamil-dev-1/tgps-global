@@ -1,0 +1,244 @@
+/* =====================================================
+   GLOBAL RESET
+===================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* =====================================================
+   BREADCRUMB BAR
+===================================================== */
+.breadcrumb-bar {
+  background: #243fcd;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 8px 20px;
+}
+
+.breadcrumb-bar span span {
+  margin: 0 6px;
+  font-size: 12px;
+}
+
+/* =====================================================
+   SECTION 1 — SPLIT HERO (FIXED HEIGHT)
+===================================================== */
+.science-section {
+  overflow: hidden;
+}
+
+.science-row {
+  height: 540px; /* 🔥 reduced height */
+}
+
+/* ---------- LEFT IMAGE ---------- */
+.left-image {
+  height: 100%;
+  overflow: hidden;
+  background: #eaeaea;
+}
+
+.left-image img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ---------- RIGHT CONTENT ---------- */
+.right-content {
+  background: linear-gradient(180deg, #0b2a8f, #061f6d);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.content-inner {
+  padding: 45px 60px;
+  max-width: 650px;
+}
+
+/* ---------- TEXT ---------- */
+.content-inner h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+.date {
+  font-size: 14px;
+  margin-bottom: 22px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.content-inner p {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+/* =====================================================
+   SECTION 2 & 4 — CONTENT BLOCK
+===================================================== */
+.fragrance-section {
+  background: #062a8f;
+  color: #ffffff;
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.intro-text {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 45px;
+}
+
+.fragrance-section p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* =====================================================
+   SECTION 3 — FIXED BACKGROUND HERO
+===================================================== */
+.fixed-hero {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  height: 100vh;
+}
+
+.fixed-hero-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.fixed-hero-content {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+/* =====================================================
+   RESPONSIVE — LARGE DESKTOP (≥1400px)
+===================================================== */
+@media (min-width: 1400px) {
+  .science-row {
+    height: 600px;
+  }
+
+  .content-inner h1 {
+    font-size: 44px;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE — LAPTOP (≤1199px)
+===================================================== */
+@media (max-width: 1199px) {
+  .science-row {
+    height: 500px;
+  }
+
+  .content-inner {
+    padding: 40px 45px;
+  }
+
+  .content-inner h1 {
+    font-size: 36px;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE — TABLET (≤991px)
+===================================================== */
+@media (max-width: 991px) {
+  .science-row {
+    height: auto;
+  }
+
+  .left-image {
+    height: 300px;
+  }
+
+  .right-content {
+    align-items: flex-start;
+  }
+
+  .content-inner {
+    padding: 40px 30px;
+    max-width: 100%;
+  }
+
+  .content-inner h1 {
+    font-size: 32px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE — MOBILE (≤767px)
+===================================================== */
+@media (max-width: 767px) {
+  .breadcrumb-bar {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .left-image {
+    height: 240px;
+  }
+
+  .content-inner {
+    padding: 32px 20px;
+  }
+
+  .content-inner h1 {
+    font-size: 26px;
+  }
+
+  .content-inner p,
+  .fragrance-section p {
+    font-size: 15px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE — SMALL MOBILE (≤480px)
+===================================================== */
+@media (max-width: 480px) {
+  .left-image {
+    height: 210px;
+  }
+
+  .content-inner h1 {
+    font-size: 23px;
+  }
+
+  .date {
+    font-size: 13px;
+  }
+}
