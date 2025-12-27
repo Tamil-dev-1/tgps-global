@@ -1,51 +1,172 @@
-.top-section{
-    background-color: #0D6EFD;
-    padding-bottom: 100px;
-    padding-top: 100px;
-}
-
 /* .top-section {
-  background: #001f82;
-  padding: 60px 0;
+  background: #0d6efd;
+  padding: 100px 0;
 } */
 
+.mono-font{
+   font-family: "Montserrat", sans-serif;
+}
+.top-section {
+  position: relative;
+  padding: 120px 0;
+  background: linear-gradient(180deg, #0a1a44, #001028);
+  overflow: hidden;
+}
+
+/* ❄️ SNOW LAYER 1 – small fast snow */
+.top-section::before {
+  content: "";
+  position: absolute;
+  inset: -200% 0 0 0;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,0.9), transparent),
+    radial-gradient(2px 2px at 80px 120px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1.5px 1.5px at 140px 60px, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 200px 180px, rgba(255,255,255,0.6), transparent);
+  background-size: 220px 220px;
+  animation: snowFast 20s linear infinite;
+  pointer-events: none;
+}
+
+/* ❄️ SNOW LAYER 2 – big glowing snow + wind */
+.top-section::after {
+  content: "";
+  position: absolute;
+  inset: -300% 0 0 0;
+  background-image:
+    radial-gradient(4px 4px at 50px 60px, rgba(255,255,255,1), transparent),
+    radial-gradient(3px 3px at 120px 160px, rgba(255,255,255,0.9), transparent),
+    radial-gradient(5px 5px at 200px 100px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(6px 6px at 260px 220px, rgba(255,255,255,0.85), transparent);
+  background-size: 320px 320px;
+  animation: snowSlow 45s linear infinite;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.8));
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* 🌬️ Snow animations with wind */
+@keyframes snowFast {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(60%) translateX(-120px);
+  }
+}
+
+@keyframes snowSlow {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(40%) translateX(160px);
+  }
+}
+
+/* 🎄 Festive glow overlay */
+.top-section .festive-glow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 0, 0, 0.15), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(0, 255, 0, 0.15), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(255, 255, 0, 0.12), transparent 45%);
+  animation: glowPulse 6s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+/* ✨ Glow pulse */
+@keyframes glowPulse {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0.85;
+  }
+}
+
+
+
+/* Wrapper */
 .marquee-wrapper {
   overflow: hidden;
-  position: relative;
   width: 100%;
 }
 
+/* Track */
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee 25s linear infinite;
+  animation: marquee 50s linear infinite;
 }
 
+/* 🔥 PAUSE ON HOVER */
+.marquee-wrapper:hover .marquee-track {
+  animation-play-state: paused;
+}
 
-
-
+/* Card */
 .marquee-card {
   min-width: 360px;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
-  padding: 20px;
+  padding: 22px;
   margin-right: 24px;
+  border-radius: 14px;
   cursor: pointer;
-  transition: transform 0.3s ease, background 0.3s ease;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .marquee-card:hover {
-  transform: translateY(-4px);
-  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
 }
 
-.marquee-card p {
-  color: #ffffff;
-  font-size: 15px;
-  line-height: 1.6;
+/* Header */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.card-header h6 {
+  font-size: 16px;
+  font-weight: 600;
   margin: 0;
 }
 
+.card-icon {
+  font-size: 20px;
+}
+
+/* Text */
+.marquee-card p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* 🎨 GRADIENTS */
+.gradient-1 {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+}
+
+.gradient-2 {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}
+
+.gradient-3 {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.gradient-4 {
+  background: linear-gradient(135deg, #7f00ff, #e100ff);
+}
+
+/* Animation */
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -59,6 +180,10 @@
 @media (max-width: 768px) {
   .marquee-card {
     min-width: 280px;
-    padding: 16px;
+    padding: 18px;
+  }
+
+  .marquee-track {
+    animation-duration: 65s;
   }
 }

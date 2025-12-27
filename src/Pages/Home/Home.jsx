@@ -1,28 +1,23 @@
 
 import React from 'react' 
 import "./Home.css";
-// import OurBrand from '../../Components/ourbrand/OurBrand';
 import { motion } from "framer-motion";
 import BlogCarousel from '../../Components/Blog/BlogCarousel';
 import LatestNews from '../../Components/LatestNews/LatestNews';
 import LogoBrands from '..//..//Components/ourbrand/LogoBrands'
 import HorizontalScroll from '..//..//Components/horizontalScroll/HorizontalScroll'
-// import LogoGoals from '..//..//Components/logoGoals/LogoGoals'
 import { Link } from 'react-router-dom';
-//import HeroSection from '../../Components/HeroSection';
 import ErrorBoundary from "../../error/errorBoundary";
-import HeroBgImg from '..//..//assets/images/Home/heroimg.jpeg'
-
-import image2 from '..//..//assets/images/Home/image2.jpeg'
-import image3 from '..//..//assets/images/Home/image3.jpeg'
-// import image1 from '..//..//assets/images/Home/image1.jpg'
+import HeroBgImg from '..//..//assets/images/Home/heroimg1.jpg'
 import Tgps1 from '..//..//assets/images/Home/tgps-1.jpeg'
 import Tgps2 from '..//..//assets/images/Home/tgps-2.jpeg'
 import Tgps3 from '..//..//assets/images/Home/tgps-3.jpeg'
-import Dummy6 from '..//..//assets/images/Home/dummy6.jpg'
-import Dummy5 from '..//..//assets/images/Home/dummy5.jpg'
+import SevenGoals from '..//..//assets/images/Home/sevengoals.png'
+import WebsiteImg from '..//..//assets/images/Home/website.jpg'
 import { Opacity } from '@mui/icons-material';
-// import Dummy4 from '..//..//assets/images/Home/dummy4.jpg'
+import Popup from '../../Components/popup/Popup'
+// import Guid from '..//..//assets/images/Home/guid1.jpg'
+// import Innovation from '..//..//assets/images/Home/innovation1.png'
 
 const Home = () => {  
 
@@ -87,10 +82,7 @@ const Home = () => {
         src={HeroBgImg}
         alt="Hero"
         className="img-fluid w-100 responsive-img"
-        // style={{
-        //   objectFit: "cover",
-        //   height: "70vh", 
-        // }}
+      
       />
     </div>
   </div>
@@ -99,10 +91,8 @@ const Home = () => {
 
 
                         {/* SATISTICS CARD SECTION */}
-    <motion.section 
-   initial={{opacity: 0, translateX: "100%"}}
-   whileInView={{opacity: 1, translateX: 0}}
-   transition={{duration: 2}}
+    <section 
+ 
       className="container-fluid py-5 stats-section"
       // style={{ backgroundColor: "#fff" }}
       style={{ backgroundColor: "#001F82" }}
@@ -221,7 +211,7 @@ const Home = () => {
 
        {/* ✅ Custom Styles */}
     
-    </motion.section>
+    </section>
 
 
   
@@ -246,126 +236,79 @@ const Home = () => {
 
 
                   {/* THE GROUP SECTION */}
- <motion.section
-   initial={{opacity: 0, rotateX: "90deg"}}
-whileInView={{opacity: 1, rotateX: 0}}
-transition={{duration: 2}}
+ {/* <section
   className="container-fluid py-5"
-  style={{
-    background: "#FEA29A",
-  }}
+  style={{ background: "#FEA29A" }}
 >
-  <div
-    className="row align-items-center justify-content-center text-center text-md-start g-4 px-4 px-md-5"
-    style={{
-      maxWidth: "100%",
-    }}
-  >
-    {/* 1️⃣ FIRST COLUMN - Heading & text */}
-    <div
-      className="col-lg-4 col-md-12"
-      style={{
-        paddingLeft: "4%",
-      }}
-    >
+  <div className="row align-items-center justify-content-center g-4 px-4 px-md-5">
+
+    
+    <div className="col-lg-4 col-md-12" style={{ paddingLeft: "4%" }}>
       <h1
         className="fw-bold mb-3"
         style={{
-          color: "#0047BA",
-          // fontSize: "clamp(2rem, 3vw + 1rem, 3.5rem)",
+          color: "#1F36C7",
           fontSize: "clamp(2rem, 1.5rem, 3.5rem)",
           lineHeight: "1.2",
         }}
       >
-        <span style={{ color: "#1F36C7" }}>Redefining Energy for a Clean, Smart & Decentralized</span>
+        Guiding Force
       </h1>
-      <p
-        style={{
-          fontSize: "clamp(1rem, 0.8vw + 0.5rem, 1.25rem)",
-          color: "#1F36C7",
-          maxWidth: "450px",
-        }}
-      >
-      Whether it is renewable energy, advanced solar solutions, EV infrastructure, EV fleet management, or blockchain-integrated energy systems, our purpose remains <br /> clear:
-      To build a greener, smarter, and more inclusive energy future for everyone.
-
-
-      </p>
-
-       <p
-        style={{
-          fontSize: "clamp(1rem, 0.8vw + 0.5rem, 1.25rem)",
-          color: "#1F36C7",
-          maxWidth: "450px",
-        }}
-      >
-        At TGPS Global, we believe that caring for communities, empowering industries, and protecting the planet is not just good business “it is the only way forward”.
-
-
-      </p>
     </div>
 
-    {/* 2️⃣ SECOND COLUMN - Image Card 1 */}
-    <div className="col-lg-4 col-md-6 col-12"  data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="1000">
-      <div
-        className="card border-0 shadow-sm h-100"
-        style={{
-          borderRadius: "0",
-          transition: "transform 0.3s ease, box-shadow 0.3s ease",
-        }}
-      >
+   
+    <div className="col-lg-4 col-md-6 col-12">
+      <div className="card guiding-card h-100 border-0 shadow-sm">
         <img
           src="https://images.pexels.com/photos/34446694/pexels-photo-34446694.jpeg"
           className="card-img-top"
-          alt="Sustainability"
-          style={{
-            height: "280px",
-            objectFit: "cover",
-            borderRadius: 0,
-          }}
+          alt="Founder"
         />
-        <div className="card-body">
-          <h5 className="card-title text-primary fw-bold">Green Carpet</h5>
-          <p className="card-text text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+        <div className="card-body d-flex flex-column">
+          <h5 className="card-title text-primary fw-bold">
+            Founder & CMD – Mr. MK
+          </h5>
+
+          <p className="card-text text-muted clamp-text">
+            When I began this journey, I was not trying to build a company—I was trying to solve a problem
           </p>
+
+          
+            Read more →
+          
         </div>
       </div>
     </div>
 
-    {/* 3️⃣ THIRD COLUMN - Image Card 2 */}
-    <div className="col-lg-4 col-md-6 col-12"  data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="1000">
-      <div
-        className="card border-0 shadow-sm h-100"
-        style={{
-          borderRadius: "0",
-          transition: "transform 0.3s ease, box-shadow 0.3s ease",
-        }}
-      >
+    
+    <div className="col-lg-4 col-md-6 col-12">
+      <div className="card guiding-card h-100 border-0 shadow-sm">
         <img
           src="https://images.pexels.com/photos/34336341/pexels-photo-34336341.jpeg"
           className="card-img-top"
-          alt="Wind Energy"
-          style={{
-            height: "280px",
-            objectFit: "cover",
-            borderRadius: "0",
-          }}
+          alt="CEO"
         />
-        <div className="card-body">
-          <h5 className="card-title text-primary fw-bold">Ideology</h5>
-          <p className="card-text text-muted">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+
+        <div className="card-body d-flex flex-column">
+          <h5 className="card-title text-primary fw-bold">
+            Chief Executive Officer – Ms. Ponsana DAVID
+          </h5>
+
+          <p className="card-text text-muted clamp-text">
+            When I look at TGPS Global today, I don’t just see a group of businesses—I see a responsibility
           </p>
+
+         
+            Read more →
+          
         </div>
       </div>
     </div>
+
   </div>
-</motion.section>
+</section> */}
+<Popup />
 
             {/* HORIZONTAL SCROLL --- SECTION */}
 
@@ -499,7 +442,7 @@ transition={{duration: 2}}
       </h5>
       <p style={{ color: "#555", fontSize: "1rem" }}>
         Sustainability here isn’t a poster on the wall. It’s how decisions are made .....
-        <Link to="/careers">Read More</Link>
+        <Link to="/careers">Readmore</Link>
       </p>
     </div>
   </div>
@@ -562,7 +505,7 @@ transition={{duration: 2}}
       </h5>
       <p style={{ color: "#555", fontSize: "1rem" }}>
         Values that guide decisions, not just words. Innovation isn’t locked inside a department .....
-        <Link to="/careers">Read More</Link>
+        <Link to="/careers">Readmore</Link>
       </p>
     </div>
   </div>
@@ -649,7 +592,7 @@ transition={{duration: 2}}
       </h5>
       <p style={{ color: "#555", fontSize: "1rem" }}>
         Your work here shapes more than a career. But no role exists in isolation. Every .....
-        <Link to="/careers">Read More</Link>
+        <Link to="/careers">Readmore</Link>
       </p>
     </div>
   </div>
@@ -668,32 +611,25 @@ transition={{duration: 2}}
 
                                {/* final section */}
 
-
-
-                   
-
-
-       <section
-       
-       >
+       <section>
 
     <div className="fullwidth-image">
   <img
-    src={Dummy6}
+    src={SevenGoals}
     alt="Innovation"
     className="img-fluid w-100"
     style={{ objectFit: "contain", height: "" }}
   />
 </div>
 
- <div className="fullwidth-image">
+ {/* <div className="fullwidth-image">
   <img
-    src={Dummy5}
+    src={WebsiteImg}
     alt="Innovation"
     className="img-fluid w-100"
     style={{ objectFit: "contain", height: "" }}
   />
-</div>
+</div> */}
   
 </section>
                         

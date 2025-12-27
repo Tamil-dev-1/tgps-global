@@ -26,7 +26,6 @@
 
 .text-section {
   min-height: 100vh;
-  
   background: #ffffff;
   display: flex;
   align-items: center;
@@ -41,11 +40,12 @@
 
 /* Heading */
 .text-title {
- font-size: clamp(28px, 5vw, 45px);
+  font-size: clamp(24px, 4.5vw, 40px);
   font-weight: 700;
   line-height: 1.2;
   color: #111;
 }
+
 
 /* Sub text */
 .hero-subtext {

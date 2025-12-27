@@ -45,11 +45,19 @@
 }
 
 /* TEXT */
-.section-title {
+/* .section-title {
   font-size: 36px;
   font-weight: 700;
   color: var(--primary);
+} */
+ .section-title {
+  font-size: 36px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #001f82, #005eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 
 .section-subtitle {
   margin-top: 20px;

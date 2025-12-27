@@ -87,11 +87,7 @@ const Footer = () => {
       >
         <div className="container text-center text-md-start">
           <div className="d-flex flex-column flex-md-row flex-wrap justify-content-center justify-content-md-start gap-3 mb-4 pb-3">
-            <Link to="/"
-              className="text-white text-decoration-underline fw-semibold" style={{textDecorationColor:'#00BFFF'}}>
-              Contact - Thai Green Power Solution Company Limited
             
-            </Link>
            <Link to='/ourcompany'
               className="text-white text-decoration-underline fw-semibold">
               Our Company
@@ -99,7 +95,7 @@ const Footer = () => {
            </Link>
             <Link to='/the-brands'
             className="text-white text-decoration-underline fw-semibold">
-              Brand
+              The Group
             
             </Link>
            <Link to='/news'
@@ -120,12 +116,8 @@ const Footer = () => {
             <a href="https://greencarpet.world/" className="text-white text-decoration-underline fw-semibold">
               Green Carpet
             </a>
-            <a href="#" className="text-white text-decoration-underline fw-semibold">
-              Accessibility
-            </a>
-            <a href="#" className="text-white text-decoration-underline fw-semibold">
-              Privacy Notice
-            </a>
+            
+          
           </div>
 
           <div className="text-center text-md-start mt-4">

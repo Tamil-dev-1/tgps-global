@@ -162,7 +162,7 @@ export default function Navbar() {
 
                   {/* Search */}
                   <Button
-                    startIcon={<Search sx={{ color: "#fff" }} />}
+                    
                     sx={{
                       backgroundColor: "#1F36C7",
                       color: "#fff",

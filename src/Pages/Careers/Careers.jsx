@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
+import PopupData from '..//..//Components/tgps popup data/PopupData';
 import bubbleImg from '..//..//assets/images/Careers/bubbles.jpg'
 import waterdropImg from '..//..//assets/images/Careers/water-drops.jpg'
-import teamImg1 from '..//..//assets/images/Careers/team1.jpeg'
-import teamImg2 from '..//..//assets/images/Careers/team2.jpeg'
-import teamImg3 from '..//..//assets/images/Careers/team3.jpeg'
+import teamImg1 from '..//..//assets/images/Careers/team1.jpg'
+import teamImg2 from '..//..//assets/images/Careers/team2.jpg'
+import teamImg3 from '..//..//assets/images/Careers/team3.jpg'
 
 const Careers = () => {
   return (
@@ -29,7 +30,7 @@ const Careers = () => {
       </motion.section>
 
       {/* ===== ABOUT / CULTURE SECTION ===== */}
-      <section className="container mt-5  py-5 text-center" style={{ backgroundColor:'#9C44C0',
+      {/* <section className="container mt-5  py-5 text-center" style={{ backgroundColor:'#9C44C0',
               
             }}>
         <h2 className="fw-bold mb-4 text-white">We TGPS</h2>
@@ -63,8 +64,37 @@ const Careers = () => {
             />
             <h5 className="text-white mt-3 fw-semibold">Fun Events</h5>
           </div>
+
+          <div className="col-md-4">
+            <img
+              src={teamImg3}
+              className="img-fluid rounded shadow-sm"
+              alt="Events"
+            />
+            <h5 className="text-white mt-3 fw-semibold">Fun Events</h5>
+          </div>
+
+          <div className="col-md-4">
+            <img
+              src={teamImg3}
+              className="img-fluid rounded shadow-sm"
+              alt="Events"
+            />
+            <h5 className="text-white mt-3 fw-semibold">Fun Events</h5>
+          </div>
+
+          <div className="col-md-4">
+            <img
+              src={teamImg3}
+              className="img-fluid rounded shadow-sm"
+              alt="Events"
+            />
+            <h5 className="text-white mt-3 fw-semibold">Fun Events</h5>
+          </div>
         </div>
-      </section>
+      </section> */}
+
+      <PopupData />
 
       {/* ===== PERKS & BENEFITS ===== */}
       <section className="bg-light py-5">
@@ -191,6 +221,7 @@ const Careers = () => {
   <button className="btn btn-light text-white px-4" style={{backgroundColor:'#0D6EFD'}}>
     Send Resume
   </button>
+  <p>To : <a href="">info@tgpsglobal.com</a></p>
 </section>
 
     </div>

@@ -180,3 +180,56 @@ section {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
+
+
+
+
+/* 🔒 Hard lock the entire card */
+.guiding-card {
+  height: 480px;              /* FIXED TOTAL HEIGHT */
+  border-radius: 0;
+  overflow: hidden;           /* 🔥 prevents growth */
+}
+
+/* 🔒 Lock image height */
+.guiding-card img {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* 🔒 Lock card body height */
+.guiding-card .card-body {
+  /* height: calc(480px - 260px);  */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;            /* 🔥 important */
+}
+
+/* 🔒 Clamp text STRICTLY */
+.clamp-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;       /* max lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 🔒 Prevent title from expanding too much */
+.guiding-card .card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Keep Read More always at bottom */
+.guiding-card a {
+  margin-top: auto;
+}
+
+/* Optional hover effect */
+.guiding-card:hover {
+  transform: translateY(-6px);
+  transition: transform 0.3s ease;
+}

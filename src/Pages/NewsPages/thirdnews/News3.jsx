@@ -2,10 +2,12 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Link} from "react-router-dom"
 import "./News3.css";
+import Missionary from "../../../assets/images/News/missionary.jpeg"
 
 const News3 = () => {
   return (
     <>
+    <section className="IBM-font">
       {/* BREADCRUMB BAR */}
       <div className="breadcrumb-bar">
         <div className="container py-2">
@@ -21,24 +23,22 @@ const News3 = () => {
             <div className="col-lg-8">
 
               <h1 className="press-title">
-                Lorem, ipsum dolor. <br />
-                Lorem ipsum dolor sit. <br />
-                Lorem
+                MK Visionary Awards 2025: Empowering Young Minds Through Scholarships, Creativity, and Opportunity
               </h1>
 
               <div className="press-meta">
-                <span>Published: 16 December 2025</span>
+                <span>Published: November 23</span>
                 <span className="dot">•</span>
-                <span>Lorem ipsum dolor sit.</span>
+                <span>Education, Youth & Social Impact</span>
               </div>
 
               <p className="press-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam adipisci debitis in sit magnam, animi ducimus numquam sed laborum reiciendis!
+                The MK Visionary Awards, held on November 23, marked a significant milestone in youth engagement, education, and talent recognition, bringing together students, educators, and changemakers under a shared vision of nurturing creativity, confidence, and future readiness.
               </p>
 
               <div className="press-image">
                 <img
-                  src="https://images.pexels.com/photos/3944382/pexels-photo-3944382.jpeg"
+                  src={Missionary}
                   alt="tgps-news"
                   
                 />
@@ -46,24 +46,73 @@ const News3 = () => {
 
               <div className="press-content">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eaque assumenda debitis mollitia architecto laudantium sapiente pariatur tempore, error nulla eos, ut fugit cupiditate non porro quo accusantium numquam autem incidunt veniam voluptatibus quis aspernatur eligendi? Ut laudantium adipisci repudiandae sapiente repellat, debitis labore, fugit quod quidem sequi dolorum aliquam error deserunt beatae ipsum consequuntur quo quae vero. Eum corporis molestias, vel quasi repellat eos nisi tenetur ab asperiores, vitae laborum dolores libero quam harum numquam minus blanditiis nobis iusto rerum. Quaerat pariatur corrupti dignissimos, fugiat quod excepturi nam tenetur delectus earum quam et dolore eaque voluptate officiis molestias aliquam.
+                  Designed as a platform to identify, encourage, and empower young potential, the MK Visionary Awards focused on students across school and college levels, recognising not just academic performance, but also creativity, awareness, and personal initiative.
                 </p>
 
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum porro maxime numquam qui exercitationem dolores necessitatibus similique eligendi illo, blanditiis dicta minus debitis fugit id. Laudantium non corporis magnam voluptatum molestiae aliquid a fugiat officiis nemo dicta laborum excepturi eum facilis culpa amet, tempore libero est doloremque quia soluta assumenda. Maiores error quod, vitae soluta dignissimos ex nulla exercitationem omnis numquam officiis atque, nesciunt fugiat. Cupiditate dolor beatae blanditiis esse, cumque labore magni nemo, ea doloremque facere, expedita id mollitia!
+                  Scholarship Support: Recognising Potential and Effort
+                </p>
+
+                <p className="fw-bold">
+                  As part of the awards, 31 students were granted scholarships, reinforcing the belief that opportunity should be driven by merit, effort, and promise:
                 </p>
 
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iure harum reiciendis libero? Explicabo omnis dicta, quae error accusamus nostrum excepturi inventore a maiores cum iste non quam, asperiores dolorem! Cumque, reprehenderit harum quidem quam tempora maiores quo assumenda consequatur nemo animi, ea id repellendus necessitatibus voluptates nostrum accusamus! Quod iure repudiandae ut quo dolorem in? Quam ducimus at a vitae consequatur saepe rerum, similique explicabo quos, adipisci modi obcaecati possimus optio ipsa reprehenderit impedit tenetur dicta fugiat cum sit.
+                  22 school students were awarded scholarships for their enthusiasm, creativity, and emerging talent
                 </p>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. At saepe deserunt minima fugit dolore est sed quos facilis atque, maxime, dolorem, architecto non optio repudiandae? Nesciunt officia libero, perspiciatis provident quaerat corporis quod. Modi explicabo non porro temporibus praesentium dolores minima corrupti. Quos esse vel sit doloremque earum quidem ex ipsam dolore voluptates, voluptatibus atque facilis in reiciendis tempora dolor necessitatibus minima ab, consequatur porro! Ex earum ea mollitia non! Quae reprehenderit, quod consequuntur maxime debitis cumque, cum cupiditate, velit suscipit ratione delectus nulla officia expedita fugit impedit error vitae facilis fuga sed dolores enim laudantium hic nemo quam! Deserunt.
+                  9 college students received scholarships in recognition of their academic commitment and future potential
                 </p>
 
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sunt esse dolorem aspernatur repellat aliquid quis tempore velit ipsum! Possimus non fugiat soluta porro eius temporibus rem, qui saepe ratione voluptatibus suscipit dolorem illum ex? Dolorum voluptas facere laudantium placeat ex similique velit itaque unde? Nulla et, cum doloribus officia laborum excepturi voluptatum voluptatem vero quo sed unde. Deserunt blanditiis et quidem officia odit iure quia quibusdam? Officiis, quod deserunt.
+                 These scholarships were positioned not merely as financial assistance, but as acknowledgement of dedication, imagination, and the courage to dream bigger.
                 </p>
+
+                <p>
+                  Student Competitions: Creativity with Purpose
+                </p>
+
+                <p className="fw-bold">
+                  The event featured thoughtfully designed competitions that encouraged students to express ideas beyond textbooks and examinations:
+                </p>
+                <p>
+                  A school-level drawing competition themed “Underwater World”, aimed at fostering environmental awareness and creative expression among young learners
+                </p>
+
+                <p>
+                  A clay modelling competition for students above 10 years, themed “Farm to Plate Journey”, promoting conceptual thinking, sustainability awareness, and hands-on creativity
+                </p>
+
+                <p>
+                  These activities provided students with a platform to translate imagination into expression while building confidence through participation.
+                </p>
+
+                <p>
+                  <strong>College Engagement</strong>: Skills, Guidance, and Real-World Exposure
+                </p>
+
+                <p>
+                  The MK Visionary Awards also extended strong support to college students through skill development initiatives and career guidance programs, helping them navigate academic-to-professional transitions with clarity and confidence.
+                </p>
+
+                <p>
+                  In addition, 17 college students were offered internship opportunities during the year, enabling hands-on learning, practical skill development, and real-world exposure across domains. These internships were designed to bridge the gap between theory and application, equipping students with industry-relevant experience
+                </p>
+
+                <p>
+                  A Commitment to the Future
+                </p>
+
+                <p>
+                  The MK Visionary Awards stand as a reflection of a long-term commitment to youth empowerment, inclusive education, and opportunity creation. By combining scholarships, creative platforms, mentorship, and experiential learning, the initiative reinforces the belief that investing in young minds is the most powerful investment in the future.
+                </p>
+
+                <h5 className="text-center">
+                  “When we recognise potential early, we shape leaders for tomorrow.”
+                </h5><br />
+                 <br />
+                 <p>Celebrating creativity. Supporting talent. Empowering futures.</p>
 
                 <hr />
               </div>
@@ -71,6 +120,7 @@ const News3 = () => {
             </div>
           </div>
         </div>
+      </section>
       </section>
     </>
   );

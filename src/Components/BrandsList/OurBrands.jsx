@@ -153,7 +153,7 @@ const  OurBrands= () => {
 
 
             <button className="btn btn-danger fw-bold px-4 py-2"data-aos="zoom-in">
-              FreC Charge
+              FreCCharge
             </button>
           </div>
 
@@ -193,7 +193,7 @@ const  OurBrands= () => {
               src={Frecfast}
               alt="brand Logo"
               className="img-fluid mb-1"
-              style={{ maxWidth: "350px" }}
+              style={{ maxWidth: "250px" }}
             />
             {/* <p className="fw-semibold mb-0">lorem.</p> */}
           </div>
@@ -295,7 +295,7 @@ const  OurBrands= () => {
               Demask is a privacy-first virtual meeting platform designed for the decentralized era. It ensures secure, encrypted, and user-controlled digital collaboration. Reimagining how people connect, meet, and collaborate online.
             </p>
 
-            <div className="d-flex flex-wrap gap-4 mb-4 justify-content-center justify-content-lg-start" >
+            {/* <div className="d-flex flex-wrap gap-4 mb-4 justify-content-center justify-content-lg-start" >
               <div className="text-center">
                 <i className="bi bi-link-45deg fs-3 d-block"></i>
                 <small className="fw-bold">CRM</small>
@@ -312,7 +312,7 @@ const  OurBrands= () => {
                 <i className="bi bi-telephone fs-3 d-block"></i>
                 <small className="fw-bold">Desk</small>
               </div>
-            </div>
+            </div> */}
 
             <button className="btn btn-danger fw-bold px-4 py-2" data-aos="zoom-in">
               Demask

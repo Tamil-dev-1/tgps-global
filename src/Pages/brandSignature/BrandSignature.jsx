@@ -128,7 +128,7 @@ const itemVariants = {
 
                   {/* SECTION ------ 2 */}
 
-    <div className="px-5 mb-5">
+    <div className="px-lg-5 mb-5">
   <motion.section
     className="text-section py-5"
     style={{ backgroundColor: "#F7F7F7" }}
@@ -226,7 +226,7 @@ const itemVariants = {
 
                    {/* SECTION ------- 3   */}
 
-     <div className="px-5 mb-5">
+     <div className="px-lg-5 mb-5">
   <motion.section
     className="text-section py-5"
     style={{ backgroundColor: "#F7F7F7" }}
@@ -315,7 +315,7 @@ const itemVariants = {
 
                    {/* SECTION ------ 4    */}
 
-       <div className="px-5 mb-5">
+       <div className="px-lg-5 mb-5">
   <motion.section
     className="text-section py-5"
     style={{ backgroundColor: "#F7F7F7" }}
@@ -394,7 +394,7 @@ const itemVariants = {
                  {/* SECTION -------- 5  */}
 
 
-<div className="px-5 mb-5">
+<div className="px-lg-5 mb-5">
       <motion.section
         className="text-section py-5"
         style={{ backgroundColor: "#F7F7F7" }}
@@ -484,7 +484,7 @@ const itemVariants = {
 
                   {/* SECTION ------ 6 */}
 
-      <div className="px-5 mb-5">
+      <div className="px-lg-5 mb-5">
   <motion.section
     className="text-section py-5"
     style={{ backgroundColor: "#F7F7F7" }}
@@ -586,7 +586,7 @@ const itemVariants = {
 
                      {/* SECTION ------ 7       */}
 
-      <div className="px-5 mb-5">
+      <div className="px-lg-5 mb-5">
   <motion.section
     className="text-section py-5"
     style={{ backgroundColor: "#F7F7F7" }}

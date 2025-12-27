@@ -27,6 +27,9 @@ import Blog2 from '../Pages/blogPages/blog2/Blog2';
 import Blog3 from '../Pages/blogPages/blog3/Blog3';
 import Blog4 from '../Pages/blogPages/blog4/Blog4';
 import Blog5 from '../Pages/blogPages/blog5/Blog5';
+import Form from '../Pages/formPage/Form';
+import Office1 from "../Pages/ourOfficepage/Office1"
+import Office2 from "../Pages/ourOfficepage/Office2"
 
 import BlogMain from '../Pages/blogPages/main/BlogMain'
 
@@ -64,6 +67,9 @@ const AppRouter = () => {
         <Route path="/blog-4" element={<Blog4 />} />
         <Route path="/blog-5" element={<Blog5 />} />
         <Route path="/blogs" element={<BlogMain />} />
+        <Route path="/form" element={<Form />} />
+        <Route path="/office-1" element={<Office1 />} />
+        <Route path="/office-2" element={<Office2 />} />
 
       </Routes>
       {/* <Footer /> */}

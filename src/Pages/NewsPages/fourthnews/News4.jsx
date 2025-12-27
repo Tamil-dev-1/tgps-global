@@ -2,10 +2,12 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Link} from "react-router-dom"
 import "./News4.css";
+import SportsImg from '../../../assets/images/News/sportsImg.jpeg'
 
 const News4 = () => {
   return (
     <>
+    <section className="IBM-font">
       {/* BREADCRUMB BAR */}
       <div className="breadcrumb-bar">
         <div className="container py-2">
@@ -21,24 +23,22 @@ const News4 = () => {
             <div className="col-lg-8">
 
               <h1 className="press-title">
-                Lorem, ipsum dolor. <br />
-                Lorem ipsum dolor sit. <br />
-                Lorem
+              Green Carpet Foundation Champions Inclusion Through Para Cricket Sponsorship in Coimbatore
               </h1>
 
               <div className="press-meta">
-                <span>Published: 16 December 2025</span>
+                <span>Published:  September 5–7</span>
                 <span className="dot">•</span>
-                <span>Lorem ipsum dolor sit.</span>
+                <span>Coimbatore | Social Impact & Sports Inclusion</span>
               </div>
 
               <p className="press-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam adipisci debitis in sit magnam, animi ducimus numquam sed laborum reiciendis!
+                The Green Carpet Foundation marked a powerful milestone in its journey toward inclusive social development by owning and sponsoring a para cricket team during the Indian Para Cricket League, held in Coimbatore from 5th to 7th September.
               </p>
 
               <div className="press-image">
                 <img
-                  src="https://images.pexels.com/photos/4185957/pexels-photo-4185957.jpeg"
+                  src={SportsImg}
                   alt="tgps-news"
                   
                 />
@@ -46,24 +46,27 @@ const News4 = () => {
 
               <div className="press-content">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eaque assumenda debitis mollitia architecto laudantium sapiente pariatur tempore, error nulla eos, ut fugit cupiditate non porro quo accusantium numquam autem incidunt veniam voluptatibus quis aspernatur eligendi? Ut laudantium adipisci repudiandae sapiente repellat, debitis labore, fugit quod quidem sequi dolorum aliquam error deserunt beatae ipsum consequuntur quo quae vero. Eum corporis molestias, vel quasi repellat eos nisi tenetur ab asperiores, vitae laborum dolores libero quam harum numquam minus blanditiis nobis iusto rerum. Quaerat pariatur corrupti dignissimos, fugiat quod excepturi nam tenetur delectus earum quam et dolore eaque voluptate officiis molestias aliquam.
+                 In partnership with Rotary, the Foundation owned the team Chennai Super Greens, signalling a strong commitment to advancing opportunities for the physically challenged community through sports. The initiative underscored the belief that athletic talent, discipline, and competitive spirit transcend physical limitations when given the right platform and support.
                 </p>
 
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum porro maxime numquam qui exercitationem dolores necessitatibus similique eligendi illo, blanditiis dicta minus debitis fugit id. Laudantium non corporis magnam voluptatum molestiae aliquid a fugiat officiis nemo dicta laborum excepturi eum facilis culpa amet, tempore libero est doloremque quia soluta assumenda. Maiores error quod, vitae soluta dignissimos ex nulla exercitationem omnis numquam officiis atque, nesciunt fugiat. Cupiditate dolor beatae blanditiis esse, cumque labore magni nemo, ea doloremque facere, expedita id mollitia!
+                 The Indian Para Cricket League brought together para-athletes from across the country, celebrating resilience, teamwork, and excellence. By stepping into team ownership and sponsorship, the Green Carpet Foundation entered a new phase of structured support for para sports, moving beyond advocacy to direct participation and long-term impact
                 </p>
 
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iure harum reiciendis libero? Explicabo omnis dicta, quae error accusamus nostrum excepturi inventore a maiores cum iste non quam, asperiores dolorem! Cumque, reprehenderit harum quidem quam tempora maiores quo assumenda consequatur nemo animi, ea id repellendus necessitatibus voluptates nostrum accusamus! Quod iure repudiandae ut quo dolorem in? Quam ducimus at a vitae consequatur saepe rerum, similique explicabo quos, adipisci modi obcaecati possimus optio ipsa reprehenderit impedit tenetur dicta fugiat cum sit.
+                 This sponsorship reflects the Foundation’s core philosophy—equal opportunity, dignity, and inclusion are fundamental rights, not privileges. Sports, as demonstrated through the Chennai Super Greens, serve as a powerful catalyst for confidence-building, social visibility, and community integration for persons with disabilities.
                 </p>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. At saepe deserunt minima fugit dolore est sed quos facilis atque, maxime, dolorem, architecto non optio repudiandae? Nesciunt officia libero, perspiciatis provident quaerat corporis quod. Modi explicabo non porro temporibus praesentium dolores minima corrupti. Quos esse vel sit doloremque earum quidem ex ipsam dolore voluptates, voluptatibus atque facilis in reiciendis tempora dolor necessitatibus minima ab, consequatur porro! Ex earum ea mollitia non! Quae reprehenderit, quod consequuntur maxime debitis cumque, cum cupiditate, velit suscipit ratione delectus nulla officia expedita fugit impedit error vitae facilis fuga sed dolores enim laudantium hic nemo quam! Deserunt.
+                  Speaking on the occasion, the Foundation reiterated its commitment to creating inclusive ecosystems where individuals are empowered not by sympathy, but by access, respect, and opportunity. The partnership with Rotary further strengthened this mission, bringing together civic leadership and social responsibility to enable meaningful change.
                 </p>
 
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sunt esse dolorem aspernatur repellat aliquid quis tempore velit ipsum! Possimus non fugiat soluta porro eius temporibus rem, qui saepe ratione voluptatibus suscipit dolorem illum ex? Dolorum voluptas facere laudantium placeat ex similique velit itaque unde? Nulla et, cum doloribus officia laborum excepturi voluptatum voluptatem vero quo sed unde. Deserunt blanditiis et quidem officia odit iure quia quibusdam? Officiis, quod deserunt.
+                 The Green Carpet Foundation continues to explore initiatives that use sports, education, and sustainable development as tools for social transformation, with a strong focus on empowering underserved and underrepresented communities.
                 </p>
+
+                <h5 className="text-center">“Inclusion is not about accommodation. It is about equal access to opportunity.”</h5>
+                <p>Owning Chennai Super Greens marks a new chapter in para-sports support.</p>
 
                 <hr />
               </div>
@@ -71,6 +74,7 @@ const News4 = () => {
             </div>
           </div>
         </div>
+      </section>
       </section>
     </>
   );

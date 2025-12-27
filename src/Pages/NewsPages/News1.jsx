@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom"
 import "./News1.css";
-
+import FrecX from '..//..//assets/images/News/frecx.png'
 const News1 = () => {
   return (
     <>
+    <section className="IBM-font">
       {/* ===== BREADCRUMB BAR ===== */}
       <div className="breadcrumb-bar">
         <div className="container-fluid">
@@ -24,7 +25,7 @@ const News1 = () => {
       {/* LEFT IMAGE */}
       <div className="col-lg-7 left-image">
         <img
-          src="https://images.pexels.com/photos/3944425/pexels-photo-3944425.jpeg"
+          src={FrecX}
           alt="Brain Research"
         />
       </div>
@@ -32,21 +33,27 @@ const News1 = () => {
       {/* RIGHT CONTENT */}
       <div className="col-lg-5 right-content">
         <div className="content-inner">
-          <h1>
-            Lorem ipsum dolor sit amet consectetur 
-          </h1>
+          <h4>
+            India’s Ethereum Has Arrived — Frequency Chain X Emerges as the Next-Gen Conscious Blockchain
+          </h4>
 
           <p className="date">
-            Published: <strong>19 December 2025</strong>
+            Published: <strong>May 23, 2025</strong>
+          </p>
+
+          <p className="date">
+             <strong>New Delhi | Web3 Innovation & Sustainable Tech</strong>
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab consequuntur adipisci labore error. Ipsum nemo culpa quos nam saepe deleniti? Dolorum facere nesciunt nulla voluptatem, quam rem. Quasi quas ex velit. Dicta aliquid eligendi veritatis praesentium voluptate quaerat, autem aspernatur deserunt deleniti iure aut ratione, ipsum qui facilis cumque..
+           Frequency Chain X — the homegrown Layer-1 blockchain developed by TGPS InfoTech — is being hailed in multiple industry publications as “India’s Ethereum”, but with a purpose-driven evolution that goes beyond traditional blockchain narratives
           </p>
 
-          {/* <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque commodi nesciunt et minus cupiditate sed autem, ratione facilis vitae inventore optio vel sapiente impedit a nisi incidunt architecto, delectus, dolor dolorem obcaecati officia. Tenetur, quos!
-          </p> */}
+          
+
+          <p>
+            
+          </p>
         </div>
       </div>
 
@@ -62,26 +69,41 @@ const News1 = () => {
           <div className="col-lg-8 col-xl-7">
 
             {/* INTRO TEXT */}
+            <h5>
+            India Technology News
+          </h5>
             <p className="intro-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit eaque, optio, iste dolores veritatis voluptate magnam nulla tempore ipsam, consequatur iure! Illo vero labore placeat excepturi! Et reiciendis officiis aut nihil cumque est laboriosam illo perferendis quas. Enim veniam ducimus laboriosam sit! Quos harum ipsa ab eum sit, dicta cupiditate et ex atque rerum dolor impedit alias quae nostrum architecto ipsum officia corporis magni neque provident veniam illo ratione? Rerum autem voluptate obcaecati amet velit ipsa error sequi voluptatum consequuntur, dolore, praesentium a repellendus mollitia excepturi accusamus ipsum iusto, magni quae! Aspernatur facilis repellendus minus libero nobis asperiores repudiandae expedita!
+              Positioned not as a replication but as a next-generation blockchain designed for real-world impact, Frequency Chain X combines sustainability, performance, and social utility to demonstrate how Web3 can serve both people and the planet. 
+India Technology News
             </p>
 
             {/* TITLE */}
-            <h2 className="section-title">
-              Lorem ipsum dolor sit amet consectetur.
-            </h2>
+            <h5>
+              Pushing Beyond Ethereum’s Limits
+            </h5>
 
             {/* CONTENT */}
             <p>
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, incidunt quae necessitatibus officia nulla vitae deserunt quos molestias saepe sed inventore fugiat soluta quam quisquam dolore ipsum earum quibusdam exercitationem cum. Cupiditate animi culpa quos quisquam aperiam consequuntur incidunt nostrum!
+             While global attention has long been on Ethereum’s innovation, Frequency Chain X was built with a distinct philosophy — to solve persistent challenges like high gas fees, network bottlenecks, and environmental trade-offs. This is achieved through its proprietary S2PoS (Solid Split Proof of Stake) consensus mechanism, which delivers high transaction throughput, ultra-low energy consumption, and robust decentralization without compromising performance. 
+India Technology News
             </p>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quis totam laudantium dolor cupiditate in incidunt sequi unde perspiciatis id doloribus, aut velit quod, delectus pariatur odit minima eos possimus ipsum repellat tenetur illum obcaecati voluptatum? Laboriosam cumque mollitia delectus quis at totam voluptatum tenetur aut odio ad exercitationem adipisci, voluptas sint omnis quidem possimus expedita, dolores aliquam quos, laudantium architecto. Odit aspernatur repudiandae neque fugit, vel eos facilis perspiciatis nulla dolore. Officiis iure non quis quibusdam eaque? Sit, quos nulla, esse ex molestiae dolorum deserunt laboriosam tenetur animi illum fugit corporis vero ducimus reprehenderit! Molestias recusandae accusamus tenetur sapiente?
+             This technology enables the blockchain to operate efficiently and sustainably — addressing issues that traditional proof-of-work or even some proof-of-stake systems struggle with. 
+India Technology News
+            </p>
+
+            <h5>
+              Leadership and Purpose-Driven Innovation
+            </h5>
+
+            <p>
+             Frequency Chain X’s evolution reflects years of deliberate strategy and engineering — beginning with the Frequency Token on Polygon as a sustainability-reward utility token and progressing through successful beta deployments. 
+India Technology News
             </p>
 
             <p>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi. Minima pariatur amet mollitia est alias neque, deleniti dolores quia quidem sed natus excepturi minus temporibus illum, iure, in facilis?
+              Murugesan Kandaswamy (MK), Founder of the project, envisioned a blockchain that goes beyond hype, focusing instead on ethical technology and infrastructure for sustainable development. 
             </p>
 
           </div>
@@ -95,8 +117,8 @@ const News1 = () => {
  {/* FIXED HERO */}
 <section className="fixed-hero">
   <img
-    src="https://images.pexels.com/photos/936137/pexels-photo-936137.jpeg"
-    alt="Hero"
+    src={FrecX}
+    alt="frecX"
     className="fixed-hero-img"
   />
 
@@ -135,27 +157,55 @@ const News1 = () => {
           <div className="col-lg-8 col-xl-7">
 
             {/* INTRO TEXT */}
+            <h5>
+              India Technology News
+            </h5>
             <p className="intro-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum tenetur facilis facere quia non, laboriosam eligendi incidunt. Nisi vero blanditiis velit qui fugit aut, voluptatibus, dignissimos fuga a debitis soluta quos possimus unde earum ex expedita at neque distinctio ea? Vero libero ab sequi deserunt expedita, hic dolorem incidunt.
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas veritatis deserunt nam explicabo voluptatum ut. Culpa cum et nisi!
+              Alongside him, Ms. Ponsana David, CEO of TGPS Global, has been highlighted for her leadership in steering the project with clarity, purpose, and long-term impact orientation — treating decentralization as a human right and emphasizing the need for technology that respects both people and the environment. 
+India Technology News
             </p>
 
             {/* TITLE */}
-            <h2 className="section-title">
-              Lorem ipsum dolor sit, amet consectetur
-            </h2>
+            <h5 >
+              Real-World Adoption and Ecosystem Integration
+            </h5>
+            <br />
 
             {/* CONTENT */}
-            <p>
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis doloremque quae id in, error cupiditate expedita praesentium iure ad sequi aut, ex ratione possimus voluptatum vitae voluptate, quibusdam similique eaque repellat eligendi nulla? Quos quasi culpa quisquam iure reprehenderit delectus quidem velit, itaque quibusdam fugit nostrum, dolore dolores pariatur officia fuga voluptatibus magni similique alias cupiditate accusamus optio ullam nihil.
+            <p className="fw-bold">
+             Frequency Chain X is already powering practical applications that span key sectors:
+            </p>
+
+            <p >
+           Frequency Vehicle — supporting EV data, energy use, and charging transparency with blockchain-powered integrity
             </p>
 
             <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima odio rerum alias quasi fugiat eum similique natus. Assumenda dolorem saepe nostrum voluptatum voluptatibus est possimus ducimus vitae perferendis a eveniet exercitationem laboriosam cupiditate ea nam quia, alias nemo adipisci debitis autem sunt velit consectetur eius? Voluptatum ipsa delectus itaque assumenda, culpa enim officiis, magni neque sunt quia eum, accusantium at..
+              MetaWatts — a low-carbon Web3 browser designed for conscious digital interaction
+            </p>
+            <p>
+              EnergyFit — a clean-energy community staking platform rewarding sustainable action
+            </p>
+            <p>
+              Cliff Chat & DeMask — private communication and identity tools free from surveillance
+            </p>
+            <p>
+              FreC Fast — logistics and mobility solutions backed by blockchain transparency
             </p>
 
+            <h5>
+              India Technology News
+            </h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi veritatis quod fugit, optio nulla iure voluptatibus voluptates laudantium dolore unde mollitia tenetur aut perspiciatis maxime eos, officiis et, velit corrupti!
+              These dApps demonstrate that Frequency Chain X isn’t just theoretical — it’s operational and integrated into sectors prioritizing sustainability and real utility. 
+India Technology News
+            </p>
+
+            <h5>
+              Alpha Launch and Momentum
+            </h5>
+            <p>
+              With its Alpha release live, Frequency Chain X is moving toward broader ecosystem adoption, onboarding validators, expanding partnerships across EV, energy, logistics and clean tech spaces, and positioning for Tier-1 and Tier-2 exchange listings. Early community and developer engagement continue to grow as the project scales.
             </p>
 
           </div>
@@ -164,6 +214,8 @@ const News1 = () => {
     </section>                    
                  
 
+                 
+</section>
     </>
   );
 };

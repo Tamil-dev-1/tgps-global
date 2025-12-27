@@ -3,7 +3,11 @@ import mainNewsImg from '../../assets/images/News/news1.jpeg'
 import NewsImg1 from '../../assets/images/News/news2.jpeg'
 import NewsImg2 from '../../assets/images/News/news3.jpg'
 import NewsImg3 from '../../assets/images/News/news4.jpeg'
-import NewsImg4 from '../../assets/images/News/news5.jpg'
+import NewsImg5 from '../../assets/images/News/newsImg5.jpeg'
+import Missionary from "../../assets/images/News/missionary.jpeg"
+import SportsImg from "../../assets/images/News/sportsImg.jpeg"
+import EVCharge from '../../assets/images/News/evcharge.jpeg'
+import FrecX from '../../assets/images/News/frecX.png'
 import { Link } from "react-router-dom";
 
 import './news.css'
@@ -42,7 +46,7 @@ const LatestNews = () => {
                   style={{ overflow: "hidden" }}
                 >
                   <img
-                    src={mainNewsImg}
+                    src={FrecX }
                     className="card-img-top rounded-0"
                     alt="Main news"
                   />
@@ -52,16 +56,12 @@ const LatestNews = () => {
                         className="text-decoration text-white"
                         style={{ cursor: "pointer" }}
                       >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Expedita, modi?
+                       India’s Ethereum Has Arrived — Frequency Chain X Emerges as the Next-Gen Conscious Blockchain
                       </p>
                     </h5>
-                    <p className="text-white mb-1 small mt-5">28 October 2025</p>
+                    <p className="text-white mb-1 small mt-5">May 23, 2025</p>
                     <p className="card-text text-white" style={{ fontSize: "0.95rem" }}>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Maiores incidunt reiciendis dolores aspernatur iure sunt
-                      amet aut enim omnis, sed deserunt recusandae ipsa excepturi
-                      dolore, debitis doloremque quis!
+                      Frequency Chain X — the homegrown Layer-1 blockchain developed by TGPS InfoTech — is being hailed in multiple industry publications as “India’s Ethereum”, but with a purpose-driven evolution that goes beyond traditional blockchain narratives!
                     </p>
                   </div>
                 </div>
@@ -81,7 +81,7 @@ const LatestNews = () => {
     <div className="row g-0 align-items-center card-bg">
       <div className="col-4">
         <img
-          src={NewsImg1}
+          src={EVCharge}
           className="img-fluid w-100 h-100 object-fit-cover"
           alt="news"
         />
@@ -95,11 +95,11 @@ const LatestNews = () => {
               className="text-decoration-none text-white"
               style={{ cursor: "pointer", fontSize: "0.95rem" }}
             >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, a.
+              Ponsana DAVID to Speak at EVCharge Live Thailand 2026 — Driving Conversation on EV Charging & Sustainable Mobility.
             </p>
            </Link>
           </h6>
-          <p className="small mb-0">27 October 2025</p>
+          <p className="small mb-0">28–29 January 2026</p>
         </div>
       </div>
     </div>
@@ -110,7 +110,7 @@ const LatestNews = () => {
     <div className="row g-0 align-items-center card-bg">
       <div className="col-4">
         <img
-          src={NewsImg2}
+          src={Missionary}
           className="img-fluid w-100 h-100 object-fit-cover"
           alt="news"
         />
@@ -124,11 +124,11 @@ const LatestNews = () => {
               className="text-decoration-none text-white"
               style={{ cursor: "pointer", fontSize: "0.95rem" }}
             >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, a.
+              MK Visionary Awards 2025: Empowering Young Minds Through Scholarships, Creativity, and Opportunity
             </p>
            </Link>
           </h6>
-          <p className="small mb-0">23 October 2025</p>
+          <p className="small mb-0">November 23 </p>
         </div>
       </div>
     </div>
@@ -139,7 +139,7 @@ const LatestNews = () => {
     <div className="row g-0 align-items-center card-bg">
       <div className="col-4">
         <img
-          src={NewsImg3}
+          src={SportsImg}
           className="img-fluid w-100 h-100 object-fit-cover"
           alt="news"
         />
@@ -153,11 +153,11 @@ const LatestNews = () => {
               className="text-decoration-none text-white"
               style={{ cursor: "pointer", fontSize: "0.95rem" }}
             >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, a.
+              Green Carpet Foundation Champions Inclusion Through Para Cricket Sponsorship in Coimbatore
             </p>
            </Link>
           </h6>
-          <p className="small mb-0">10 October 2025</p>
+          <p className="small mb-0">September 5–7</p>
         </div>
       </div>
     </div>
@@ -168,7 +168,7 @@ const LatestNews = () => {
     <div className="row g-0 align-items-center card-bg">
       <div className="col-4">
         <img
-          src={NewsImg4}
+          src={NewsImg5}
           className="img-fluid w-100 h-100 object-fit-cover"
           alt="news"
         />
@@ -182,12 +182,12 @@ const LatestNews = () => {
               style={{ cursor: "pointer", fontSize: "0.95rem" }}
             >
               
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, a.
+              CEO Ponsana Flags Child Safety Concerns on Quick-Commerce Apps, Industry Responds
               
             </p>
             </Link>
           </h6>
-          <p className="small mb-0">05 October 2025</p>
+          <p className="small mb-0">July 15 2025</p>
         </div>
       </div>
     </div>

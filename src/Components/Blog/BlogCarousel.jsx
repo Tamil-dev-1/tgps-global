@@ -2,7 +2,12 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom"
-import { motion } from "framer-motion";
+import IMG1 from "../../assets/images/blog/img1.png"
+import IMG2 from "../../assets/images/blog/img2.jpg"
+import IMG3 from "../../assets/images/blog/img3.png"
+import IMG4 from "../../assets/images/blog/img4.jpeg"
+import IMG5 from "../../assets/images/blog/img5.jpg"
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -13,10 +18,8 @@ const BlogCarousel = () => {
   
   return (
     <>
-    <motion.div
-    initial={{opacity: 0, scale: 0}}
-    whileInView={{opacity: 1, scale: 1}}
-    transition={{duration: 2}}
+    <div
+   
      style={{ padding: "60px 0", backgroundColor: "#24A7F7" }}>
       <div className="container text-center">
         <h2 style={{ fontWeight: "700", color: "#fff" }}>Our Blogs</h2>
@@ -48,7 +51,7 @@ const BlogCarousel = () => {
               }}
             >
               <img
-                src="https://images.pexels.com/photos/5081392/pexels-photo-5081392.jpeg"
+                src={IMG2}
                 alt="Blog"
                 className="card-img-top"
                 style={{
@@ -60,10 +63,10 @@ const BlogCarousel = () => {
               />
               <div className="card-body">
                 <p className="text-muted mb-1" style={{ fontSize: "0.9rem" }}>
-                  BY Lorem Ipsum - 14 Jan, 2024
+                  
                 </p>
                 <h6 style={{ fontWeight: "600" }}>
-                  simply dummy text of the printing and typesetting industry.
+                  Blockchain’s Role <br /> in Renewable Energy
                 </h6>
               </div>
             </div>
@@ -80,7 +83,7 @@ const BlogCarousel = () => {
               boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
             }}>
               <img
-                src="https://images.pexels.com/photos/18105/pexels-photo.jpg"
+                src={IMG1}
                 alt="Blog"
                 className="card-img-top"
                 style={{
@@ -92,10 +95,10 @@ const BlogCarousel = () => {
               />
               <div className="card-body">
                 <p className="text-muted mb-1" style={{ fontSize: "0.9rem" }}>
-                  BY Lorem Ipsum - 14 Jan, 2024
+                  
                 </p>
                 <h6 style={{ fontWeight: "600" }}>
-                  simply dummy text of the printing and typesetting industry.
+                  Decentralized Energy: <br /> Benefits and Challenges
                 </h6>
               </div>
             </div>
@@ -111,7 +114,7 @@ const BlogCarousel = () => {
               boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
             }}>
               <img
-                src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg"
+                src={IMG3}
                 alt="Blog"
                 className="card-img-top"
                 style={{
@@ -123,10 +126,10 @@ const BlogCarousel = () => {
               />
               <div className="card-body">
                 <p className="text-muted mb-1" style={{ fontSize: "0.9rem" }}>
-                  BY Lorem Ipsum - 14 Jan, 2024
+                
                 </p>
                 <h6 style={{ fontWeight: "600" }}>
-                  simply dummy text of the printing and typesetting industry.
+                  How Smart Grids Are Shaping the Future of Energy Distribution
                 </h6>
               </div>
             </div>
@@ -135,14 +138,14 @@ const BlogCarousel = () => {
 
           {/* SLIDE 4 */}
           <SwiperSlide>
-           <Link to='/blog-5' className="text-decoration-none">
+           <Link to='/blog-4' className="text-decoration-none">
             <div className="card border-0" style={{
               backgroundColor: "#fff",
               borderRadius: "10px",
               boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
             }}>
               <img
-                src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg"
+                src={IMG4}
                 alt="Blog"
                 className="card-img-top"
                 style={{
@@ -154,11 +157,11 @@ const BlogCarousel = () => {
               />
               <div className="card-body">
                 <p className="text-muted mb-1" style={{ fontSize: "0.9rem" }}>
-                  BY Lorem Ipsum - 14 Jan, 2024
+                  
                 </p>
-                <h6 style={{ fontWeight: "600" }}>
-                  simply dummy text of the printing and typesetting industry.
-                </h6>
+                <p style={{ fontWeight: "600" }}>
+                  Sustainable Energy Practices for Businesses
+                </p>
               </div>
             </div>
            </Link>
@@ -174,7 +177,7 @@ const BlogCarousel = () => {
               boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
             }}>
               <img
-                src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg"
+                src={IMG5}
                 alt="Blog"
                 className="card-img-top"
                 style={{
@@ -186,10 +189,10 @@ const BlogCarousel = () => {
               />
               <div className="card-body">
                 <p className="text-muted mb-1" style={{ fontSize: "0.9rem" }}>
-                  BY Lorem Ipsum - 14 Jan, 2024
+                  
                 </p>
                 <h6 style={{ fontWeight: "600" }}>
-                  simply dummy text of the printing and typesetting industry.
+                   The Importance of Energy Transparency in Building Trust Introduction
                 </h6>
               </div>
             </div>
@@ -216,7 +219,7 @@ const BlogCarousel = () => {
           </Link>
         </div>
       </div>
-    </motion.div>
+    </div>
     </>
   );
 };

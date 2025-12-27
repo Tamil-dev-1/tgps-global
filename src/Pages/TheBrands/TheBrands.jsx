@@ -57,11 +57,9 @@ const TheGroup = () => {
 </section>
 
       {/* ===== VISION & MISSION ===== */}
-      <motion.section
+      <section
 
-       initial={{opacity: 0, translateX: "100%"}}
-    whileInView={{opacity: 1, translateX: 0}}
-   transition={{duration: 2}}
+       
   className="py-5 text-center text-white"
   style={{ background: "#A14DC3" }}
 >
@@ -117,7 +115,7 @@ const TheGroup = () => {
 
     </div>
   </div>
-</motion.section>
+</section>
 
 
       {/* ===== GLOBAL PRESENCE ===== */}

@@ -1,11 +1,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Link} from "react-router-dom"
+import EVCharge from '../../../assets/images/News/evcharge.jpeg'
 import "./News2.css";
 
 const News2 = () => {
   return (
     <>
+    <section className="IBM-font">
       {/* BREADCRUMB BAR */}
       <div className="breadcrumb-bar">
         <div className="container py-2">
@@ -21,24 +23,23 @@ const News2 = () => {
             <div className="col-lg-8">
 
               <h1 className="press-title">
-                Lorem, ipsum dolor. <br />
-                Lorem ipsum dolor sit. <br />
-                Lorem
+                Ponsana DAVID to Speak at EVCharge Live Thailand 2026 — Driving Conversation on EV Charging & Sustainable Mobilityṣ
               </h1>
 
               <div className="press-meta">
-                <span>Published: 16 December 2025</span>
+                <span>Published: 28–29 January 2026</span>
                 <span className="dot">•</span>
-                <span>Lorem ipsum dolor sit.</span>
+                {/* <span>Lorem ipsum dolor sit.</span> */}
               </div>
 
               <p className="press-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam adipisci debitis in sit magnam, animi ducimus numquam sed laborum reiciendis!
+                Ponsana DAVID, Chairman of the Green Carpet Foundation and CEO of TGPS Global, has been invited as a featured speaker at EVCharge Live Thailand 2026, one of Southeast Asia’s most influential events focused on electric vehicles (EVs) and charging infrastructure. The event will take place on 28–29 January 2026 at BITEC, Bangkok, Thailand. 
+Terrapinn
               </p>
 
               <div className="press-image">
                 <img
-                  src="https://images.pexels.com/photos/1752724/pexels-photo-1752724.jpeg"
+                  src={EVCharge}
                   alt="tgps-news"
                   
                 />
@@ -46,23 +47,27 @@ const News2 = () => {
 
               <div className="press-content">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eaque assumenda debitis mollitia architecto laudantium sapiente pariatur tempore, error nulla eos, ut fugit cupiditate non porro quo accusantium numquam autem incidunt veniam voluptatibus quis aspernatur eligendi? Ut laudantium adipisci repudiandae sapiente repellat, debitis labore, fugit quod quidem sequi dolorum aliquam error deserunt beatae ipsum consequuntur quo quae vero. Eum corporis molestias, vel quasi repellat eos nisi tenetur ab asperiores, vitae laborum dolores libero quam harum numquam minus blanditiis nobis iusto rerum. Quaerat pariatur corrupti dignissimos, fugiat quod excepturi nam tenetur delectus earum quam et dolore eaque voluptate officiis molestias aliquam.
+                  EVCharge Live Thailand 2026 is a premier business-to-business exhibition and conference that brings together the entire EV ecosystem — from policymakers, industry leaders, and infrastructure developers to technology providers and investors. The event is designed to address the rapid evolution of electric mobility, particularly the charging infrastructure, which is considered a cornerstone for accelerating EV adoption across Thailand and the ASEAN region. 
+Terrapinn
                 </p>
 
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum porro maxime numquam qui exercitationem dolores necessitatibus similique eligendi illo, blanditiis dicta minus debitis fugit id. Laudantium non corporis magnam voluptatum molestiae aliquid a fugiat officiis nemo dicta laborum excepturi eum facilis culpa amet, tempore libero est doloremque quia soluta assumenda. Maiores error quod, vitae soluta dignissimos ex nulla exercitationem omnis numquam officiis atque, nesciunt fugiat. Cupiditate dolor beatae blanditiis esse, cumque labore magni nemo, ea doloremque facere, expedita id mollitia!
+                  Over two days, the event will feature interactive sessions, expert presentations, product demonstrations, and networking opportunities aimed at advancing thought leadership and collaboration in the EV sector. Attendees will gain deep insights into key themes such as fast charging technology, fleet and battery management, data platforms, business models, investment strategies, last–mile logistics, regulatory frameworks, and emerging trends in energy integration and maintenance. 
+Terrapinn
                 </p>
 
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iure harum reiciendis libero? Explicabo omnis dicta, quae error accusamus nostrum excepturi inventore a maiores cum iste non quam, asperiores dolorem! Cumque, reprehenderit harum quidem quam tempora maiores quo assumenda consequatur nemo animi, ea id repellendus necessitatibus voluptates nostrum accusamus! Quod iure repudiandae ut quo dolorem in? Quam ducimus at a vitae consequatur saepe rerum, similique explicabo quos, adipisci modi obcaecati possimus optio ipsa reprehenderit impedit tenetur dicta fugiat cum sit.
+                  Ponsana David joins a distinguished lineup of global and regional industry speakers, contributing her perspective on sustainable mobility, infrastructure development, and the role of multi-sector collaboration in shaping resilient, equitable transportation ecosystems. Her participation highlights the Green Carpet Foundation’s ongoing commitment to promoting innovative, environmentally responsible solutions and fostering partnerships that support the growth of green technologies and infrastructure. 
+Terrapinn
+                </p>
+                    In addition to keynote talks and sessions, the event will host over 150 expert speakers, hands-on product demos, and exhibits, allowing delegates to explore the latest innovations driving the future of EV charging. Delegates will also have opportunities for networking and strategic dialogues, essential for forming partnerships that will influence the adoption and integration of next-generation EV technologies.Terrapinn
+                <p>
+                  As Thailand continues to build out its EV ecosystem — supported by government initiatives and private sector investment — platforms like EVCharge Live Thailand are pivotal for sharing knowledge, spotlighting emerging trends, and catalysing collaboration across borders and industries. 
+Terrapinn
                 </p>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. At saepe deserunt minima fugit dolore est sed quos facilis atque, maxime, dolorem, architecto non optio repudiandae? Nesciunt officia libero, perspiciatis provident quaerat corporis quod. Modi explicabo non porro temporibus praesentium dolores minima corrupti. Quos esse vel sit doloremque earum quidem ex ipsam dolore voluptates, voluptatibus atque facilis in reiciendis tempora dolor necessitatibus minima ab, consequatur porro! Ex earum ea mollitia non! Quae reprehenderit, quod consequuntur maxime debitis cumque, cum cupiditate, velit suscipit ratione delectus nulla officia expedita fugit impedit error vitae facilis fuga sed dolores enim laudantium hic nemo quam! Deserunt.
-                </p>
-
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sunt esse dolorem aspernatur repellat aliquid quis tempore velit ipsum! Possimus non fugiat soluta porro eius temporibus rem, qui saepe ratione voluptatibus suscipit dolorem illum ex? Dolorum voluptas facere laudantium placeat ex similique velit itaque unde? Nulla et, cum doloribus officia laborum excepturi voluptatum voluptatem vero quo sed unde. Deserunt blanditiis et quidem officia odit iure quia quibusdam? Officiis, quod deserunt.
+                  
                 </p>
 
                 <hr />
@@ -71,6 +76,7 @@ const News2 = () => {
             </div>
           </div>
         </div>
+      </section>
       </section>
     </>
   );

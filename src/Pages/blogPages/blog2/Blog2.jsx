@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import IMG1 from '../../../assets/images/blog/img1.png'
 const Blog2 = () => {
   return (
     <section style={{ background: "#F4F6FA", padding: "70px 0" }}>
@@ -13,7 +13,7 @@ const Blog2 = () => {
             {/* IMAGE */}
             <div className="mb-4">
               <img
-                src="https://images.pexels.com/photos/5081392/pexels-photo-5081392.jpeg"
+                src={IMG1}
                 alt="Blog"
                 className="img-fluid w-100"
                 style={{
@@ -27,35 +27,80 @@ const Blog2 = () => {
             {/* META */}
             <div className="mb-3">
               <span className="text-muted me-3">
-                BY <strong>Lorem Ipsum</strong>
+                {/* Decentralized Energy: <strong> Benefits and Challenges</strong> */}
               </span>
-              <span className="text-muted">14 Jan, 2024</span>
+             
             </div>
 
             {/* TITLE */}
             <h2 className="fw-bold mb-4">
-              Simply dummy text of the printing and typesetting industry
+              Decentralized Energy: Benefits and Challenges
+                 
             </h2>
 
             {/* CONTENT */}
+
+            <h5 className="fw-bold">
+              Introduction
+            </h5>
             <p style={{ lineHeight: "1.9" }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of type
-              and scrambled it to make a type specimen book.
+             Decentralized energy involves producing, storing, and distributing power close to the point of consumption, as opposed to relying on large, central power plants. These systems allow local energy production, using sources like solar panels, wind farms, and microgrids. By decentralizing energy production, communities can reduce their dependence on central grids, enhancing efficiency and flexibility in managing energy needs.
             </p>
 
-            <p style={{ lineHeight: "1.9" }}>
-              It has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages.
-            </p>
+            <h5 className="fw-bold">
+              Benefits
+            </h5>
 
             <p style={{ lineHeight: "1.9" }}>
-              A reader will be distracted by the readable content of a page when
-              looking at its layout. The point of using Lorem Ipsum is that it
-              has a more-or-less normal distribution of letters.
+              Strengthened Energy Resilience and Security
+One of the standout advantages of decentralized energy systems is how they bolster resilience. With energy generation spread across various locations, the risk of large-scale outages diminishes, as power doesn't depend solely on one major grid. This diversification ensures that even in emergencies or during extreme weather events, power can still be supplied. Such a structure offers better energy security, especially in regions prone to grid disruptions.
+            </p>
+
+            <h5 className="fw-bold">
+              Empowering Communities and Consumers
+            </h5>
+
+            <p style={{ lineHeight: "1.9" }}>
+              Decentralized energy offers communities control over their energy. Households and small businesses can produce their own electricity, reducing reliance on traditional utility providers. This local autonomy not only increases energy independence but also enables communities to tailor energy solutions to their specific needs. Moreover, consumers can enjoy cost benefits by either using the energy they produce or selling the surplus back to the grid, fostering a more sustainable and consumer-driven energy landscape.
+            </p>
+
+             <h5 className="fw-bold">
+              Challenges
+            </h5>
+
+            <p style={{ lineHeight: "1.9" }}>
+             Infrastructure Constraints
+However, decentralized energy faces considerable infrastructure-related challenges. The existing grid was largely built for centralized energy systems and is not fully equipped to handle multiple small, distributed power sources. Adapting current infrastructure to accommodate decentralized energy will require substantial investment. Without such upgrades, issues like energy loss during transmission and coordination difficulties between different sources may arise, reducing system efficiency..
+            </p>
+
+             <h5 className="fw-bold">
+             Regulatory and Market Obstacles
+            </h5>
+
+            <p style={{ lineHeight: "1.9" }}>
+              Regulatory environments are another significant barrier. Many regulations are designed with large, centralized producers in mind, leaving decentralized systems at a disadvantage. Complex permitting processes and restricted access to energy markets further hinder decentralized energy initiatives. Addressing these legal and regulatory hurdles is crucial to leveling the playing field and allowing decentralized energy to thrive.
+            </p>
+
+            <h5 className="fw-bold">
+             Technological Innovations
+            </h5>
+            <h5>
+              IoT and AI: Supporting Decentralized Energy
+            </h5>
+
+            <p style={{ lineHeight: "1.9" }}>
+            The Internet of Things (IoT) and Artificial Intelligence (AI) are transforming decentralized energy systems. IoT devices enable real-time monitoring of energy production and consumption, making it easier to manage and optimize energy use. AI, on the other hand, can analyze usage patterns, predict demand spikes, and autonomously adjust energy flows to improve efficiency. Together, these technologies are making decentralized energy systems more adaptive, scalable, and efficient, laying the groundwork for smarter energy grids.
+            </p>
+
+            <h5 className="fw-bold">
+            Future Outlook
+            </h5>
+            <h5>
+              Emerging Trends and Predictions
+            </h5>
+
+            <p style={{ lineHeight: "1.9" }}>
+             The future of decentralized energy looks promising as technological advancements continue. With the integration of smart grids, enhanced energy storage solutions, and peer-to-peer energy sharing platforms, decentralized systems are expected to grow. Governments, regulators, and businesses must collaborate to reform outdated regulations and encourage investments in infrastructure to support this shift. We can expect decentralized energy systems to play a more prominent role in the global energy market as demand for renewable and localized energy solutions rises.
             </p>
 
             {/* QUOTE */}
@@ -67,8 +112,11 @@ const Blog2 = () => {
                 borderRadius: "10px",
               }}
             >
+              <h6>
+                Conclusion
+              </h6>
               <p className="mb-0 fst-italic">
-                “Good design is obvious. Great design is transparent.”
+                Decentralized energy systems enable a greener, more resilient, and flexible energy future despite infrastructure and regulatory challenges.
               </p>
             </div>
 
@@ -87,7 +135,7 @@ const Blog2 = () => {
           <div className="col-lg-4">
 
             {/* AUTHOR CARD */}
-            <div
+            {/* <div
               className="mb-4 p-4"
               style={{
                 background: "#fff",
@@ -100,7 +148,7 @@ const Blog2 = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Author with passion for design and technology.
               </p>
-            </div>
+            </div> */}
 
             {/* RECENT POSTS */}
             <div
@@ -111,21 +159,21 @@ const Blog2 = () => {
                 boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
               }}
             >
-              <h5 className="fw-bold mb-3">Recent Posts</h5>
+              <h5 className="fw-bold mb-3">Recent post</h5>
 
               <div className="mb-3">
-                <h6 className="mb-1">Premium UI design trends</h6>
-                <small className="text-muted">10 Jan, 2024</small>
+                <h6 className="mb-1">Benefits and Challenges</h6>
+                <small className="text-muted"></small>
               </div>
 
               <div className="mb-3">
-                <h6 className="mb-1">Why UX matters in 2024</h6>
-                <small className="text-muted">08 Jan, 2024</small>
+                <h6 className="mb-1"> Energy Distribution</h6>
+                <small className="text-muted"></small>
               </div>
 
               <div>
-                <h6 className="mb-1">Modern web development</h6>
-                <small className="text-muted">05 Jan, 2024</small>
+                <h6 className="mb-1">Sustainable Energy</h6>
+                <small className="text-muted"></small>
               </div>
             </div>
 
@@ -140,10 +188,10 @@ const Blog2 = () => {
             >
               <h5 className="fw-bold mb-3">Tags</h5>
               <div className="d-flex flex-wrap gap-2">
-                <span className="badge bg-light text-dark border">Design</span>
-                <span className="badge bg-light text-dark border">UI/UX</span>
-                <span className="badge bg-light text-dark border">Technology</span>
-                <span className="badge bg-light text-dark border">React</span>
+                <span className="badge bg-light text-dark border">Blockchain</span>
+                <span className="badge bg-light text-dark border">Decentralized Energy</span>
+                <span className="badge bg-light text-dark border">Energy Distribution</span>
+                <span className="badge bg-light text-dark border">Sustainable Energy</span>
               </div>
             </div>
 

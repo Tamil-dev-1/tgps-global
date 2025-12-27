@@ -364,12 +364,12 @@ const Contact = () => {
    
 
          {/* ===== CALL TO ACTION / FOOTER ===== */}
-    <section
+    {/* <section
   className="text-center p-5"
   style={{
     borderTop: "1px solid #001F82",
     color:'#0D6EFD',
-    // borderBottom: "1px solid #001F82",
+    
   }}
 >
   <h3 className="fw-bold mb-3">Let’s Work Together</h3>
@@ -379,7 +379,7 @@ const Contact = () => {
   <button className="btn btn-light text-white px-4" style={{backgroundColor:'#0D6EFD'}}>
     Start a Conversation
   </button>
-</section>
+</section> */}
     </div>
   );
 };

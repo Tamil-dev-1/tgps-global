@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import NewsImg5 from "../../../assets/images/News/newsImg5.jpeg"
 import "./News5.css";
 
 const News5 = () => {
   return (
     <>
+    <section className="IBM-font">
       {/* ===== BREADCRUMB BAR ===== */}
       <div className="breadcrumb-bar">
         <div className="container-fluid py-2">
@@ -26,7 +28,7 @@ const News5 = () => {
       {/* LEFT IMAGE */}
       <div className="col-lg-7 left-image">
         <img
-          src="https://images.pexels.com/photos/3970328/pexels-photo-3970328.jpeg"
+          src={NewsImg5}
           alt="Brain Research"
         />
       </div>
@@ -34,21 +36,25 @@ const News5 = () => {
       {/* RIGHT CONTENT */}
       <div className="col-lg-5 right-content">
         <div className="content-inner">
-          <h1>
-            Lorem ipsum dolor sit amet consectetur 
-          </h1>
+          <h3>
+            CEO Ponsana Flags Child Safety Concerns on Quick-Commerce Apps Industry Responds 
+          </h3>
 
           <p className="date">
-            Published: <strong>19 December 2025</strong>
+            Published: <strong>July 15 2025</strong>
+          </p>
+
+          <p className="date">
+            <strong>India | Technology & Digital Responsibility</strong>
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab consequuntur adipisci labore error. Ipsum nemo culpa quos nam saepe deleniti? Dolorum facere nesciunt nulla voluptatem, quam rem. Quasi quas ex velit. Dicta aliquid eligendi veritatis praesentium voluptate quaerat, autem aspernatur deserunt deleniti iure aut ratione, ipsum qui facilis cumque..
+            Ponsana, CEO of Thai Green Power Solution (TGPS Global), recently sparked a nationwide conversation on child safety and digital responsibility after raising concerns about the lack of parental controls on popular quick-commerce platforms.
           </p>
 
-          <p>
+          {/* <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque commodi nesciunt et minus cupiditate sed autem, ratione facilis vitae inventore optio vel sapiente impedit a nisi incidunt architecto, delectus, dolor dolorem obcaecati officia. Tenetur, quos!
-          </p>
+          </p> */}
         </div>
       </div>
 
@@ -65,26 +71,23 @@ const News5 = () => {
 
             {/* INTRO TEXT */}
             <p className="intro-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum accusamus consequatur nemo ex totam, at quam nihil! Autem, aliquam quisquam. Dolores minus deserunt necessitatibus consequuntur molestias quo numquam, praesentium explicabo quasi quos repellendus laborum vel repellat facere, ipsa culpa recusandae earum ullam ad voluptatum ratione nihil quidem aperiam? Dolor sequi iure quidem distinctio optio quisquam atque eum minus commodi, porro odio quos placeat in voluptas id consectetur maiores deleniti voluptate?
+             In a public post, Ponsana highlighted how children using grocery and instant-delivery apps for everyday needs are inadvertently exposed to adult and age-inappropriate product listings, due to the absence of effective content filters or age-based access controls. Speaking from personal experience as a parent, she described the issue as a growing challenge in today’s app-driven households. 
             </p>
 
             {/* TITLE */}
-            <h2 className="section-title">
+            {/* <h2 className="section-title">
              Lorem ipsum dolor sit amet consectetur.
-            </h2>
+            </h2> */}
 
             {/* CONTENT */}
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis ducimus tempora expedita natus quo? In soluta perferendis omnis sed. Tempore provident sequi sunt eveniet mollitia laboriosam praesentium et. Exercitationem consectetur cumque ipsum repudiandae repellat! Obcaecati, laborum, magni voluptas provident repellendus odit deserunt dolore cum assumenda consectetur perspiciatis explicabo fuga. Iusto officia voluptatum nesciunt quasi explicabo. Numquam, minima delectus? Quo esse tempora architecto consequuntur repellendus quidem omnis ratione velit eos debitis!
+              Her comments quickly gained traction across social media and technology circles, prompting a public response from Zomato CEO Deepinder Goyal, whose company operates Blinkit. Acknowledging the concern, Goyal stated that the feedback was valid and confirmed that efforts are underway to address child-safety features on such platforms .
             </p>
 
             <p>
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio nam incidunt laborum earum ex magni molestiae facere dolorum molestias doloribus similique nisi quibusdam sequi in tempore, cupiditate at unde nemo blanditiis vitae sint voluptatibus distinctio? Omnis delectus perferendis aspernatur saepe nisi obcaecati dignissimos odio quod quia ad necessitatibus rerum quas, facilis nemo in veritatis amet! Culpa hic minima illum suscipit eveniet reiciendis adipisci, atque, nihil eum ullam praesentium, quibusdam recusandae?
+              The exchange has since evolved into a broader discussion on ethical technology design, parental safeguards, and platform accountability, particularly as quick-commerce apps become increasingly integrated into family life.
             </p>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium dolorum et similique delectus, voluptates, quia quaerat illo dolores cum excepturi temporibus iure ex ab. Cumque nobis necessitatibus esse quae ab.
-            </p>
 
           </div>
         </div>
@@ -97,7 +100,7 @@ const News5 = () => {
  {/* FIXED HERO */}
 <section className="fixed-hero">
   <img
-    src="https://images.pexels.com/photos/3970329/pexels-photo-3970329.jpeg"
+    src={NewsImg5}
     alt="Hero"
     className="fixed-hero-img"
   />
@@ -118,10 +121,8 @@ const News5 = () => {
 <section className="after-hero py-5">
   <div className="container">
     <h2></h2>
-    <p>
-      
-    </p>
-    <p style={{ height: "100vh" }}>
+   
+    <p style={{ height: "50vh" }}>
       
     </p>
   </div>
@@ -138,33 +139,49 @@ const News5 = () => {
 
             {/* INTRO TEXT */}
             <p className="intro-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum tenetur facilis facere quia non, laboriosam eligendi incidunt. Nisi vero blanditiis velit qui fugit aut, voluptatibus, dignissimos fuga a debitis soluta quos possimus unde earum ex expedita at neque distinctio ea? Vero libero ab sequi deserunt expedita, hic dolorem incidunt.
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas veritatis deserunt nam explicabo voluptatum ut. Culpa cum et nisi!
+             
             </p>
 
             {/* TITLE */}
-            <h2 className="section-title">
+            {/* <h2 className="section-title">
               Lorem ipsum dolor sit, amet consectetur
-            </h2>
+            </h2> */}
 
             {/* CONTENT */}
             <p>
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis doloremque quae id in, error cupiditate expedita praesentium iure ad sequi aut, ex ratione possimus voluptatum vitae voluptate, quibusdam similique eaque repellat eligendi nulla? Quos quasi culpa quisquam iure reprehenderit delectus quidem velit, itaque quibusdam fugit nostrum, dolore dolores pariatur officia fuga voluptatibus magni similique alias cupiditate accusamus optio ullam nihil.
+             At TGPS Global, this moment reinforces the organization’s long-standing belief that technology must grow responsibly—balancing convenience with care, innovation with ethics, and scale with social impact. As digital ecosystems expand, leaders and platforms alike are being called upon to design solutions that protect the most vulnerable users.
             </p>
+             
+              <p>
+      Times of India <br />
+      CEO flags child safety concerns on quick-commerce apps; Zomato CEO responds
+       </p>
 
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima odio rerum alias quasi fugiat eum similique natus. Assumenda dolorem saepe nostrum voluptatum voluptatibus est possimus ducimus vitae perferendis a eveniet exercitationem laboriosam cupiditate ea nam quia, alias nemo adipisci debitis autem sunt velit consectetur eius? Voluptatum ipsa delectus itaque assumenda, culpa enim officiis, magni neque sunt quia eum, accusantium at..
-            </p>
+               <p>
+      LiveMint <br />
+      CEO’s post on lack of child-safety filters in quick-commerce apps sparks industry response
+       </p>
 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi veritatis quod fugit, optio nulla iure voluptatibus voluptates laudantium dolore unde mollitia tenetur aut perspiciatis maxime eos, officiis et, velit corrupti!
-            </p>
+               <p>
+      Financial Express <br />
+      Deepinder Goyal reacts after CEO raises concerns over adult products on delivery apps
+       </p>
+
+               <p>
+      StartupPedia <br />
+      CEO calls out quick-commerce platforms on parental control gaps; industry takes note
+       </p>
+       <a className="text-white" href="https://timesofindia.indiatimes.com/technology/social/ceo-calls-out-quick-commerce-apps-for-what-can-be-parents-nightmare-zomatos-deepinder-goyal-responds/articleshow/122495011.cms">Click Here...</a>
+    <p>
+      
+    </p>
+           
 
           </div>
         </div>
       </div>
     </section>                    
-                 
+           </section>      
 
     </>
   );
